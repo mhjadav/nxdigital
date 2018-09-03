@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-starter-bootstrap-cv",
+  "description": "Gatsby starter bootstrap cv",
+  "version": "1.0.0",
+  "author": "Mahipat Jadav <mj@mojaave.com>",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby bootstrap",
+    "bootstrap cv"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-plugin-google-analytics": "next",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.1.3",
+    "gatsby-plugin-purgecss": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhjadav/gatsby-starter-bootstrap-cv"
+  }
+}
