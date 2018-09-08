@@ -5001,4 +5001,17 @@ ul {
     .tw-list-style li img {
       margin-right: 15px; }
     .tw-list-style li:last-child {
-      margin-bottom: 0; }
+      margin-bottom: 0; 
+}
+.form-check-input {
+  margin-left: 0;
+}
+.form-check-label {
+  color: white;
+}
+select.form-control:not([size]):not([multiple]) {
+  height: calc(3.25rem + 2px);
+}
+.slider-wrapper-marketing{
+  height: 750px !important;
+}

@@ -1,6 +1,41 @@
 import React, { Component } from 'react';
 
 class Carousel2 extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            callbackDays: [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            workshopDays: [
+                "Monday To Friday",
+                "Saturday"
+            ],
+            callbackSlot:[
+                "10 AM",
+                "11 AM",
+                "12 PM",
+                "1 PM",
+                "2 PM",
+                "3 PM",
+                "4 PM",
+                "5 PM",
+                "6 PM",
+                "7 PM",
+                "8 PM"
+            ],
+            workshopSlot:[
+                "10 AM",
+                "4 PM"
+            ],
+            callBackSelected: false
+        }
+    }
     componentDidMount() {
         if(window.$){
             window.$(".tw-hero-slider").owlCarousel({
@@ -16,6 +51,11 @@ class Carousel2 extends Component {
                 navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
             });
         }
+    }
+    _handleRequestChange = (event) => {
+       this.setState({
+            callBackSelected: !this.state.callBackSelected
+       })
     }
     render() {
         return (
@@ -40,33 +80,96 @@ class Carousel2 extends Component {
                             <div className="col-md-5 mr-auto ml-auto align-self-center">
                                 <div className="col-xs-12">
                                     <div className="contact-us-form service-contact-form">
-                                        <form id="contact-form" className="contact-form" action="contact-form.php" method="POST">
+                                        <form id="contact-form" className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                                         <div className="error-container" />
                                         <div className="row">
-                                            <div className="col-lg-6">
-                                            <div className="form-group">
-                                                <input className="form-control form-name" name="name" id="name" placeholder="Name" type="text" required />
-                                            </div>
+                                            <div className="col-lg-12">
+                                                <div className="form-group">
+                                                    <input className="form-control form-name" name="name" id="name" placeholder="Name" type="text" required />
+                                                </div>
                                             </div>
                                             {/* Col end */}
                                             <div className="col-lg-6">
-                                            <div className="form-group">
-                                                <input className="form-control form-email" name="email" placeholder="Email" type="email" required />
+                                                <div className="form-group">
+                                                    <input className="form-control form-email" name="email" placeholder="Email" type="email" required />
+                                                </div>
                                             </div>
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                    <input className="form-control form-email" name="contactno" placeholder="Contact Number" type="text" required />
+                                                </div>
                                             </div>
                                             {/* Col End */}
                                             <div className="col-lg-12">
-                                            <div className="form-group">
-                                                <input className="form-control form-subject" placeholder="Subject" name="subject" id="subject" type="text" />
-                                            </div>
+                                                <div className="form-group">
+                                                    <input className="form-control form-subject" placeholder="City" name="city" id="city" type="text" />
+                                                </div>
                                             </div>
                                             {/* Col End */}
                                             <div className="col-lg-12">
-                                            <div className="form-group">
-                                                <textarea className="form-control form-message required-field" id="message" placeholder="Message" rows={1} defaultValue={""} />
+                                                <div className="form-group">
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" name="request" value="workshop" id="workshop" type="radio" onChange={ this._handleRequestChange } checked={!this.state.callBackSelected}/>
+                                                        <label className="form-check-label" htmlFor="workshop" onClick={ this._handleRequestChange }>
+                                                            Attend Free Workshop
+                                                        </label>
+                                                    </div>
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" name="request" value="callback" id="callback" type="radio" onClick={ this._handleRequestChange } checked={this.state.callBackSelected}/>
+                                                        <label className="form-check-label" htmlFor="callback">
+                                                            Request A Call-Back
+                                                        </label>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            </div>
-                                            {/* Col 12 end */}
+                                            {
+                                                this.state.callBackSelected ? <div className="col-lg-12">
+                                                    <div className="form-group">
+                                                        <select id="callbackday" name="callback-day" className="form-control" defaultValue="">
+                                                            <option value="">Select Day</option>
+                                                            {
+                                                                this.state.callbackDays.map((item, index)=>{
+                                                                    return  <option key={index} value={item}>{item}</option>
+                                                                })
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                    <div className="form-group">
+                                                        <select id="callbackday" className="form-control" name="workshop-slot" defaultValue="">
+                                                            <option value="">Select Slot</option>
+                                                            {
+                                                                this.state.callbackSlot.map((item, index)=>{
+                                                                    return  <option key={index} value={item}>{item}</option>
+                                                                })
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            :   <div className="col-lg-12">
+                                                    <div className="form-group">
+                                                        <select id="workshopday" className="form-control" name="workshop-day" defaultValue="">
+                                                            <option value="">Select Day</option>
+                                                            {
+                                                                this.state.workshopDays.map((item, index)=>{
+                                                                    return  <option key={index} value={item}>{item}</option>
+                                                                })
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                    <div className="form-group">
+                                                        <select id="workshopslot" className="form-control" name="workshop-slot" defaultValue="">
+                                                            <option value="">Select Slot</option>
+                                                            {
+                                                                this.state.workshopSlot.map((item, index)=>{
+                                                                    return  <option key={index}value={item}>{item}</option>
+                                                                })
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            
+                                            }
+                                            {/* Col End */}
                                         </div>
                                         {/* Form row end */}
                                         <div className="text-right">

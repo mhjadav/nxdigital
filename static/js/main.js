@@ -28,13 +28,19 @@
    
   
 */
+const interval = setInterval(() => {
+      if(window.$){
+            init();
+            clearInterval(interval);
+      }
+}, 200);
 
-$(function ($) {
+const init = () => {
    "use strict";
-
-   jQuery(".navbar-nav li a").on("click", function() { 
-      jQuery(this).parent("li").find(".dropdown-menu").slideToggle();
-      jQuery(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+   
+   $(".navbar-nav li a").on("click", function() { 
+      $(this).parent("li").find(".dropdown-menu").slideToggle();
+      //jQuery(this).find("i").toggleClass("fa-angle-down fa-angle-up");
    });
 
 
@@ -329,4 +335,4 @@ $(function ($) {
       }
    });
 
-});
+};
