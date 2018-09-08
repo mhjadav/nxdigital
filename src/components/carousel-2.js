@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
 class Carousel2 extends Component {
     constructor(props){
         super(props);
@@ -55,8 +61,24 @@ class Carousel2 extends Component {
     _handleRequestChange = (event) => {
        this.setState({
             callBackSelected: !this.state.callBackSelected
-       })
+       });
+       this.handleChange(event);
     }
+
+    handleSubmit = e => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", ...this.state })
+        })
+          .then(() => alert("Success!"))
+          .catch(error => alert(error));
+  
+        e.preventDefault();
+        console.log(encode({ "form-name": "contact", ...this.state }));
+      };
+  
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
     render() {
         return (
              <div className="tw-hero-slider owl-carousel slider-dark">
@@ -80,30 +102,30 @@ class Carousel2 extends Component {
                             <div className="col-md-5 mr-auto ml-auto align-self-center">
                                 <div className="col-xs-12">
                                     <div className="contact-us-form service-contact-form">
-                                    <form className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
+                                    <form onSubmit={ this.handleSubmit } className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
                                         <input type="hidden" name="form-name" value="contact" />
                                         <div className="error-container" />
                                         <div className="row">
                                             <div className="col-lg-12">
                                                 <div className="form-group">
-                                                    <input className="form-control form-name" name="name" id="name" placeholder="Name" type="text" required />
+                                                    <input className="form-control form-name" name="name" id="name" placeholder="Name" type="text" required onChange={ this.handleChange } />
                                                 </div>
                                             </div>
                                             {/* Col end */}
                                             <div className="col-lg-6">
                                                 <div className="form-group">
-                                                    <input className="form-control form-email" name="email" placeholder="Email" type="email" required />
+                                                    <input className="form-control form-email" name="email" placeholder="Email" type="email" required onChange={ this.handleChange } />
                                                 </div>
                                             </div>
                                             <div className="col-lg-6">
                                                 <div className="form-group">
-                                                    <input className="form-control form-email" name="contact-no" placeholder="Contact Number" type="text" required />
+                                                    <input className="form-control form-email" name="contact-no" placeholder="Contact Number" type="text" required onChange={ this.handleChange } />
                                                 </div>
                                             </div>
                                             {/* Col End */}
                                             <div className="col-lg-12">
                                                 <div className="form-group">
-                                                    <input className="form-control form-subject" placeholder="City" name="city" id="city" type="text" />
+                                                    <input className="form-control form-subject" placeholder="City" name="city" id="city" type="text" onChange={ this.handleChange } />
                                                 </div>
                                             </div>
                                             {/* Col End */}
@@ -117,7 +139,7 @@ class Carousel2 extends Component {
                                                     </div>
                                                     <div className="form-check">
                                                         <input className="form-check-input" name="request" value="callback" id="callback" type="radio" onClick={ this._handleRequestChange } checked={this.state.callBackSelected}/>
-                                                        <label className="form-check-label" htmlFor="callback">
+                                                        <label className="form-check-label" htmlFor="callback" onClick={ this._handleRequestChange }>
                                                             Request A Call-Back
                                                         </label>
                                                     </div>
@@ -126,7 +148,7 @@ class Carousel2 extends Component {
                                             {
                                                 this.state.callBackSelected ? <div className="col-lg-12">
                                                     <div className="form-group">
-                                                        <select id="callbackday" name="callback-day" className="form-control" defaultValue="">
+                                                        <select id="callbackday" name="callback-day" className="form-control" defaultValue="" onChange={ this.handleChange } >
                                                             <option value="">Select Day</option>
                                                             {
                                                                 this.state.callbackDays.map((item, index)=>{
@@ -136,7 +158,7 @@ class Carousel2 extends Component {
                                                         </select>
                                                     </div>
                                                     <div className="form-group">
-                                                        <select id="callback slot" className="form-control" name="callback-slot" defaultValue="">
+                                                        <select id="callback slot" className="form-control" name="callback-slot" defaultValue="" onChange={ this.handleChange } >
                                                             <option value="">Select Slot</option>
                                                             {
                                                                 this.state.callbackSlot.map((item, index)=>{
@@ -148,7 +170,7 @@ class Carousel2 extends Component {
                                                 </div>
                                             :   <div className="col-lg-12">
                                                     <div className="form-group">
-                                                        <select id="workshopday" className="form-control" name="workshop-day" defaultValue="">
+                                                        <select id="workshopday" className="form-control" name="workshop-day" defaultValue="" onChange={ this.handleChange } >
                                                             <option value="">Select Day</option>
                                                             {
                                                                 this.state.workshopDays.map((item, index)=>{
@@ -158,7 +180,7 @@ class Carousel2 extends Component {
                                                         </select>
                                                     </div>
                                                     <div className="form-group">
-                                                        <select id="workshopslot" className="form-control" name="workshop-slot" defaultValue="">
+                                                        <select id="workshopslot" className="form-control" name="workshop-slot" defaultValue="" onChange={ this.handleChange } >
                                                             <option value="">Select Slot</option>
                                                             {
                                                                 this.state.workshopSlot.map((item, index)=>{
