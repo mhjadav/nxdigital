@@ -28,7 +28,7 @@
    
   
 */
-const interval = setInterval(() => {
+var interval = setInterval(() => {
       if(window.$){
             init();
             clearInterval(interval);
@@ -203,7 +203,7 @@ const init = () => {
 
    /* Map */
  
-   /* Contact Form */
+   /* Contact Form 
    $('#contact-form').submit(function () {
 
       var $form = $(this),
@@ -244,7 +244,7 @@ const init = () => {
 
       return false;
 
-   });
+   });*/
 
    /* Service List Box Slider */
    if ($(".service-list-carousel").length > 0) {
