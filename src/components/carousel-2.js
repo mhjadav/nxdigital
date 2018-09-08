@@ -80,7 +80,7 @@ class Carousel2 extends Component {
                             <div className="col-md-5 mr-auto ml-auto align-self-center">
                                 <div className="col-xs-12">
                                     <div className="contact-us-form service-contact-form">
-                                    <form id="contact-form" className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                                    <form className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                                         <div className="error-container" />
                                         <div className="row">
                                             <div className="col-lg-12">
