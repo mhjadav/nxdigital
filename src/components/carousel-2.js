@@ -80,7 +80,7 @@ class Carousel2 extends Component {
                             <div className="col-md-5 mr-auto ml-auto align-self-center">
                                 <div className="col-xs-12">
                                     <div className="contact-us-form service-contact-form">
-                                    <form className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                                    <form className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
                                         <input type="hidden" name="form-name" value="contact" />
                                         <div className="error-container" />
                                         <div className="row">
@@ -97,7 +97,7 @@ class Carousel2 extends Component {
                                             </div>
                                             <div className="col-lg-6">
                                                 <div className="form-group">
-                                                    <input className="form-control form-email" name="contactno" placeholder="Contact Number" type="text" required />
+                                                    <input className="form-control form-email" name="contact-no" placeholder="Contact Number" type="text" required />
                                                 </div>
                                             </div>
                                             {/* Col End */}
@@ -136,7 +136,7 @@ class Carousel2 extends Component {
                                                         </select>
                                                     </div>
                                                     <div className="form-group">
-                                                        <select id="callbackday" className="form-control" name="workshop-slot" defaultValue="">
+                                                        <select id="callback slot" className="form-control" name="callback-slot" defaultValue="">
                                                             <option value="">Select Slot</option>
                                                             {
                                                                 this.state.callbackSlot.map((item, index)=>{
