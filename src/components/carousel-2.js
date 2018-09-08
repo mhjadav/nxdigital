@@ -72,7 +72,7 @@ class Carousel2 extends Component {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...this.state.form })
+          body: encode({ "form-name": "marketing-and-coffee", ...this.state.form })
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
@@ -82,7 +82,7 @@ class Carousel2 extends Component {
   //[e.target.name]: e.target.value
     handleChange = e => {
         this.setState({
-            form:{...this.state.form, ...{ [e.target.name]: e.target.value }}
+            form: {...this.state.form, ...{ [e.target.name]: e.target.value }}
         });
     }
     render() {
@@ -109,8 +109,8 @@ class Carousel2 extends Component {
                                 <div className="col-xs-12">
                                     <div className="contact-us-form service-contact-form">
                                     {/* method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/" */}
-                                    <form onSubmit={ this.handleSubmit } className="contact-form" name="contact">
-                                        <input type="hidden" name="form-name" value="contact" />
+                                    <form onSubmit={ this.handleSubmit } className="contact-form" name="marketing-and-coffee">
+                                        <input type="hidden" name="form-name" value="marketing-and-coffee" />
                                         <div className="error-container" />
                                         <div className="row">
                                             <div className="col-lg-12">
