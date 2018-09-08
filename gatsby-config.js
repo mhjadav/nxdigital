@@ -47,12 +47,12 @@ module.exports = {
           ]
         },
     },
-    {
+    /*{
       resolve: `gatsby-plugin-purgecss`,
       options: {
         whitelist: ["body","html","fa", "fa-twitter", "fa-github", "fa-linkedin"]
       }
-    },
+    },*/
     'gatsby-plugin-offline',
     ],
     siteMetadata: {

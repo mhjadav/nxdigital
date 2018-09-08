@@ -1,10 +1,8 @@
 import React, { Component  } from "react";
 import Helmet from 'react-helmet'
-import Header from "../components/header";
 import Carousel from '../components/carousel';
 import Testimonial from '../components/testimonial';
-import Footer from '../components/footer';
-import "../utils/importFiles";
+import Layout from '../components/layout';
 import  "./index.css";
 
 import laptopImage from "../static/images/about/about_image.png";
@@ -13,8 +11,7 @@ class Index extends Component {
  
   render() {
     return(
-      <React.Fragment>
-        <Header />
+      <Layout>
         <Carousel />
         <section id="tw-intro" className="tw-intro-area">
         <div className="container">
@@ -44,8 +41,7 @@ class Index extends Component {
         {/* End Container */}
         </section>
         <Testimonial />
-        <Footer />
-      </React.Fragment>
+      </Layout>
     )
   }
 }

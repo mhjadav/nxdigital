@@ -1,9 +1,8 @@
 import React, { Component  } from "react";
 import Helmet from 'react-helmet'
-import Header from "../components/header";
-import Footer from '../components/footer';
+import Layout from "../components/layout";
 import ContactForm from '../components/contact-form';
-import "../utils/importFiles";
+
 import  "./index.css";
 
 import place1Image from "../static/images/icon/place1.png";
@@ -13,8 +12,7 @@ import place3Image from "../static/images/icon/place3.png";
 class Contact extends Component {
   render() {
     return(
-      <React.Fragment>
-          <Header />
+      <Layout>
           <div id="banner-area" className="banner-area">
             <div className="container">
               <div className="row">
@@ -126,8 +124,7 @@ class Contact extends Component {
                 {/* Container End */}
               </section>
           <ContactForm />
-          <Footer />
-      </React.Fragment>
+      </Layout>
     )
   }
 }

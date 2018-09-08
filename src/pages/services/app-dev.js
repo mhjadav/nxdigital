@@ -1,19 +1,16 @@
 import React, { Component  } from "react";
-import Header from "../../components/header";
-import Footer from '../../components/footer';
+import Layout from '../../components/layout';
 import ContactForm from '../../components/contact-form';
 import ServicesList from '../../components/services-list';
 
-import "../../utils/importFiles";
+
 import serviceImage1 from "../../static/images/services/single_service_img1.png";
 import serviceImage2 from "../../static/images/services/single_service_img2.png";
 import serviceImage3 from "../../static/images/services/single_service_img3.png";
 
 const WebsiteDevelopment = () => {
     return(
-      <React.Fragment>
-          <Header />
-        
+      <Layout>
             <div id="banner-area" className="banner-area">
                 <div className="container">
                 <div className="row">
@@ -113,8 +110,7 @@ const WebsiteDevelopment = () => {
             </section>
             <ServicesList />
             <ContactForm />
-          <Footer />
-      </React.Fragment>
+      </Layout>
     )
 }
 

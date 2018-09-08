@@ -10,6 +10,8 @@ import '../static/css/magnific-popup.css';
 import '../static/css/style.css';
 import '../static/css/responsive.css'
 
+loadScript('/js/jquery.js');
+
 import("jquery").then(($) => {
   loadScript('/js/popper.js');
   loadScript('/js/bootstrap.js');
@@ -19,5 +21,6 @@ import("jquery").then(($) => {
   loadScript("/js/wow.min.js");
   loadScript("/js/smoothscroll.js");
   loadScript("/js/main.js");
+}, (err) => {
+    console.log(err);
 });
-loadScript('/js/jquery.js');

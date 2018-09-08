@@ -1520,24 +1520,6 @@ input.round-btn {
                Service Area
 
       =============================*/
-.service-icon-bg-1 {
-  background: url("../images/services/service_bg1.png"); }
-
-.service-icon-bg-2 {
-  background: url("../images/services/service_bg2.png"); }
-
-.service-icon-bg-3 {
-  background: url("../images/services/service_bg3.png"); }
-
-.service-icon-bg-4 {
-  background: url("../images/services/service_bg4.png"); }
-
-.service-icon-bg-5 {
-  background: url("../images/services/service_bg5.png"); }
-
-.service-icon-bg-6 {
-  background: url("../images/services/service_bg6.png"); }
-
 .service-icon {
   width: 100%;
   position: relative;
@@ -1858,7 +1840,7 @@ input.round-btn {
   height: 227px;
   display: table;
   width: 100%;
-  background: url("../images/pricing/pricing_icon_bg.png");
+  background: url("");
   background-position: center;
   background-repeat: no-repeat; }
   .price-icon-bg .price-icon {
@@ -3626,13 +3608,13 @@ ul {
     font-size: 14px; }
 
 .service-list-bg-1 {
-  background: url("../images/services/service_bg1.png"); }
+  background: url(""); }
 
 .service-list-bg-2 {
-  background: url("../images/services/service_bg2.png"); }
+  background: url(""); }
 
 .service-list-bg-3 {
-  background: url("../images/services/service_bg3.png"); }
+  background: url(""); }
 
 .service-list-bg {
   background-repeat: no-repeat;
@@ -3671,7 +3653,7 @@ ul {
     margin-left: 14px; }
 
 .service-bg-icon-1 {
-  background: url("../images/services/service_bg1.png") no-repeat top center;
+  background: url("") no-repeat top center;
   height: 127px; }
 
 .service-feature-icon-bg {
@@ -3775,7 +3757,7 @@ ul {
     margin-top: -50px;
     left: 50%;
     margin-left: -50%;
-    background: url("../images/cases/single_case_arrow.png") no-repeat top center; }
+    background: url("") no-repeat top center; }
 
 /* Case Workign Process */
 .tw-case-working-box h3 {
@@ -3852,19 +3834,6 @@ ul {
     position: absolute;
     left: -105%;
     z-index: -1; }
-
-/* Traffic Result */
-.traffic-bg-1 {
-  background: url("../images/cases/result_bg1.png") no-repeat top center; }
-
-.traffic-bg-2 {
-  background: url("../images/cases/result_bg2.png") no-repeat top center; }
-
-.traffic-bg-3 {
-  background: url("../images/cases/result_bg3.png") no-repeat top center; }
-
-.traffic-bg-4 {
-  background: url("../images/cases/result_bg4.png") no-repeat top center; }
 
 .traffic-icon-bg {
   height: 126px; }
