@@ -92,7 +92,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                     <div className="col-md-6">
-                        <span>Copyright © 2018, All Right Reserved Seobin</span>
+                        <span>Copyright © 2018, All Right Reserved Nx Digital</span>
                     </div>
                     {/* End Col */}
                     <div className="col-md-6">
