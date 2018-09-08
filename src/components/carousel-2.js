@@ -39,7 +39,8 @@ class Carousel2 extends Component {
                 "10 AM",
                 "4 PM"
             ],
-            callBackSelected: false
+            callBackSelected: false,
+            form: {}
         }
     }
     componentDidMount() {
@@ -69,7 +70,7 @@ class Carousel2 extends Component {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...this.state })
+          body: encode({ "form-name": "contact", ...this.state.form })
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
@@ -78,7 +79,11 @@ class Carousel2 extends Component {
         console.log(encode({ "form-name": "contact", ...this.state }));
       };
   
-    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+    handleChange = e => this.setState({ 
+        form:{
+            [e.target.name]: e.target.value
+        }
+     });
     render() {
         return (
              <div className="tw-hero-slider owl-carousel slider-dark">
@@ -102,7 +107,8 @@ class Carousel2 extends Component {
                             <div className="col-md-5 mr-auto ml-auto align-self-center">
                                 <div className="col-xs-12">
                                     <div className="contact-us-form service-contact-form">
-                                    <form onSubmit={ this.handleSubmit } className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
+                                    {/* method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/" */}
+                                    <form onSubmit={ this.handleSubmit } className="contact-form" name="contact">
                                         <input type="hidden" name="form-name" value="contact" />
                                         <div className="error-container" />
                                         <div className="row">
