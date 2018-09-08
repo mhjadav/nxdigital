@@ -662,7 +662,10 @@
    .slider-wrapper,
    .tw-slider-1,
    .slider-1 .slider-wrapper {
-      min-height: 1000px;
+      min-height: 700px;
+   }
+   .slider-wrapper-marketing {
+      min-height: 1050px;
    }
    .slider-1 .slider-content {
       margin-top: 50px;
@@ -1005,7 +1008,7 @@
    }
    /* Slider */
    .tw-slider-bg-dark .slider-content {
-      margin-top: 100px;
+      margin-top: 10px;
    }
    /* Home Variation 6 */
    /* Slider */

@@ -21,7 +21,7 @@ class Carousel2 extends Component {
         return (
              <div className="tw-hero-slider owl-carousel slider-dark">
                 <div className="slider-2 tw-slider-bg-dark">
-                    <div className="slider-wrapper d-table">
+                    <div className="slider-wrapper d-table slider-wrapper-marketing">
                     <div className="slider-inner d-table-cell">
                         <div className="container">
                         <div className="row justify-content-center">
