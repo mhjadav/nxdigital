@@ -109,7 +109,7 @@ class Carousel2 extends Component {
                                 <div className="col-xs-12">
                                     <div className="contact-us-form service-contact-form">
                                     {/* method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/" */}
-                                    <form onSubmit={ this.handleSubmit } className="contact-form" name="marketing-and-coffee">
+                                    <form onSubmit={ this.handleSubmit } className="contact-form" name="marketing-and-coffee" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
                                         <input type="hidden" name="form-name" value="marketing-and-coffee" />
                                         <div className="error-container" />
                                         <div className="row">
