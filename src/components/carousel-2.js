@@ -40,7 +40,9 @@ class Carousel2 extends Component {
                 "4 PM"
             ],
             callBackSelected: false,
-            form: {}
+            form: {
+                request: 'workshop'
+            }
         }
     }
     componentDidMount() {
@@ -74,16 +76,15 @@ class Carousel2 extends Component {
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
-  
+            console.log("this.state.form", this.state.form);
         e.preventDefault();
-        console.log(encode({ "form-name": "contact", ...this.state }));
       };
-  
-    handleChange = e => this.setState({ 
-        form:{
-            [e.target.name]: e.target.value
-        }
-     });
+  //[e.target.name]: e.target.value
+    handleChange = e => {
+        this.setState({
+            form:{...this.state.form, ...{ [e.target.name]: e.target.value }}
+        });
+    }
     render() {
         return (
              <div className="tw-hero-slider owl-carousel slider-dark">
@@ -154,7 +155,7 @@ class Carousel2 extends Component {
                                             {
                                                 this.state.callBackSelected ? <div className="col-lg-12">
                                                     <div className="form-group">
-                                                        <select id="callbackday" name="callback-day" className="form-control" defaultValue="" onChange={ this.handleChange } >
+                                                        <select id="callbackday" name="day" className="form-control" defaultValue="" onChange={ this.handleChange } >
                                                             <option value="">Select Day</option>
                                                             {
                                                                 this.state.callbackDays.map((item, index)=>{
@@ -164,7 +165,7 @@ class Carousel2 extends Component {
                                                         </select>
                                                     </div>
                                                     <div className="form-group">
-                                                        <select id="callback slot" className="form-control" name="callback-slot" defaultValue="" onChange={ this.handleChange } >
+                                                        <select id="callback slot" className="form-control" name="slot" defaultValue="" onChange={ this.handleChange } >
                                                             <option value="">Select Slot</option>
                                                             {
                                                                 this.state.callbackSlot.map((item, index)=>{
@@ -176,7 +177,7 @@ class Carousel2 extends Component {
                                                 </div>
                                             :   <div className="col-lg-12">
                                                     <div className="form-group">
-                                                        <select id="workshopday" className="form-control" name="workshop-day" defaultValue="" onChange={ this.handleChange } >
+                                                        <select id="workshopday" className="form-control" name="day" defaultValue="" onChange={ this.handleChange } >
                                                             <option value="">Select Day</option>
                                                             {
                                                                 this.state.workshopDays.map((item, index)=>{
@@ -186,7 +187,7 @@ class Carousel2 extends Component {
                                                         </select>
                                                     </div>
                                                     <div className="form-group">
-                                                        <select id="workshopslot" className="form-control" name="workshop-slot" defaultValue="" onChange={ this.handleChange } >
+                                                        <select id="workshopslot" className="form-control" name="slot" defaultValue="" onChange={ this.handleChange } >
                                                             <option value="">Select Slot</option>
                                                             {
                                                                 this.state.workshopSlot.map((item, index)=>{
