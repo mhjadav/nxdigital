@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby"
-import logo from "../static/images/logo/logo.jpg"
+import logo from "../static/images/logo/logo.png"
 const Footer = () => {
     return  <footer id="tw-footer" className="tw-footer">
                 <div className="container">
@@ -8,7 +8,7 @@ const Footer = () => {
                     <div className="col-md-12 col-lg-4">
                     <div className="tw-footer-info-box">
                         <a href="index.html" className="footer-logo">
-                            <img src={logo} alt="Nx Digital" className="img-fluid" style={{height: "50px"}} />
+                            <img src={logo} alt="Nx Digital" className="img-fluid" style={{height: "70px"}} />
                         </a>
                         <p className="footer-info-text">
                             Proudly serving the marketing needs of all kinds of businesses
@@ -46,6 +46,9 @@ const Footer = () => {
                         {/* End Social link */}
                     </div>
                     {/* End Footer info */}
+                        <div class="footer-awarad">
+                            <p>Marketing Made Beautiful</p>
+                        </div>
                     </div>
                     {/* End Col */}
                     <div className="col-md-12 col-lg-8">

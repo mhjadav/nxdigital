@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby"
 
-import logo from "../static/images/logo/logo.jpg"
+import logo from "../static/images/logo/logo.png"
 const Header = () => {
     return <header>
             <div className="tw-head">
