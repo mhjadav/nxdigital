@@ -16,87 +16,102 @@ const ServicesList = (props) => {
     };
     return (
         <React.Fragment>
-            <section id="tw-features" className="tw-features-area">
+            <section id="main-container" className="main-container" style={{paddingTop: "0", marginTop: "-100px"}}>
                 <div className="container">
                     <div className="row">
-                    <div className="col-md-4">
-                        <h2 className="column-title text-md-right text-sm-center">Nx Digital<br /> Other Services!</h2>
+                    <div className="col-lg-3 col-md-12">
+                        <div className="section-heading">
+                        <h2>
+                            Other <span>Services</span>
+                        </h2>
+                        <span className="animate-border tw-mt-30 tw-mb-40" />
+                        <p> Digital Marketing is for everyone. You decide your budget upfront and then design campaigns.</p>
+                        </div>
                     </div>
-                    {/* Col End */}
-                    <div className="col-md-7 ml-md-auto">
-                        <p className="features-text">Digital Marketing is for everyone. You decide your budget upfront and then design campaigns accordingly. 
-                            It let's you define your target audience very precisely. You can run your campaigns for a longer period of time at lesser costs.</p>
-                    </div>
-                    {/* Col End */}
-                    </div>
-                    {/* End Row 1 */}
-                    <div className="tw-mt-60" />
-                    <div className="row">
-                    <div className="col-lg-4 col-md-12">
-                        <div className="features-box">
-                        <div className="features-icon d-table">
-                            <div className="features-icon-inner d-table-cell">
-                            <img src={ service1Image } alt="" />
+                    {/* Heading Col End */}
+                    <div className="col-lg-9 col-md-12">
+                        <div className="service-list-carousel owl-carousel">
+                            <div className="tw-service-box-list text-center">
+                                <div className="service-list-bg service-list-bg-1 d-table">
+                                <div className="service-list-icon d-table-cell">
+                                    <img src={service1Image} alt="" className="img-fluid" />
+                                </div>
+                                </div>
+                                {/* List Bg End */}
+                                <h3>Digital Marketing</h3>
+                                <p>Digital Marketing is for everyone. You decide your budget upfront and then design campaigns.</p>
+                                <Link to="/services/digital-marketing/" className="tw-readmore">Read More
+                                    <i className="fa fa-angle-right" />
+                                </Link>
                             </div>
-                            {/* End Features icon inner */}
-                        </div>
-                        {/* End Features Icon */}
-                        <h3>Digital Marketing</h3>
-                        <p>Digital Marketing is for everyone. You decide your budget upfront and then design campaigns accordingly. 
-                        It let's you define your target audience very precisely.
-                        </p>
-                        <Link to="/services/digital-marketing/" className="tw-readmore">Read More
-                            <i className="fa fa-angle-right" />
-                        </Link>
-                        </div>
-                        {/* End Single Features */}
-                    </div>
-                    {/* Col End */}
-                    <div className="col-lg-4 col-md-12">
-                        <div className="features-box">
-                        <div className="features-icon d-table">
-                            <div className="features-icon-inner d-table-cell">
-                            <img src={ service2Image } alt="" />
+                            {/* List Box End */}
+                            <div className="tw-service-box-list text-center">
+                                <div className="service-list-bg service-list-bg-1 d-table">
+                                <div className="service-list-icon d-table-cell">
+                                    <img src={service2Image} alt="" className="img-fluid" />
+                                </div>
+                                </div>
+                                {/* List Bg End */}
+                                <h3>App Dev</h3>
+                                <p>Digital Marketing is for everyone. You decide your budget upfront and then design campaigns.</p>
+                                <Link to="/services/app-dev/" className="tw-readmore">Read More
+                                    <i className="fa fa-angle-right" />
+                                </Link>
                             </div>
-                            {/* End Features icon inner */}
-                        </div>
-                        {/* End Features Icon */}
-                        <h3>App Dev</h3>
-                        <p>Digital Marketing is for everyone. You decide your budget upfront and then design campaigns accordingly. 
-                        It let's you define your target audience very precisely.
-                        </p>
-                        <Link to="/services/app-dev/" className="tw-readmore">Read More
-                            <i className="fa fa-angle-right" />
-                        </Link>
-                        </div>
-                        {/* End Single Features */}
-                    </div>
-                    {/* end col */}
-                    <div className="col-lg-4 col-md-12">
-                        <div className="features-box">
-                        <div className="features-icon d-table">
-                            <div className="features-icon-inner d-table-cell">
-                            <img src={ service3Image } alt="" />
+                            {/* List Box End */}
+                            <div className="tw-service-box-list text-center">
+                                <div className="service-list-bg service-list-bg-1 d-table">
+                                <div className="service-list-icon d-table-cell">
+                                    <img src={service3Image} alt="" className="img-fluid" />
+                                </div>
+                                </div>
+                                {/* List Bg End */}
+                                <h3>Outsourced CMO</h3>
+                                <p>Digital Marketing is for everyone. You decide your budget upfront and then design campaigns.</p>
+                                <Link to="/services/outsourced-cmo/" className="tw-readmore">Read More
+                                    <i className="fa fa-angle-right" />
+                                </Link>
                             </div>
-                            {/* End Features icon inner */}
+                            {/* List Box End */}
+                            <div className="tw-service-box-list text-center">
+                                <div className="service-list-bg service-list-bg-1 d-table">
+                                <div className="service-list-icon d-table-cell">
+                                    <img src={service2Image} alt="" className="img-fluid" />
+                                </div>
+                                </div>
+                                {/* List Bg End */}
+                                <h3>Outsourced CTO</h3>
+                                <p>Digital Marketing is for everyone. You decide your budget upfront and then design campaigns.</p>
+                                <Link to="/services/outsourced-cto/" className="tw-readmore">Read More
+                                    <i className="fa fa-angle-right" />
+                                </Link>
+                            </div>
+                            {/* List Box End */}
+                            <div className="tw-service-box-list text-center">
+                                <div className="service-list-bg service-list-bg-1 d-table">
+                                <div className="service-list-icon d-table-cell">
+                                    <img src={service3Image} alt="" className="img-fluid" />
+                                </div>
+                                </div>
+                                {/* List Bg End */}
+                                <h3>Website Development</h3>
+                                <p>Digital Marketing is for everyone. You decide your budget upfront and then design campaigns.</p>
+                                <Link to="/services/website-development/" className="tw-readmore">Read More
+                                    <i className="fa fa-angle-right" />
+                                </Link>
+                            </div>
+                            {/* List Box End */}
+                            
                         </div>
-                        {/* End Features Icon */}
-                        <h3>Outsourced CMO</h3>
-                        <p>Digital Marketing is for everyone. You decide your budget upfront and then design campaigns accordingly. 
-                        It let's you define your target audience very precisely.
-                        </p>
-                        <Link to="/services/outsourced-cmo/" className="tw-readmore">Read More
-                            <i className="fa fa-angle-right" />
-                        </Link>
-                        </div>
-                        {/* End Single Features */}
+                        {/* Carousel End */}
                     </div>
-                    {/* End col */}
+                    {/* Content Col end */}
                     </div>
-                    {/* End Row 2 */}
+                    {/* Row End */}
                 </div>
-                {/* End Container */}
+                {/* Container End */}
             </section>
+            {/* Service List End */}
             <section id="tw-contact-us" className="tw-contact-us bg-offwhite">
                 <div className="container">
                     <div className="row">

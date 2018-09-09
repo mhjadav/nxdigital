@@ -35,7 +35,7 @@ const WebsiteDevelopment = () => {
                     <div className="section-heading">
                         <h2>
                         <small>we are best</small>
-                        Web <span>Analytics</span>
+                        Digital <span>Marketing</span>
                         </h2>
                         <span className="animate-border tw-mt-20 tw-mb-40 mr-auto ml-auto" />
                     </div>
