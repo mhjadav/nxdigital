@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
+import { push } from 'gatsby';
 
 const encode = (data) => {
     return Object.keys(data)
@@ -55,9 +56,10 @@ class ContactForm extends Component {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: encode({ "form-name": this.props.formName, ...this.state.form })
         })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
-            console.log("this.state.form", this.state.form);
+        .then(() => push('/success'))
+        .catch(error => alert(error));
+        
+        console.log("Form data", this.state.form);
         e.preventDefault();
     };
   //[e.target.name]: e.target.value

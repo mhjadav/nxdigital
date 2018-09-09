@@ -1,14 +1,10 @@
 import React from "react";
-import { Link } from 'gatsby';
 import Layout from "../components/layout";
+import { Link } from 'gatsby';
 
 import NotFoundImage from "../static/images/404.png";
 
-const Success = () => {
-    const handleGoBackClick = (event) => {
-        window.history.back()
-        event.preventDefault();
-    }
+const PageNotFound = () => {
     return(
         <Layout>
             <section id="main-container" className="main-container">
@@ -16,14 +12,17 @@ const Success = () => {
                     <div className="row">
                         <div className="col-6 text-center align-self-center">
                             <div className="error-page text-center">
+                            <div className="error-code">
+                                <strong>404</strong>
+                            </div>
                             <div className="error-message">
-                                <h3>Thank you for getting in touch!</h3>
+                                <h3>Oops... Page Not Found!</h3>
                             </div>
                             <div className="error-body">
-                                We appreciate you contacting us. One of our colleagues will get back to you shortly.
-                                <br />
-                                Have a great day!<br />
-                                <a onClick={ handleGoBackClick } href="#" className="btn btn-primary solid blank"><i className="fa fa-arrow-circle-left">&nbsp;</i> Go Back</a>
+                                Try using the button below to go to main page of the site <br />
+                                <Link to="/" className="btn btn-primary solid blank">
+                                    <i className="fa fa-arrow-circle-left">&nbsp;</i> Go to Home
+                                </Link>
                             </div>
                             </div>
                         </div>
@@ -39,4 +38,4 @@ const Success = () => {
     )
 }
 
-export default Success;
+export default PageNotFound;

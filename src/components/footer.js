@@ -46,7 +46,7 @@ const Footer = () => {
                         {/* End Social link */}
                     </div>
                     {/* End Footer info */}
-                        <div class="footer-awarad">
+                        <div className="footer-awarad">
                             <p>Marketing Made Beautiful</p>
                         </div>
                     </div>
