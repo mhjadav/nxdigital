@@ -130,13 +130,13 @@ class ContactForm extends Component {
                         <div className="col-lg-12">
                             <div className="form-group">
                                 <div className="form-check">
-                                    <input className="form-check-input" name="request" value="workshop" id="workshop" type="radio" onChange={ this.handleRequestChange } checked={!this.state.callBackSelected}/>
+                                    <input className="form-check-input" name="request" value="workshop" id="workshop" type="radio" onChange={ this.handleChange } />
                                     <label className={labelClassName} htmlFor="workshop">
                                         Attend Free Workshop
                                     </label>
                                 </div>
                                 <div className="form-check">
-                                    <input className="form-check-input" name="request" value="callback" id="callback" type="radio" onClick={ this.handleRequestChange } checked={this.state.callBackSelected}/>
+                                    <input className="form-check-input" name="request" value="callback" id="callback" type="radio" onClick={ this.handleChange } />
                                     <label className={labelClassName} htmlFor="callback">
                                         Request A Call-Back
                                     </label>
