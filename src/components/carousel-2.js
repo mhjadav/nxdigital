@@ -118,7 +118,7 @@ class Carousel2 extends Component {
                                 <div className="col-xs-12">
                                     <div className="contact-us-form service-contact-form">
                                     {/* method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/" */}
-                                        <ContactForm fields={this.fields} submitButtonText="Let's Have A Coffee" formName="marketing-and-coffee" />
+                                        <ContactForm subjectText="New Message On Marketing And Coffee Page" fields={this.fields} submitButtonText="Let's Have A Coffee" formName="marketing-and-coffee" />
                                     </div>
                                     {/* Contact us form end */}
                                 </div>

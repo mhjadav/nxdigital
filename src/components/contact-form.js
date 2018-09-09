@@ -100,12 +100,13 @@ class ContactForm extends Component {
                             </div>
                         </div>
                     }
-                    {this.props.fields.subject && 
+                    {this.props.fields.subject ? 
                     <div className="col-lg-12">
                         <div className="form-group">
                             <input className="form-control form-subject" placeholder="Subject" name="subject" id="subject" type="text"  onChange={ this.handleChange } />
                         </div>
-                    </div>
+                    </div> : 
+                        <input type="hidden" name="subject" value={this.props.subjectText} />
                     }
                     {this.props.fields.message && 
                     <div className="col-lg-12">
@@ -216,6 +217,7 @@ ContactForm.defaultProps = {
     },
     formName: 'contact',
     submitButtonText: 'Contact US',
-    labelClass: ''
+    labelClass: '',
+    subjectText:"",
 }
 export default ContactForm;

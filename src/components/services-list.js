@@ -114,7 +114,7 @@ const ServicesList = (props) => {
                     {/* Row End */}
                     <div className="row justify-content-center">
                         <div className="contact-us-form col-lg-6">
-                            <ContactForm fields={fields} labelClass="text-dark" submitButtonText="Let's Build Something Unique" formName="services" />
+                            <ContactForm subjectText="New Message On Services Page" fields={fields} labelClass="text-dark" submitButtonText="Let's Build Something Unique" formName="services" />
                         </div>
                     </div>
                     {/* Contact us form end */}
