@@ -76,7 +76,7 @@ class ContactForm extends Component {
         const labelClassName = `form-check-label ${this.props.labelClass}`;
         return (
             <form onSubmit={ this.handleSubmit } className="contact-form" name={this.props.formName} method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
-                <input type="hidden" name="form-name" value="marketing-and-coffee" />
+                <input type="hidden" name="form-name" value={this.props.formName} />
                 <div className="error-container" />
                 <div className="row">
                     {   this.props.fields.name && 
