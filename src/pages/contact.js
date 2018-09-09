@@ -33,6 +33,7 @@ class Contact extends Component {
           </div>
           {/* Banner area end */}
           <section id="main-container" className="main-container">
+          
                 <div className="container">
                   <div className="row">
                     <div className="col text-center">
@@ -123,7 +124,28 @@ class Contact extends Component {
                 </div>
                 {/* Container End */}
               </section>
-          <ContactForm />
+              <section id="tw-contact-us" className="tw-contact-us bg-offwhite">
+                <div className="container">
+                    <div className="row">
+                      <div className="col">
+                          <div className="section-heading text-center">
+                          <h2>
+                              <small>leave a message</small>
+                              Give a <span>Message</span>
+                          </h2>
+                          <span className="animate-border border-ash ml-auto mr-auto tw-mt-20 tw-mb-40" />
+                          </div>
+                      </div>
+                      {/* Col End */}
+                    </div>
+                    {/* Row End */}
+                    <div className="contact-us-form">
+                      <ContactForm formName="contactus"/>
+                    </div>
+                    {/* Contact us form end */}
+                </div>
+                  {/* Container End */}
+              </section>
       </Layout>
     )
   }

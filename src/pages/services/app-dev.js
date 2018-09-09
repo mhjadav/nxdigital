@@ -1,6 +1,5 @@
 import React, { Component  } from "react";
 import Layout from '../../components/layout';
-import ContactForm from '../../components/contact-form';
 import ServicesList from '../../components/services-list';
 
 
@@ -109,7 +108,6 @@ const WebsiteDevelopment = () => {
                 {/* Container End */}
             </section>
             <ServicesList />
-            <ContactForm />
       </Layout>
     )
 }

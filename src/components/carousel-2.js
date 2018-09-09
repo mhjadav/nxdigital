@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ContactForm from '../components/contact-form';
 
 const encode = (data) => {
     return Object.keys(data)
@@ -44,6 +45,13 @@ class Carousel2 extends Component {
                 request: 'workshop'
             }
         }
+        this.fields = {
+            name: true,
+            email: true,
+            contactno: true,
+            city: true,
+            request: true
+        };
     }
     componentDidMount() {
         if(window.$){
@@ -85,6 +93,7 @@ class Carousel2 extends Component {
             form: {...this.state.form, ...{ [e.target.name]: e.target.value }}
         });
     }
+
     render() {
         return (
              <div className="tw-hero-slider owl-carousel slider-dark">
@@ -109,104 +118,7 @@ class Carousel2 extends Component {
                                 <div className="col-xs-12">
                                     <div className="contact-us-form service-contact-form">
                                     {/* method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/" */}
-                                    <form onSubmit={ this.handleSubmit } className="contact-form" name="marketing-and-coffee" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
-                                        <input type="hidden" name="form-name" value="marketing-and-coffee" />
-                                        <div className="error-container" />
-                                        <div className="row">
-                                            <div className="col-lg-12">
-                                                <div className="form-group">
-                                                    <input className="form-control form-name" name="name" id="name" placeholder="Name" type="text" required onChange={ this.handleChange } />
-                                                </div>
-                                            </div>
-                                            {/* Col end */}
-                                            <div className="col-lg-6">
-                                                <div className="form-group">
-                                                    <input className="form-control form-email" name="email" placeholder="Email" type="email" required onChange={ this.handleChange } />
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6">
-                                                <div className="form-group">
-                                                    <input className="form-control form-email" name="contact-no" placeholder="Contact Number" type="text" required onChange={ this.handleChange } />
-                                                </div>
-                                            </div>
-                                            {/* Col End */}
-                                            <div className="col-lg-12">
-                                                <div className="form-group">
-                                                    <input className="form-control form-subject" placeholder="City" name="city" id="city" type="text" onChange={ this.handleChange } />
-                                                </div>
-                                            </div>
-                                            {/* Col End */}
-                                            <div className="col-lg-12">
-                                                <div className="form-group">
-                                                    <div className="form-check">
-                                                        <input className="form-check-input" name="request" value="workshop" id="workshop" type="radio" onChange={ this._handleRequestChange } checked={!this.state.callBackSelected}/>
-                                                        <label className="form-check-label" htmlFor="workshop" onClick={ this._handleRequestChange }>
-                                                            Attend Free Workshop
-                                                        </label>
-                                                    </div>
-                                                    <div className="form-check">
-                                                        <input className="form-check-input" name="request" value="callback" id="callback" type="radio" onClick={ this._handleRequestChange } checked={this.state.callBackSelected}/>
-                                                        <label className="form-check-label" htmlFor="callback" onClick={ this._handleRequestChange }>
-                                                            Request A Call-Back
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {
-                                                this.state.callBackSelected ? <div className="col-lg-12">
-                                                    <div className="form-group">
-                                                        <select id="callbackday" name="day" className="form-control" defaultValue="" onChange={ this.handleChange } >
-                                                            <option value="">Select Day</option>
-                                                            {
-                                                                this.state.callbackDays.map((item, index)=>{
-                                                                    return  <option key={index} value={item}>{item}</option>
-                                                                })
-                                                            }
-                                                        </select>
-                                                    </div>
-                                                    <div className="form-group">
-                                                        <select id="callback slot" className="form-control" name="slot" defaultValue="" onChange={ this.handleChange } >
-                                                            <option value="">Select Slot</option>
-                                                            {
-                                                                this.state.callbackSlot.map((item, index)=>{
-                                                                    return  <option key={index} value={item}>{item}</option>
-                                                                })
-                                                            }
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            :   <div className="col-lg-12">
-                                                    <div className="form-group">
-                                                        <select id="workshopday" className="form-control" name="day" defaultValue="" onChange={ this.handleChange } >
-                                                            <option value="">Select Day</option>
-                                                            {
-                                                                this.state.workshopDays.map((item, index)=>{
-                                                                    return  <option key={index} value={item}>{item}</option>
-                                                                })
-                                                            }
-                                                        </select>
-                                                    </div>
-                                                    <div className="form-group">
-                                                        <select id="workshopslot" className="form-control" name="slot" defaultValue="" onChange={ this.handleChange } >
-                                                            <option value="">Select Slot</option>
-                                                            {
-                                                                this.state.workshopSlot.map((item, index)=>{
-                                                                    return  <option key={index}value={item}>{item}</option>
-                                                                })
-                                                            }
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            
-                                            }
-                                            {/* Col End */}
-                                        </div>
-                                        {/* Form row end */}
-                                        <div className="text-right">
-                                            <button className="btn btn-primary tw-mt-30" type="submit">Let's Have A Coffee</button>
-                                        </div>
-                                        </form>
-                                        {/* Form end */}
+                                        <ContactForm fields={this.fields} submitButtonText="Let's Have A Coffee" formName="marketing-and-coffee" />
                                     </div>
                                     {/* Contact us form end */}
                                 </div>
