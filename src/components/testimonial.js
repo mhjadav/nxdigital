@@ -33,7 +33,7 @@ class Carousel extends Component {
                       {/* End Testimonial bg */}
                       <div className="testimonial-text">
                         <p>
-                        Optimus DM has provided a social intranet to AM Legals for managing leads and efficiently handling their business. Vat Profs, a sister concern of AM Legals based out of the Middle East is also our client for their LinkedIn Advertisements. AM Legals and Vat Profs advise, handle litigation & render non-litigation services specialised in Arbitration, Value Added Tax(VAT), IBC, Contracts & Agreements,Trademark – IPR, Company Laws, Corporate Laws, Commercial Laws and so on. 
+                        Optimus DM has provided a social intranet to AM Legals for managing leads and efficiently handling their business. Vat Profs. 
                         </p>
                         <div className="testimonial-meta">
                           <h4>
@@ -51,7 +51,7 @@ class Carousel extends Component {
                       {/* End Testimonial bg */}
                       <div className="testimonial-text">
                         <p>
-                        Optimus DM has provided a social intranet to AM Legals for managing leads and efficiently handling their business. Vat Profs, a sister concern of AM Legals based out of the Middle East is also our client for their LinkedIn Advertisements. AM Legals and Vat Profs advise, handle litigation & render non-litigation services specialised in Arbitration, Value Added Tax(VAT), IBC, Contracts & Agreements,Trademark – IPR, Company Laws, Corporate Laws, Commercial Laws and so on. 
+                        Optimus DM has provided a social intranet to AM Legals for managing leads and efficiently handling their business. Vat Profs. 
                         </p>
                         <div className="testimonial-meta">
                           <h4>
@@ -69,7 +69,7 @@ class Carousel extends Component {
                       {/* end testimonial bg */}
                       <div className="testimonial-text">
                         <p>
-                        Optimus DM has provided a social intranet to AM Legals for managing leads and efficiently handling their business. Vat Profs, a sister concern of AM Legals based out of the Middle East is also our client for their LinkedIn Advertisements. AM Legals and Vat Profs advise, handle litigation & render non-litigation services specialised in Arbitration, Value Added Tax(VAT), IBC, Contracts & Agreements,Trademark – IPR, Company Laws, Corporate Laws, Commercial Laws and so on. 
+                        Optimus DM has provided a social intranet to AM Legals for managing leads and efficiently handling their business. Vat Profs. 
                         </p>
                         <div className="testimonial-meta">
                           <h4>
