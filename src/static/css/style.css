@@ -1550,7 +1550,7 @@ li.dropdown:hover .tw-mega-menu {
 .slider-content {
   margin-top: 50px; }
   .slider-content h1 {
-    color: #fff;
+    color: #2f2c2c;
     font-size: 60px;
     font-weight: 800;
     margin-bottom: 26px; }
@@ -1558,7 +1558,7 @@ li.dropdown:hover .tw-mega-menu {
       color: #2e2c2d; }
   .slider-content p {
     margin-bottom: 40px;
-    color: #fff;
+    color:#2f2c2c;
     font-size: 20px;
     line-height: 32px; }
 
@@ -4525,7 +4525,7 @@ ul {
     height: 131%;
     content: "";
     z-index: -1;
-    background: url("../images/slider/slider-banner-2.jpg");
+    background: #f7f9f8;
     background-size: cover;
     background-position: right center; }
 
@@ -4547,7 +4547,7 @@ ul {
   color: #6ab8ee; }
 
 .slider-dark .tw-slider-bg-dark:after {
-  background: url("../images/slider/slider-banner-1.jpg"); }
+  background: #f7f9f8}
 
 .slider-content-dark h1 span {
   color: #6ab8ee; }

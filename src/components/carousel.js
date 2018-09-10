@@ -28,7 +28,7 @@ class Carousel extends Component {
                     <div className="row justify-content-center">
                         <div className="col-md-6">
                         <div className="slider-content slider-content-dark">
-                            <h1>NX
+                            <h1>Nx
                             <span> Digital</span>
                             </h1>
                             <p>Proudly serving the marketing needs of all kinds of businesses</p>
@@ -37,7 +37,24 @@ class Carousel extends Component {
                         </div>
                         {/* Col end */}
                         <div className="col-md-5 mr-auto ml-auto align-self-center">
-                        <img src={sliderImage} alt="slider image" className="img-fluid slider-img" />
+                        <h3>Connect with us over a coffee to understand:</h3>
+                        <span className="bottom-border tw-mt-20 tw-mb-30" />
+                        <p>
+                            How #DigitalMarketing fuels business growth
+                        </p>
+                        <p>
+                            How #Technology helps businesses become better
+                        </p>
+                        <p>
+                            How #WebsiteDesign can increase brand value
+                        </p>
+                        <p>
+                            How #MobileApp can transform your brand
+                        </p>
+                        <p>
+                            How #Software can smoothen your business 
+                        </p>
+
                         </div>
                         {/* col end */}
                     </div>
