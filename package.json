@@ -27,6 +27,7 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-helmet": "^5.2.0",
+    "react-linkedin-sdk": "^1.0.11",
     "simple-load-script": "^1.0.2"
   },
   "devDependencies": {

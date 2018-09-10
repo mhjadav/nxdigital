@@ -1,4 +1,3 @@
-
 (function(){
       if(!this.init){
             this.init = function() {

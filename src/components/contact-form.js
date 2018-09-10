@@ -1,13 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import { push } from 'gatsby';
-
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-}
-
+import encode from "../utils";
 
 class ContactForm extends Component {
     constructor(props){

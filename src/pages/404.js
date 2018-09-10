@@ -5,6 +5,9 @@ import { Link } from 'gatsby';
 import NotFoundImage from "../static/images/404.png";
 
 const PageNotFound = () => {
+    const responseLinkedin = response => {
+        console.log(response)
+    }
     return(
         <Layout>
             <section id="main-container" className="main-container">
