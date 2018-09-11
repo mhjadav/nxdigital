@@ -1,7 +1,6 @@
 import React, { Component  } from "react";
 import Helmet from 'react-helmet'
 import Layout from "../components/layout";
-import Carousel from "../components/carousel-2";
 
 import  "./index.css";
 
@@ -9,11 +8,10 @@ import blogImage1 from "../static/images/news/post1.jpg";
 import blogImage2 from "../static/images/news/post2.jpg"
 import blogImage3 from "../static/images/news/post3.jpg"
 
-class MarketingAndCofee extends Component {
+class BookAppointment extends Component {
     render() {
         return(
         <Layout>    
-            <Carousel />       
             <section id="tw-blog" className="tw-blog">
             <div className="container">
                 <div className="row text-center">
@@ -277,4 +275,4 @@ class MarketingAndCofee extends Component {
   }
 }
 
-export default MarketingAndCofee;
+export default BookAppointment;

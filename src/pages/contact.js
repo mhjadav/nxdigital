@@ -13,27 +13,7 @@ class Contact extends Component {
   render() {
     return(
       <Layout>
-          <div id="banner-area" className="banner-area">
-            <div className="container">
-              <div className="row">
-                <div className="col-sm-12">
-                  <div className="banner-heading">
-                    <h1 className="banner-title">Contact us</h1>
-                    <ol className="breadcrumb">
-                      <li>Home</li>
-                      <li><a href="#">Contact us</a></li>
-                    </ol>
-                  </div>
-                </div>
-                {/* Col end */}
-              </div>
-              {/* Row end */}
-            </div>
-            {/* Container end */}
-          </div>
-          {/* Banner area end */}
           <section id="main-container" className="main-container">
-          
                 <div className="container">
                   <div className="row">
                     <div className="col text-center">
@@ -49,6 +29,33 @@ class Contact extends Component {
                     {/* End Col */}
                   </div>
                   {/* End Title Row */}
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <section id="tw-contact-us" className="tw-contact-us bg-offwhite">
+                        <div className="container">
+                            <div className="row">
+                              <div className="col">
+                                  <div className="section-heading text-center">
+                                  <h2>
+                                      <small>leave a message</small>
+                                      Give a <span>Message</span>
+                                  </h2>
+                                  <span className="animate-border border-ash ml-auto mr-auto tw-mt-20 tw-mb-40" />
+                                  </div>
+                              </div>
+                              {/* Col End */}
+                            </div>
+                            {/* Row End */}
+                            <div className="contact-us-form">
+                              <ContactForm formName="contactus"/>
+                            </div>
+                            {/* Contact us form end */}
+                        </div>
+                          {/* Container End */}
+                      </section>
+                    </div>
+                  </div>
+                  <br></br>
                   <div className="row">
                     <div className="col-md-4">
                       <div className="tw-contact-box">
@@ -123,28 +130,6 @@ class Contact extends Component {
                   {/* End Row */}
                 </div>
                 {/* Container End */}
-              </section>
-              <section id="tw-contact-us" className="tw-contact-us bg-offwhite">
-                <div className="container">
-                    <div className="row">
-                      <div className="col">
-                          <div className="section-heading text-center">
-                          <h2>
-                              <small>leave a message</small>
-                              Give a <span>Message</span>
-                          </h2>
-                          <span className="animate-border border-ash ml-auto mr-auto tw-mt-20 tw-mb-40" />
-                          </div>
-                      </div>
-                      {/* Col End */}
-                    </div>
-                    {/* Row End */}
-                    <div className="contact-us-form">
-                      <ContactForm formName="contactus"/>
-                    </div>
-                    {/* Contact us form end */}
-                </div>
-                  {/* Container End */}
               </section>
       </Layout>
     )

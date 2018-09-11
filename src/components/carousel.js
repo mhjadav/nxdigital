@@ -1,72 +1,57 @@
 import React, { Component } from 'react';
 import sliderImage from "../static/images/slider/slider2.png";
+import { Link } from 'gatsby';
 
 class Carousel extends Component {
     componentDidMount() {
-        if(window.$){
-            window.$(".tw-hero-slider").owlCarousel({
-                items: 1,
-                loop: true,
-                autoplay: true,
-                nav: true,
-                dots: false,
-                autoplayTimeout: 8000,
-                autoplayHoverPause: true,
-                mouseDrag: false,
-                smartSpeed: 1100,
-                navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
-            });
-        }
     }
     render() {
         return (
-            <div className="tw-hero-slider owl-carousel slider-dark">
-                <div className="slider-2 tw-slider-bg-dark">
-                <div className="slider-wrapper d-table">
-                <div className="slider-inner" style={{ paddingTop: "50px" }}>
-                    <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-md-6">
-                        <div className="slider-content slider-content-dark">
-                            <h1>Nx
-                            <span> Digital</span>
-                            </h1>
-                            <p>Proudly serving the marketing needs of all kinds of businesses</p>
-                            <p>Digital Marketing is for everyone. You decide your budget upfront and then design campaigns accordingly. </p>
+        <React.Fragment>
+            <section id="tw-intro" className="tw-intro-area" style={{ "background": "rgb(247, 249, 248)" }}>
+                <div className="container">
+                    <div className="row">
+                   
+                        <div className="col-lg-12 col-md-12 fadeInLeft">
+                            <div className="section-heading" style={{ marginBottom: "25px" }}>
+                                <h2>
+                                    Connect with us over a
+                                    <span> coffee </span>
+                                    to understand:
+                                </h2>
+                                <span className="animate-border tw-mb-40" />
+                            </div>
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <p>
+                                        We understand that you are working tirelessly to achieve your dreams and you need to completely focus on your core business.
+                                        Outsource your Digital Marketing and / or Technology Requirements to us.
+                                    </p>
+                                </div>
+                                <div className="col-lg-6">
+                                    <p>
+                                        How <span>#</span>DigitalMarketing fuels business growth
+                                        <br />
+                                        How <span>#</span>Technology helps businesses become better
+                                        <br />
+                                        How <span>#</span>WebsiteDesign can increase brand value
+                                        <br />
+                                        How <span>#</span>MobileApp can transform your brand
+                                        <br />
+                                        How <span>#</span>Software can smoothen your business 
+                                    </p>
+                                    {/* Default Round Btn */}
+                                    <Link to="/book-appointment/" className="btn btn-secondary">Let's Grab a Coffee</Link>
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                        {/* Col end */}
-                        <div className="col-md-5 mr-auto ml-auto align-self-center">
-                        <h3>Connect with us over a coffee to understand:</h3>
-                        <span className="bottom-border tw-mt-20 tw-mb-30" />
-                        <p>
-                            How #DigitalMarketing fuels business growth
-                        </p>
-                        <p>
-                            How #Technology helps businesses become better
-                        </p>
-                        <p>
-                            How #WebsiteDesign can increase brand value
-                        </p>
-                        <p>
-                            How #MobileApp can transform your brand
-                        </p>
-                        <p>
-                            How #Software can smoothen your business 
-                        </p>
-
-                        </div>
-                        {/* col end */}
+                        {/* End Col */}
                     </div>
-                    {/* Row End */}
-                    </div>
-                    {/* Container End */}
+                    {/* End Row */}
                 </div>
-                {/* Slider Inner End */}
-                </div>
-                {/* Slider Wrapper End */}
-            </div>
-        </div>
+                {/* End Container */}
+                </section>
+        </React.Fragment>
         );
     }
 }

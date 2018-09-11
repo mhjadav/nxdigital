@@ -7,23 +7,6 @@
                         $(this).parent("li").find(".dropdown-menu").slideToggle();
                         //jQuery(this).find("i").toggleClass("fa-angle-down fa-angle-up");
                   });
-                  
-                  
-                  
-                  /*Main Slideshow*/
-                  $(".tw-hero-slider").owlCarousel({
-                        items: 1,
-                        loop: true,
-                        autoplay: true,
-                        nav: true,
-                        dots: false,
-                        autoplayTimeout: 8000,
-                        autoplayHoverPause: true,
-                        mouseDrag: false,
-                        smartSpeed: 1100,
-                        navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
-                  });
-                  
                   /*Testimonial Slider*/
                   $(".tw-testimonial-carousel").owlCarousel({
                         items: 1,

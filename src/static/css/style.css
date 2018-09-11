@@ -2384,7 +2384,7 @@ input.round-btn {
   .tw-footer .contact-us {
     margin-top: 0;
     margin-bottom: 30px;
-    padding-left: 80px; }
+  }
     .tw-footer .contact-us .contact-info {
       margin-left: 50px; }
     .tw-footer .contact-us.contact-us-last {
@@ -2396,10 +2396,6 @@ input.round-btn {
     color: #2faaff; }
 
 .tw-footer-info-box {
-  position: absolute;
-  top: -122px;
-  background: #202020;
-  padding: 40px;
   z-index: 2; }
   .tw-footer-info-box .footer-social-link h3 {
     color: #fff;
@@ -3562,7 +3558,7 @@ ul {
   padding-right: 20px; }
   .timeline-date .title,
   .timeline-date .tagline {
-    padding-left: 40px;
+    padding-left: 20px;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
@@ -3573,7 +3569,7 @@ ul {
     font-weight: 700; }
   .timeline-date .tagline {
     color: #757575;
-    font-size: 22px; }
+    font-size: 16px; }
   .timeline-date.left-part {
     text-align: left; }
   .timeline-date.active .title,
@@ -4516,7 +4512,7 @@ ul {
   position: relative;
   z-index: 2; }
   .tw-slider-bg-dark .slider-wrapper {
-    height: 450px; }
+    height: 550px; }
   .tw-slider-bg-dark:after {
     position: absolute;
     bottom: 0;
@@ -4890,7 +4886,6 @@ ul {
     tw-banner
     -----------------------*/
 .tw-banner {
-  background: url(../images/check-seo/check-seo-banner-big.png);
   min-height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4898,7 +4893,7 @@ ul {
   padding: 100px 0 0;
   position: relative; }
   .tw-banner:before {
-    background-color: rgba(39, 75, 195, 0.95);
+    background-color: #f7f9f8;
     position: absolute;
     left: 0px;
     top: 0;
@@ -4908,11 +4903,20 @@ ul {
 
 .tw-seo-check-content h2 {
   font-size: 54px;
-  color: #fff;
-  margin-bottom: 20px; }
+  color: #2f2c2c;
+  margin-bottom: 20px; 
+}
+.tw-seo-check-content h2 span{
+  color: #2faaff   
+}
 
 .tw-seo-check-content p {
-  color: #fff; }
+  color: #2f2c2c; 
+  margin-bottom: 40px;
+  color: #2f2c2c;
+  font-size: 20px;
+  line-height: 32px;
+}
 
 .tw-seo-check-content .analysis-form {
   background: rgba(0, 0, 0, 0.2);
@@ -5006,12 +5010,12 @@ ul {
 .form-check-input {
   margin-left: 0;
 }
-.form-check-label {
-  color: white;
-}
 select.form-control:not([size]):not([multiple]) {
   height: calc(3.25rem + 2px);
 }
 .slider-wrapper-marketing{
   height: 750px !important;
+}
+p span {
+  color: #2faaff; 
 }

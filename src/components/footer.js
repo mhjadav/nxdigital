@@ -5,55 +5,9 @@ const Footer = () => {
     return  <footer id="tw-footer" className="tw-footer">
                 <div className="container">
                 <div className="row">
-                    <div className="col-md-12 col-lg-4">
-                    <div className="tw-footer-info-box">
-                        <a href="index.html" className="footer-logo">
-                            <img src={logo} alt="Nx Digital" className="img-fluid" style={{height: "70px"}} />
-                        </a>
-                        <p className="footer-info-text">
-                            Proudly serving the marketing needs of all kinds of businesses
-                        </p>
-                        <div className="footer-social-link">
-                        <h3>Follow us</h3>
-                        <ul>
-                            <li>
-                            <a href="#">
-                                <i className="fa fa-facebook" />
-                            </a>
-                            </li>
-                            <li>
-                            <a href="#">
-                                <i className="fa fa-twitter" />
-                            </a>
-                            </li>
-                            <li>
-                            <a href="#">
-                                <i className="fa fa-google-plus" />
-                            </a>
-                            </li>
-                            <li>
-                            <a href="#">
-                                <i className="fa fa-linkedin" />
-                            </a>
-                            </li>
-                            <li>
-                            <a href="#">
-                                <i className="fa fa-instagram" />
-                            </a>
-                            </li>
-                        </ul>
-                        </div>
-                        {/* End Social link */}
-                    </div>
-                    {/* End Footer info */}
-                        <div className="footer-awarad">
-                            <p>Marketing Made Beautiful</p>
-                        </div>
-                    </div>
-                    {/* End Col */}
-                    <div className="col-md-12 col-lg-8">
+                    <div className="col-md-12 col-lg-12">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-4">
                         <div className="contact-us">
                             <div className="contact-icon">
                             <i className="icon icon-map2" />
@@ -68,7 +22,7 @@ const Footer = () => {
                         {/* End Contact Us */}
                         </div>
                         {/* End Col */}
-                        <div className="col-md-6">
+                        <div className="col-md-4">
                         <div className="contact-us contact-us-last">
                             <div className="contact-icon">
                             <i className="icon icon-phone3" />
@@ -83,6 +37,21 @@ const Footer = () => {
                         {/* End Contact Us */}
                         </div>
                         {/* End Col */}
+                        <div className="col-md-4">
+                            <div className="tw-footer-info-box">
+                                <div className="footer-social-link">
+                                    <h3>Follow us</h3>
+                                    <ul>
+                                    <li><a href="#"><i className="fa fa-facebook" /></a></li>
+                                    <li><a href="#"><i className="fa fa-twitter" /></a></li>
+                                    <li><a href="#"><i className="fa fa-google-plus" /></a></li>
+                                    <li><a href="#"><i className="fa fa-linkedin" /></a></li>
+                                    <li><a href="#"><i className="fa fa-instagram" /></a></li>
+                                    </ul>
+                                </div>
+                                {/* End Social link */}
+                            </div>
+                        </div>
                     </div>
                     {/* End Contact Row */}
                     </div>

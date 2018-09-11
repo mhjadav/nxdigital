@@ -9,25 +9,6 @@ import serviceImage3 from "../../static/images/services/single_service_img3.png"
 const WebsiteDevelopment = () => {
     return(
       <Layout>
-            <div id="banner-area" className="banner-area">
-                <div className="container">
-                <div className="row">
-                    <div className="col-sm-12">
-                    <div className="banner-heading">
-                        <h1 className="banner-title">Digital Marketing</h1>
-                        <ol className="breadcrumb">
-                        <li>Home</li>
-                        <li><a href="#">Services</a></li>
-                        </ol>
-                    </div>
-                    </div>
-                    {/* Col end */}
-                </div>
-                {/* Row end */}
-                </div>
-                {/* Container end */}
-            </div>
-            
             <section id="main-container" className="main-container">
                 <div className="container">
                 <div className="row">
