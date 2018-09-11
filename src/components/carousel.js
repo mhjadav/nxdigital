@@ -15,20 +15,22 @@ class Carousel extends Component {
                         <div className="col-lg-12 col-md-12 fadeInLeft">
                             <div className="section-heading" style={{ marginBottom: "25px" }}>
                                 <h2>
-                                    Connect with us over a
-                                    <span> coffee </span>
-                                    to understand:
+                                    <span> Nx Digital : </span>
+                                    Your ideal digital partner
                                 </h2>
                                 <span className="animate-border tw-mb-40" />
                             </div>
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <p>
-                                        We understand that you are working tirelessly to achieve your dreams and you need to completely focus on your core business.
-                                        Outsource your Digital Marketing and / or Technology Requirements to us.
-                                    </p>
+                                    <h4>
+                                        We offer end to end digital marketing and technology services to our clients world wide, 
+                                        We offer end to end digital marketing and technology services to our clients world wide
+                                    </h4>
                                 </div>
                                 <div className="col-lg-6">
+                                    <h5>
+                                        Connect with us over a  <span> coffee </span> to understand:
+                                    </h5>
                                     <p>
                                         How <span>#</span>DigitalMarketing fuels business growth
                                         <br />

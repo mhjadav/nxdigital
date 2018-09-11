@@ -5019,3 +5019,6 @@ select.form-control:not([size]):not([multiple]) {
 p span {
   color: #2faaff; 
 }
+h5 span {
+  color: #2faaff; 
+}
