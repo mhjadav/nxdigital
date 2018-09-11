@@ -15,17 +15,19 @@ class Carousel extends Component {
                         <div className="col-lg-12 col-md-12 fadeInLeft">
                             <div className="section-heading" style={{ marginBottom: "25px" }}>
                                 <h2>
-                                    <span> Nx Digital : </span>
-                                    Your ideal digital partner
+                                    <span> Nx Digital </span>
+                                    <small>Your ideal digital partner</small>
                                 </h2>
                                 <span className="animate-border tw-mb-40" />
                             </div>
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <h4>
+                                    <p>
                                         We offer end to end digital marketing and technology services to our clients world wide, 
                                         We offer end to end digital marketing and technology services to our clients world wide
-                                    </h4>
+                                        We offer end to end digital marketing and technology services to our clients world wide
+                                        We offer end to end digital marketing and technology services to our clients world wide
+                                    </p>
                                 </div>
                                 <div className="col-lg-6">
                                     <h5>
