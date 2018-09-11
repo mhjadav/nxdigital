@@ -833,14 +833,6 @@
    .timeline2-wrapper:after {
       left: 0;
    }
-   .left-part .timeline-badge {
-      left: 0;
-      margin-left: 0;
-   }
-   .timeline-badge,
-   .left-part .timeline-badge {
-      margin-left: 7px;
-   }
    .left-part .timeline-panel:before {
       right: inherit;
       left: -15px;

@@ -63,85 +63,85 @@ class Index extends Component {
               <section id="tw-timeline" className="tw-timeline" style={{ padding: "0" }}>
                   <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-lg-12">
                           <div className="timeline-wrapper">
                               <div className="row">
-                                <div className="col-md-6 timeline-item left-part">
+                                <div className="col-6 timeline-item left-part">
                                     <div className="timeline-badge"></div>
                                 </div>
-                                <div className="col-md-6 timeline-item ">
-                                    <div className="timeline-date left-part">
+                                <div className="col-6 timeline-item p-0">
+                                    <div className="timeline-date left-part text-left">
                                       <p className="tagline"> Requirement Gathering</p>
                                     </div>
                                 </div>
                               </div>
                               <div className="row">
-                                <div className="col-md-6 timeline-item">
-                                    <div className="timeline-date">
+                                <div className="col-6 timeline-item p-0">
+                                    <div className="timeline-date text-right">
                                       <p className="tagline">Business Analysis</p>
                                     </div>
                                 </div>
-                                <div className="col-md-6 timeline-item">
+                                <div className="col-6 timeline-item">
                                     <div className="timeline-badge"></div>
                                 </div>
                               </div>
                               <div className="row">
-                                <div className="col-md-6 timeline-item left-part">
+                                <div className="col-6 timeline-item left-part">
                                     <div className="timeline-badge"></div>
                                 </div>
-                                <div className="col-md-6 timeline-item ">
-                                    <div className="timeline-date left-part">
+                                <div className="col-6 timeline-item p-0">
+                                    <div className="timeline-date left-part text-left">
                                       <p className="tagline">Project Kick-Off</p>
                                     </div>
                                 </div>
                               </div>
                               <div className="row">
-                                <div className="col-md-6 timeline-item">
-                                    <div className="timeline-date ">
+                                <div className="col-6 timeline-item p-0">
+                                    <div className="timeline-date text-right">
                                       <p className="tagline">Creative Concept</p>
                                     </div>
                                 </div>
-                                <div className="col-md-6 timeline-item">
+                                <div className="col-6 timeline-item">
                                     <div className="timeline-badge "></div>
                                 </div>
                               </div>
                               <div className="row">
-                                <div className="col-md-6 timeline-item left-part">
+                                <div className="col-6 timeline-item left-part">
                                     <div className="timeline-badge"></div>
                                 </div>
-                                <div className="col-md-6 timeline-item ">
-                                    <div className="timeline-date left-part">
+                                <div className="col-6 timeline-item p-0">
+                                    <div className="timeline-date left-part text-left">
                                       <p className="tagline">Client Approvals</p>
                                     </div>
                                 </div>
                               </div>
                               <div className="row">
-                                <div className="col-md-6 timeline-item">
-                                    <div className="timeline-date ">
+                                <div className="col-6 timeline-item p-0">
+                                    <div className="timeline-date text-right">
                                       <p className="tagline">Execution</p>
                                     </div>
                                 </div>
-                                <div className="col-md-6 timeline-item">
+                                <div className="col-6 timeline-item">
                                     <div className="timeline-badge "></div>
                                 </div>
                               </div>
                               <div className="row">
-                                <div className="col-md-6 timeline-item left-part">
+                                <div className="col-6 timeline-item left-part">
                                     <div className="timeline-badge "></div>
                                 </div>
-                                <div className="col-md-6 timeline-item">
-                                    <div className="timeline-date left-part">
+                                <div className="col-6 timeline-item">
+                                    <div className="timeline-date left-part text-left">
                                       <p className="tagline">Reporting And Analytics</p>
                                     </div>
                                 </div>
                               </div>
                               <div className="row">
-                                <div className="col-md-6 timeline-item">
-                                    <div className="timeline-date ">
+                                <div className="col-6 timeline-item">
+                                    <div className="timeline-date text-right">
                                       <p className="tagline">Support</p>
                                     </div>
                                 </div>
-                                <div className="col-md-6 timeline-item">
+                                <div className="col-6 timeline-item">
                                     <div className="timeline-badge "></div>
                                 </div>
                               </div>
