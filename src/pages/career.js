@@ -63,6 +63,23 @@ class Career extends Component {
     render() {
         return(
             <Layout>
+               <div id="banner-area" className="banner-area bg-overlay case-bg-overlay">
+                  <div className="container">
+                      <div className="row">
+                          <div className="col-sm-12">
+                              <div className="banner-heading">
+                                  <h1 className="banner-title">
+                                      Career
+                                  </h1>
+                              </div>
+                          </div>
+                          {/* Col end */}
+                      </div>
+                      {/* Row end */}
+                  </div>
+                  {/* Container end */}
+              </div>
+              {/* Banner area end */}
                  <section id="main-container" className="main-container">
                     <div className="container">
                       <div className="row">

@@ -13,22 +13,25 @@ class Contact extends Component {
   render() {
     return(
       <Layout>
+         <div id="banner-area" className="banner-area bg-overlay case-bg-overlay">
+                  <div className="container">
+                      <div className="row">
+                          <div className="col-sm-12">
+                              <div className="banner-heading">
+                                  <h1 className="banner-title">
+                                      Contact Us
+                                  </h1>
+                              </div>
+                          </div>
+                          {/* Col end */}
+                      </div>
+                      {/* Row end */}
+                  </div>
+                  {/* Container end */}
+              </div>
+              {/* Banner area end */}
           <section id="main-container" className="main-container">
                 <div className="container">
-                  <div className="row">
-                    <div className="col text-center">
-                      <div className="section-heading">
-                        <h2>
-                          <small>Contact us</small>
-                          Our Contact <span>Details</span>
-                        </h2>
-                        <span className="animate-border tw-mt-20 tw-mb-40 ml-auto mr-auto" />
-                      </div>
-                      {/* End Heading */}
-                    </div>
-                    {/* End Col */}
-                  </div>
-                  {/* End Title Row */}
                   <div className="row">
                     <div className="col-lg-12">
                       <section id="tw-contact-us" className="tw-contact-us bg-offwhite">

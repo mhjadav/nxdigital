@@ -9,21 +9,25 @@ import serviceImage3 from "../../static/images/services/single_service_img3.png"
 const WebsiteDevelopment = () => {
     return(
       <Layout>
+          <div id="banner-area" className="banner-area bg-overlay case-bg-overlay">
+                  <div className="container">
+                      <div className="row">
+                          <div className="col-sm-12">
+                              <div className="banner-heading">
+                                  <h1 className="banner-title">
+                                      App Dev
+                                  </h1>
+                              </div>
+                          </div>
+                          {/* Col end */}
+                      </div>
+                      {/* Row end */}
+                  </div>
+                  {/* Container end */}
+              </div>
+            {/* Banner area end */}
             <section id="main-container" className="main-container">
                 <div className="container">
-                <div className="row">
-                    <div className="col text-center">
-                    <div className="section-heading">
-                        <h2>
-                        <small>we are best</small>
-                        Outsourced <span>CTO</span>
-                        </h2>
-                        <span className="animate-border tw-mt-20 tw-mb-40 mr-auto ml-auto" />
-                    </div>
-                    </div>
-                    {/* Col End */}
-                </div>
-                {/* Row End */}
                 <div className="row">
                     <div className="col-md-6 align-self-md-center">
                         <img src={serviceImage1} alt="Website Development" className="img-fluid analytics-img" />

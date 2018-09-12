@@ -5,15 +5,30 @@ import { Link } from 'gatsby';
 const About = () => {
     return(
         <Layout>
+            
+        <div id="banner-area" className="banner-area bg-overlay case-bg-overlay">
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-12">
+                        <div className="banner-heading">
+                            <h1 className="banner-title">
+                                About Us
+                            </h1>
+                        </div>
+                    </div>
+                    {/* Col end */}
+                </div>
+                {/* Row end */}
+            </div>
+            {/* Container end */}
+        </div>
+        {/* Banner area end */}
+
             <section id="main-container" className="main-container">
                 <div className="container">
                     <div className="row">
                     <div className="col text-center">
                         <div className="section-heading">
-                        <h2>
-                            About <span>Nx Digital</span>
-                        </h2>
-                        <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
                         <p>
                             We are Nx Digital and we aim to be your ideal digital partners. 
                         </p>
