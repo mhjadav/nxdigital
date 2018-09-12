@@ -194,6 +194,19 @@
                   
                   });*/
                   
+                    /*Main Slideshow*/
+                  $(".tw-hero-slider").owlCarousel({
+                        items: 1,
+                        loop: true,
+                        autoplay: true,
+                        nav: true,
+                        dots: false,
+                        autoplayTimeout: 8000,
+                        autoplayHoverPause: true,
+                        mouseDrag: false,
+                        smartSpeed: 1100,
+                        navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
+                  });
                   /* Service List Box Slider */
                   if ($(".service-list-carousel").length > 0) {
                         $(".service-list-carousel").owlCarousel({

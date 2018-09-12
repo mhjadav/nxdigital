@@ -1,154 +1,203 @@
-import React, { Component  } from "react";
-import Helmet from 'react-helmet'
+import React, { Component } from "react";
 import Layout from "../components/layout";
-import ContactForm from '../components/contact-form';
-
-import  "./index.css";
-
-import place1Image from "../static/images/icon/place1.png";
-import place2Image from "../static/images/icon/place2.png";
-import place3Image from "../static/images/icon/place3.png";
-
-class Contact extends Component {
-  render() {
-    return(
-      <Layout>
-          <div id="banner-area" className="banner-area">
-            <div className="container">
-              <div className="row">
-                <div className="col-sm-12">
-                  <div className="banner-heading">
-                    <h1 className="banner-title">Contact us</h1>
-                    <ol className="breadcrumb">
-                      <li>Home</li>
-                      <li><a href="#">Contact us</a></li>
-                    </ol>
-                  </div>
-                </div>
-                {/* Col end */}
-              </div>
-              {/* Row end */}
-            </div>
-            {/* Container end */}
-          </div>
-          {/* Banner area end */}
-          <section id="main-container" className="main-container">
-          
-                <div className="container">
-                  <div className="row">
-                    <div className="col text-center">
-                      <div className="section-heading">
-                        <h2>
-                          <small>Contact us</small>
-                          Our Contact <span>Details</span>
-                        </h2>
-                        <span className="animate-border tw-mt-20 tw-mb-40 ml-auto mr-auto" />
-                      </div>
-                      {/* End Heading */}
-                    </div>
-                    {/* End Col */}
-                  </div>
-                  {/* End Title Row */}
-                  <div className="row">
-                    <div className="col-md-4">
-                      <div className="tw-contact-box">
-                        <div className="contact-heading">
-                          <img src={place1Image} alt="" className="img-fluid" />
-                          <h3>Sydney</h3>
-                        </div>
-                        {/* End Content Heading */}
-                        <div className="contact-info-box-content">
-                          <i className="fa fa-map-marker" />
-                          <p>14, 388 Some Street Sydney 200</p>
-                          <i className="fa fa-phone" />
-                          <p>009-1234-5678</p>
-                          <i className="fa fa-envelope" />
-                          <p>mail@nxdigital.com</p>
-                        </div>
-                        {/* End content info box */}
-                      </div>
-                      {/* End Contact Box */}
-                    </div>
-                    {/* End Col */}
-                    <div className="col-md-4">
-                      <div className="tw-contact-box">
-                        <div className="contact-heading">
-                          <img src={place2Image} alt="" className="img-fluid" />
-                          <h3>Sydney</h3>
-                        </div>
-                        {/* End Content Heading */}
-                        <div className="contact-info-box-content">
-                          <i className="fa fa-map-marker" />
-                          <p>14, 388 Some Street Sydney 200</p>
-                          <i className="fa fa-phone" />
-                          <p>009-1234-5678</p>
-                          <i className="fa fa-envelope" />
-                          <p>mail@nxdigital.com</p>
-                        </div>
-                        {/* End content info box */}
-                      </div>
-                      {/* End Contact Box */}
-                    </div>
-                    {/* End Col */}
-                    <div className="col-md-4">
-                      <div className="tw-contact-box">
-                        <div className="contact-heading">
-                          <img src={place3Image} alt="" className="img-fluid" />
-                          <h3>Sydney</h3>
-                        </div>
-                        {/* End Content Heading */}
-                        <div className="contact-info-box-content">
-                          <i className="fa fa-map-marker" />
-                          <p>14, 388 Some Street Sydney 200</p>
-                          <i className="fa fa-phone" />
-                          <p>009-1234-5678</p>
-                          <i className="fa fa-envelope" />
-                          <p>mail@nxdigital.com</p>
-                        </div>
-                        {/* End content info box */}
-                      </div>
-                      {/* End Contact Box */}
-                    </div>
-                    {/* End Col */}
-                  </div>
-                  {/* End Row */}
-                  <div className="row">
-                    <div className="col">
-                      <div id="map" className="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29379.905333987128!2d72.50951076284976!3d23.00584159383215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9adf23fbc007%3A0x187db03229123089!2sEarth+Arise%2C+Before+YMCA+Club%2C+Sarkhej+-+Gandhinagar+Hwy%2C+Makarba%2C+Ahmedabad%2C+Gujarat+380015!5e0!3m2!1sen!2sin!4v1536395632792" width="100%" height="100%" frameBorder={0} style={{border: 0}} allowFullScreen />
-
-                      </div>
-                    </div>
-                  </div>
-                  {/* End Row */}
-                </div>
-                {/* Container End */}
-              </section>
-              <section id="tw-contact-us" className="tw-contact-us bg-offwhite">
-                <div className="container">
-                    <div className="row">
-                      <div className="col">
-                          <div className="section-heading text-center">
-                          <h2>
-                              <small>leave a message</small>
-                              Give a <span>Message</span>
-                          </h2>
-                          <span className="animate-border border-ash ml-auto mr-auto tw-mt-20 tw-mb-40" />
+import { push } from 'gatsby';
+import encode from '../utils/index';
+import { currentOpenings } from '../../site-config';
+var LinkedinSDK = () => {
+  return <div>Nothing</div>;
+};
+if(typeof window != 'undefined'){
+  LinkedinSDK = require('react-linkedin-sdk').default;
+}
+class Career extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            userApplied: false,
+            selectedJob: ''
+        }
+    }
+    
+    handleSubmit = e => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": 'career', ...this.state })
+        })
+        .then(() => push('/success'))
+        .catch(error => alert(error));
+        
+        console.log("Form data", this.state);
+        e.preventDefault();
+    };
+    handleChange = e => {
+      this.setState({
+          [e.target.name]: e.target.value
+      });
+    }
+    handleApplyJob = e => {
+      const jobTitle = e.target.getAttribute('data-title');
+      this.setState({
+        headline: jobTitle,
+        userApplied: true
+      });
+      e.preventDefault();
+    }
+    responseLinkedin = response => {
+        this.setState({
+          userApplied: true
+        });
+        const fullname = `${response.firstName} ${response.lastName}`; 
+        const headline = response.headline;
+        const location = response.location.name;
+        const profilelink = response.siteStandardProfileRequest.url;
+        const company = response.positions.values ? response.positions.values[0].company.name : '';
+        this.setState({
+            fullname,
+            headline,
+            location,
+            profilelink,
+            company
+        });
+    }
+    render() {
+        return(
+            <Layout>
+                 <section id="main-container" className="main-container">
+                    <div className="container">
+                      <div className="row">
+                        <div className="col text-center">
+                          <div className="section-heading">
+                            <h2>
+                              <small>The Beginning</small>
+                              We are <span>hiring</span>
+                            </h2>
+                            <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
+                            <p>
+                            If you are looking for change email your CV with subject `Applying for the post of "Job Title"` @ mail@nxdigital.com
+                            </p>
                           </div>
+                          {/* section Heading End */}
+                        </div>
+                        {/* Col End */}
                       </div>
-                      {/* Col End */}
-                    </div>
-                    {/* Row End */}
-                    <div className="contact-us-form">
-                      <ContactForm formName="contactus"/>
-                    </div>
-                    {/* Contact us form end */}
-                </div>
-                  {/* Container End */}
-              </section>
-      </Layout>
-    )
-  }
+                      {
+                        this.state.userApplied ? <div className="row">
+                        <div className="col-lg-12">
+                          <section id="tw-contact-us" className="tw-contact-us bg-offwhite">
+                            <div className="container">
+                                <div className="row">
+                                  <div className="col">
+                                      <div className="section-heading text-center">
+                                      <h2>
+                                          Fill In <span> Details</span>
+                                      </h2>
+                                      </div>
+                                  </div>
+                                  {/* Col End */}
+                                </div>
+                                {/* Row End */}
+                                <div className="contact-us-form">
+                                <form onSubmit={ this.handleSubmit } className="contact-form" name="career" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
+                                    <input type="hidden" name="form-name" value="career" />
+                                    <div className="error-container" />
+                                    <div className="row">
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                  <input className="form-control form-name" value={this.state.fullname} name="fullname" id="fullname" placeholder="Full Name" type="text" required onChange={ this.handleChange }/>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                  <input  className="form-control form-name" value={this.state.location} name="location" id="location" placeholder="Current Location" type="text" required onChange={this.handleChange} />
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-12">
+                                                <div className="form-group">
+                                                  <input className="form-control form-name" value={this.state.headline} name="headling" id="headling" placeholder="Job Title" type="text" required onChange={ this.handleChange }/>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                  <input className="form-control form-name" value={this.state.profilelink} name="profilelink" id="profilelink" placeholder="Linkedin or Portfolio Url" type="url" required onChange={ this.handleChange }/>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                <input className="form-control form-name" value={this.state.company} name="company" id="company" placeholder="Current Company" type="text" required onChange={ this.handleChange }/>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                <input className="form-control form-name" value={this.state.email} name="email" id="email" placeholder="Email" type="email" required onChange={ this.handleChange }/>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                <input className="form-control form-name" value={this.state.contactnumber} name="contactnumber" id="contactnumber" placeholder="Contact Number" type="phone" required onChange={ this.handleChange }/>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div className="text-center">
+                                        <button className="btn btn-primary tw-mt-30" type="submit">Submit</button>
+                                    </div>
+                                </form>
+                                {/* Form end */}
+                                </div>
+                                {/* Contact us form end */}
+                            </div>
+                              {/* Container End */}
+                          </section>
+                        </div>
+                      </div>: 
+                      <div className="row" style={{ "background": "rgb(247, 249, 248)" }}>
+                        <div className="col-lg-12 col-md-12">
+                          {
+                            currentOpenings.map((job, index) => {
+                                return <article  key={index} className="post tw-news-post">
+                                <div className="post-body">
+                                  <div className="entry-header">
+                                    <h2 className="entry-title">
+                                      <a href="#">{job.title}</a>
+                                    </h2>
+                                    {/* End Post Meta */}
+                                  </div>
+                                  {/* header end */}
+                                  <div className="entry-content">
+                                    <p>
+                                      {job.description}
+                                    </p>
+                                  </div>
+                                  {/* End Entry Content */}
+                                  <div className="post-footer">
+                                  <LinkedinSDK
+                                      clientId="816psos5oxo4mk"
+                                      callBack={this.responseLinkedin}
+                                      fields=":(id,site-standard-profile-request,num-connections,picture-url,first-name,last-name,headline,location,summary,specialties,positions)"
+                                      className={'btn btn-primary solid blank'}
+                                      loginButtonText={'Apply Via Linkedin'}
+                                      logoutButtonText={'Logout from Linkedin'}
+                                      buttonType={'button'}
+                                  />
+                                    <a href="#" data-title={job.title} onClick={ this.handleApplyJob } className="btn btn-primary">Apply Directly</a>
+                                  </div>
+                                  {/* End Post Footer */}
+                                </div>
+                                {/* End Post Body */}
+                              </article>
+                              {/* 1st article end end */}
+                            })
+                          }
+
+                        </div>
+                      </div>
+                
+                      }
+                      </div>
+                </section>
+                </Layout>
+        )
+    }
 }
 
-export default Contact;
+export default Career;

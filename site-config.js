@@ -18,5 +18,23 @@ module.exports = {
     contactForm: {},
     valueAddition: {},
     testimonials: [],
+    currentOpenings: [
+      {
+        title:'UI Engineer',
+        description:'We offer end to end digital marketing and technology services to our clients world wide, We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide'
+      },
+      {
+        title:'Front End Engineer',
+        description:'We offer end to end digital marketing and technology services to our clients world wide, We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide'
+      },
+      {
+        title:'UX Designer',
+        description:'We offer end to end digital marketing and technology services to our clients world wide, We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide'
+      },
+      {
+        title:'Senior UI Engineer',
+        description:'We offer end to end digital marketing and technology services to our clients world wide, We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide'
+      }
+    ],
     MAC: {}
   };

@@ -1107,9 +1107,7 @@
    }
    /* Sub Pages */
    /* Recent Posts */
-   .post-body {
-      padding-left: 0;
-   }
+  
    .post-item-date {
       position: relative;
    }

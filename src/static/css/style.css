@@ -1550,15 +1550,15 @@ li.dropdown:hover .tw-mega-menu {
 .slider-content {
   margin-top: 50px; }
   .slider-content h1 {
-    color: #2f2c2c;
+    color: #fff;
     font-size: 60px;
     font-weight: 800;
     margin-bottom: 26px; }
     .slider-content h1 span {
-      color: #2e2c2d; }
+      color: #fff; }
   .slider-content p {
     margin-bottom: 40px;
-    color:#2f2c2c;
+    color:#fff;
     font-size: 20px;
     line-height: 32px; }
 
@@ -2672,7 +2672,10 @@ input.round-btn {
   background: #fff;
   padding-bottom: 30px;
   border-bottom: 1px solid #E4E4E4;
-  margin-bottom: 50px; }
+  margin-bottom: 50px; 
+  margin-top: 30px;
+  padding-top: 10px;
+}
   .tw-news-post .entry-content {
     margin-left: 80px;
     margin-bottom: 25px; }
@@ -2710,6 +2713,8 @@ input.round-btn {
 .post-footer {
   margin-left: 80px; }
   .post-footer .btn {
+    margin-top: 36px;
+    margin-right: 20px;
     font-size: 14px;
     padding: 11px 30px; }
     .post-footer .btn i {
@@ -3646,7 +3651,7 @@ ul {
 .alert-success.fade.in {
   opacity: 1; }
 
-.contact-us-form input[type=text], .contact-us-form input[type=phone], .contact-us-form input[type=email] {
+.contact-us-form input[type=text], .contact-us-form input[type=phone], .contact-us-form input[type=email], .contact-us-form input[type=url] {
   padding: 16px 30px;
   border-radius: 50px;
   border: 1px solid #F1F1F1; }
@@ -4520,7 +4525,7 @@ ul {
     height: 131%;
     content: "";
     z-index: -1;
-    background: #f7f9f8;
+    background: url(../images/slider/slider-banner-1.jpg);
     background-size: cover;
     background-position: right center; }
 
@@ -4540,9 +4545,6 @@ ul {
 
 .slider-dark.tw-hero-slider .owl-nav button i:hover {
   color: #2faaff; }
-
-.slider-dark .tw-slider-bg-dark:after {
-  background: #f7f9f8}
 
 .slider-content-dark h1 span {
   color: #2faaff; }
