@@ -1602,10 +1602,12 @@ li.dropdown:hover .tw-mega-menu {
 .features-box {
   text-align: center;
   background: #fff;
-  padding: 32px 44px 32px;
-  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.03);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.03);
-  min-height: 315px;
+  padding: 10px 32px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  min-height: fit-content;
+  margin-bottom: 10px;
+  background: rgb(247, 249, 248);
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear; }
@@ -1623,7 +1625,7 @@ li.dropdown:hover .tw-mega-menu {
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear; }
   .features-box p {
-    margin-bottom: 5px; }
+    margin-bottom: 5px !important; }
   .features-box a {
     margin-top: 10px; }
   .features-box:hover {
