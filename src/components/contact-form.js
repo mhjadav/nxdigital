@@ -71,7 +71,7 @@ class ContactForm extends Component {
     render() {
         const labelClassName = `form-check-label ${this.props.labelClass}`;
         return (
-            <form onSubmit={ this.handleSubmit } className="contact-form" name={this.props.formName} method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
+            <form onSubmit={ this.handleSubmit } className="contact-form" name={this.props.formName}  id={`${this.props.formName}-form`} method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
                 <input type="hidden" name="form-name" value={this.props.formName} />
                 <div className="error-container" />
                 <div className="row">
@@ -126,7 +126,7 @@ class ContactForm extends Component {
                                 <div className="form-check">
                                     <input className="form-check-input" name="request" value="workshop" id="workshop" type="radio" onChange={ this.handleChange } />
                                     <label className={labelClassName} htmlFor="workshop">
-                                        Attend Free Workshop
+                                        Complimentary Consultation
                                     </label>
                                 </div>
                                 <div className="form-check">
@@ -188,7 +188,7 @@ class ContactForm extends Component {
                     {/* Col End */}
                 </div>
                 {/* Form row end */}
-                <div className="text-right">
+                <div className="text-center">
                     <button className="btn btn-primary tw-mt-30" type="submit">{this.props.submitButtonText}</button>
                 </div>
             </form>              

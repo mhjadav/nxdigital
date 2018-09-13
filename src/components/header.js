@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby"
 
-import logo from "../static/images/logo/logo.png"
+import logo from "../static/images/logo/logo.jpg"
 const Header = () => {
     return <header>
             <div className="tw-head">
@@ -18,6 +18,11 @@ const Header = () => {
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link to="/" className="nav-link">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/about/" className="nav-link">
+                                About
+                            </Link>
                         </li>
                         <li className="nav-item dropdown">
                             <a href="#" className="nav-link">
@@ -63,13 +68,13 @@ const Header = () => {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/about/" className="nav-link">
-                                About
+                            <Link to="/blog/" className="nav-link">
+                                Blog
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/contact/" className="nav-link">
-                                Contact
+                                Marketing & Coffee
                             </Link>
                         </li>
                     </ul>

@@ -662,7 +662,7 @@
    .slider-wrapper,
    .tw-slider-1,
    .slider-1 .slider-wrapper {
-      min-height: 700px;
+      min-height: 810px;
    }
    .slider-wrapper-marketing {
       min-height: 1050px;
@@ -1075,6 +1075,26 @@
    .banner-title {
     font-size: 35px;
    }
+   .slider-content p {
+        font-size: 1rem;
+        text-align: left;
+        color: #2e2c2d
+    }
+    
+   .slider-content h1 {
+        color: #2e2c2d
+    }
+    .tw-slider-bg-dark:after{
+        background: rgb(247, 249, 248);   
+    }
+    .slider-wrapper .slider-image{
+        margin-top: 10px;
+    }
+    .section-heading h2 {
+        color: #2f2c2c;
+        font-size: 1.5rem;
+    }
+
 
 }
 

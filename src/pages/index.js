@@ -19,8 +19,10 @@ class Index extends Component {
         <div className="container">
             <div className="row">
             <div className="col-lg-7 ml-auto col-md-12 wow fadeInLeft" data-wow-duration="1s">
-                <h2 className="column-title">What we bring on the table:</h2>
-                <span className="animate-border tw-mb-40" />
+                <h2 className="column-title text-center">
+                  Digital <span>Marketing</span> & Website <span>Development</span> for all:
+                </h2>
+                <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
                 <article>
                   <h4> We take pride in being associated with clients across the business spectrum: </h4>
                   <div className="row">
@@ -29,7 +31,7 @@ class Index extends Component {
                       <p>
                         We understand that you are working tirelessly to achieve your dreams and you need to completely focus on your core business.
                         Outsource your Digital Marketing and / or Technology Requirements to us.
-                        <Link to="/contact/" className="tw-readmore"> Let's Connect
+                        <Link to="/contact/" className="tw-readmore">
                           <i className="fa fa-angle-right"></i>
                         </Link>
                       </p>
@@ -39,7 +41,7 @@ class Index extends Component {
                       <p>
                         Scaling your business and taking it to new heights is your priority. We will take care of your technology requirements and help you 
                         increase productivity. With innovative Digital Marketing Campaigns, we can help you get more customers.
-                        <Link to="/contact/" className="tw-readmore"> Let's Connect
+                        <Link to="/contact/" className="tw-readmore">
                           <i className="fa fa-angle-right"></i>
                         </Link>
                       </p>
@@ -49,7 +51,7 @@ class Index extends Component {
                       <p>
                         Brand Management and building brand value is really important for you. Mapping supply with demand, managing attrition, increasing 
                         efficiency, picking the right CRM and ERP Solutions, building customised software and digital marketing is what we will love to help you with.
-                          <Link to="/contact/" className="tw-readmore"> Let's Connect
+                          <Link to="/contact/" className="tw-readmore">
                             <i className="fa fa-angle-right"></i>
                           </Link>
                       </p>
@@ -59,7 +61,7 @@ class Index extends Component {
                     <p>
                       You are a large company and enhancing profitability and shareholder value is your top priority. Outsource the processes that are not your Core 
                       Competence to us. We would love to connect with you to explore various avenues to help you become meaner, leaner and faster than your competitors.
-                      <Link to="/contact/" className="tw-readmore"> Let's Connect
+                      <Link to="/contact/" className="tw-readmore">
                         <i className="fa fa-angle-right"></i>
                       </Link>
                     </p>
@@ -69,7 +71,7 @@ class Index extends Component {
             </div>
             {/* End Col */}
             <div className="col-lg-5 col-md-12 ml-auto wow fadeInRight" data-wow-duration="1s">
-              <h2 className="column-title text-center">Our Processes:</h2>
+              <h2 className="column-title text-center">Software Development <span>Process</span>:</h2>
                 <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
               <section id="tw-timeline" className="tw-timeline" style={{ padding: "0" }}>
                   <div className="container">

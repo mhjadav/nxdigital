@@ -36,17 +36,31 @@ class Carousel extends Component {
                         <div className="slider-content slider-content-dark">
                             <h1>
                                 <span> Nx Digital </span><br/>
-                                <small>Your ideal digital partner</small>
+                                <small style={{ fontSize: "75%" }}>Your ideal digital partner</small>
                             </h1>
-                            <h1>
-                                
-                            </h1>
-                            <p>We offer end to end digital marketing and technology services to our clients world wide, </p>
-                            <Link to="/book-appointment/" className="btn btn-primary">Let's Grab A Coffee</Link>
+                            <p style={{ marginBottom: "0px" }}>We offer end to end digital marketing and technology services to our clients world wide. Through a complimentary consultation session understand:
+                                <br />
+                                <br />
+                                How # Digital Marketing propels businesses
+                                <br />
+                                How # Technology empowers businesses
+                                <br />
+                                How # Websites can increase brand value
+                                <br />
+                                How # Mobile App can transform your brand
+                                <br/>
+                                How # Software can smoothen your business
+                                <br/>
+                                <br/>
+
+                            </p>
+
+                            <Link to="/book-appointment/" className="btn btn-primary">Free Consultation</Link>
+                            <br/>
                         </div>
                         </div>
                         {/* Col end */}
-                        <div className="col-md-5 mr-auto ml-auto align-self-center">
+                        <div className="col-md-5 mr-auto ml-auto align-self-center slider-image">
                         <img src={sliderImage} alt="" className="img-fluid slider-img" />
                         </div>
                         {/* col end */}
