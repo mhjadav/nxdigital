@@ -7,29 +7,30 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-12 col-lg-12">
                     <div className="row">
-                        <div className="col-md-4">
+                        <div className="col-md-5">
                         <div className="contact-us">
                             <div className="contact-icon">
                             <i className="icon icon-map2" />
                             </div>
                             {/* End contact Icon */}
                             <div className="contact-info">
-                            <h3>Sydney, Australia</h3>
-                            <p>1010 Grand Avenue</p>
+                            <h3>Melbourne, Australia</h3>
+                            <p>40 City Road, Southbank VIC 3006</p>
+                            <p>Level 23, HWT Tower</p>
                             </div>
                             {/* End Contact Info */}
                         </div>
                         {/* End Contact Us */}
                         </div>
                         {/* End Col */}
-                        <div className="col-md-4">
+                        <div className="col-md-3">
                         <div className="contact-us contact-us-last">
                             <div className="contact-icon">
                             <i className="icon icon-phone3" />
                             </div>
                             {/* End contact Icon */}
                             <div className="contact-info">
-                            <h3>01234567890</h3>
+                            <h3>+61 433 756 552</h3>
                             <p>Give us a call</p>
                             </div>
                             {/* End Contact Info */}
@@ -71,16 +72,24 @@ const Footer = () => {
                         <div className="copyright-menu">
                         <ul>
                             <li>
-                            <a href="#">Home</a>
+                            <Link to="/" className="nav-link">
+                                About
+                            </Link>
                             </li>
                             <li>
-                            <a href="#">Terms</a>
+                            <Link to="/about/" className="nav-link">
+                                About
+                            </Link>
                             </li>
                             <li>
-                            <a href="#">Privacy Policy</a>
+                            <Link to="/blog/" className="nav-link">
+                                Blog
+                            </Link>
                             </li>
                             <li>
-                            <a href="#">Contact</a>
+                            <Link to="/contact/" className="nav-link">
+                                Marketing And Coffee
+                            </Link>
                             </li>
                         </ul>
                         </div>
