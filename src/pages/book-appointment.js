@@ -13,28 +13,27 @@ class BookAppointment extends Component {
                 "Wednesday",
                 "Thursday",
                 "Friday",
-                "Saturday"
+                "Saturday",
+                "Sunday"
             ],
             workshopDays: [
-                "Monday To Friday",
-                "Saturday"
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
             ],
             callbackSlot:[
-                "10 AM",
-                "11 AM",
-                "12 PM",
-                "1 PM",
-                "2 PM",
-                "3 PM",
-                "4 PM",
-                "5 PM",
-                "6 PM",
-                "7 PM",
-                "8 PM"
+                "Morning",
+                "Afternoon",
+                "Evening"
             ],
             workshopSlot:[
-                "10 AM",
-                "4 PM"
+                "Morning",
+                "Afternoon",
+                "Evening"
             ],
             callBackSelected: false,
             form: {
@@ -54,28 +53,34 @@ class BookAppointment extends Component {
         <Layout>    
               <section id="tw-intro" className="tw-intro-area" style={{ "background": "rgb(247, 249, 248)" }}>
                 <div className="container">
+
+
                     <div className="row">
-                   
-                        <div className="col-lg-12 col-md-12 fadeInLeft">
-                            <div className="section-heading" style={{ marginBottom: "25px" }}>
-                                <h2>
-                                    Connect with us over a
-                                    <span> coffee </span>
-                                    to understand:
-                                </h2>
-                                <span className="animate-border tw-mb-40" />
-                            </div>
+                    <div className="col-lg-12">
+                      <section id="tw-contact-us" className="tw-contact-us bg-offwhite">
+                        <div className="container">
                             <div className="row">
-                                <div className="col-lg-6">
-                                    <div className="contact-us-form service-contact-form">
-                                        <ContactForm subjectText="New Message On Marketing And Coffee Page" fields={this.fields} submitButtonText="Let's Have A Coffee" formName="marketing-and-coffee" />
-                                    </div>
-                                </div>
+                              <div className="col">
+                                  <div className="section-heading text-center">
+                                  <h2>
+                                      Let's Connect
+                                  </h2>
+                                  <span className="animate-border border-ash ml-auto mr-auto tw-mt-20 tw-mb-40" />
+                                  </div>
+                              </div>
+                              {/* Col End */}
                             </div>
+                            {/* Row End */}
+                            <div className="contact-us-form">
+                                <ContactForm subjectText="New Message On Marketing And Coffee Page" fields={this.fields} submitButtonText="Submit" formName="marketing-and-coffee" />
+                            </div>
+                            {/* Contact us form end */}
                         </div>
-                        {/* End Col */}
+                          {/* Container End */}
+                      </section>
                     </div>
-                    {/* End Row */}
+                  </div>
+                  <br></br>
                 </div>
                 {/* End Container */}
                 </section>

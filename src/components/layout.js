@@ -17,10 +17,10 @@ const Layout = (props) => {
                     <div className="row">
                     <div className="col text-center">
                         <h2 className="column-title">
-                        <small>Promise to take you on top</small>
-                        Take your website to TOP of <span>Search Engines</span>
+                        <small>Your Growth Is Our Growth</small>
+                            Strategize . Develop . Optimize
                         </h2>
-                        <Link to="/book-appointment/" className="btn btn-primary tw-mt-20 btn-lg">Let's Grab A Coffee</Link>
+                        <Link to="/book-appointment/" className="btn btn-primary tw-mt-20 btn-lg">Let's Connect</Link>
                     </div>
                     {/* Col End */}
                     </div>
