@@ -19,7 +19,7 @@ class Contact extends Component {
                           <div className="col-sm-12">
                               <div className="banner-heading">
                                   <h1 className="banner-title">
-                                    Marketing & Coffee
+                                    Marketing & Contact
                                   </h1>
                               </div>
                           </div>
@@ -71,8 +71,8 @@ class Contact extends Component {
                         <div className="contact-info-box-content">
                           <i className="fa fa-map-marker" />
                           <p>Nx Digital</p>
-                          <p>40 City Road, Southbank VIC 3006</p>
                           <p>Level 23, HWT Tower</p>
+                          <p>40 City Road, Southbank VIC 3006</p>
                           <i className="fa fa-phone" />
                           <p>+61 433 756 552</p>
                           <i className="fa fa-envelope" />
@@ -85,8 +85,7 @@ class Contact extends Component {
                     {/* End Col */}
                     <div className="col-8">
                       <div id="map" className="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29379.905333987128!2d72.50951076284976!3d23.00584159383215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9adf23fbc007%3A0x187db03229123089!2sEarth+Arise%2C+Before+YMCA+Club%2C+Sarkhej+-+Gandhinagar+Hwy%2C+Makarba%2C+Ahmedabad%2C+Gujarat+380015!5e0!3m2!1sen!2sin!4v1536395632792" width="100%" height="100%" frameBorder={0} style={{border: 0}} allowFullScreen />
-
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.678217130921!2d144.9645478157912!3d-37.821005479751186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b18149340d%3A0xe2cc72ca55f888cc!2sHWT+Tower!5e0!3m2!1sen!2sin!4v1536931843558" width="100%" height="100%" frameBorder={0} style={{border: 0}} allowFullScreen />
                       </div>
                     </div>
                  

@@ -31,7 +31,7 @@ class Index extends Component {
                       <p>
                         We understand that you are working tirelessly to achieve your dreams and you need to completely focus on your core business.
                         Outsource your Digital Marketing and / or Technology Requirements to us.
-                        <Link to="/contact/" className="tw-readmore">
+                        <Link to="/book-appointment/" className="tw-readmore">
                           <i className="fa fa-angle-right"></i>
                         </Link>
                       </p>
@@ -41,7 +41,7 @@ class Index extends Component {
                       <p>
                         Scaling your business and taking it to new heights is your priority. We will take care of your technology requirements and help you 
                         increase productivity. With innovative Digital Marketing Campaigns, we can help you get more customers.
-                        <Link to="/contact/" className="tw-readmore">
+                        <Link to="/book-appointment/" className="tw-readmore">
                           <i className="fa fa-angle-right"></i>
                         </Link>
                       </p>
@@ -51,7 +51,7 @@ class Index extends Component {
                       <p>
                         Brand Management and building brand value is really important for you. Mapping supply with demand, managing attrition, increasing 
                         efficiency, picking the right CRM and ERP Solutions, building customised software and digital marketing is what we will love to help you with.
-                          <Link to="/contact/" className="tw-readmore">
+                          <Link to="/book-appointment/" className="tw-readmore">
                             <i className="fa fa-angle-right"></i>
                           </Link>
                       </p>
@@ -61,7 +61,7 @@ class Index extends Component {
                     <p>
                       You are a large company and enhancing profitability and shareholder value is your top priority. Outsource the processes that are not your Core 
                       Competence to us. We would love to connect with you to explore various avenues to help you become meaner, leaner and faster than your competitors.
-                      <Link to="/contact/" className="tw-readmore">
+                      <Link to="/book-appointment/" className="tw-readmore">
                         <i className="fa fa-angle-right"></i>
                       </Link>
                     </p>

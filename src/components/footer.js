@@ -15,8 +15,8 @@ const Footer = () => {
                             {/* End contact Icon */}
                             <div className="contact-info">
                             <h3>Melbourne, Australia</h3>
-                            <p>40 City Road, Southbank VIC 3006</p>
                             <p>Level 23, HWT Tower</p>
+                            <p>40 City Road, Southbank VIC 3006</p>
                             </div>
                             {/* End Contact Info */}
                         </div>
@@ -30,8 +30,8 @@ const Footer = () => {
                             </div>
                             {/* End contact Icon */}
                             <div className="contact-info">
-                            <h3>+61 433 756 552</h3>
-                            <p>Give us a call</p>
+                                <h3>+61 433 756 552</h3>
+                                <p>Give us a call</p>
                             </div>
                             {/* End Contact Info */}
                         </div>

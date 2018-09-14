@@ -74,7 +74,7 @@ const Header = () => {
                         </li>
                         <li className="nav-item">
                             <Link to="/contact/" className="nav-link">
-                                Marketing & Coffee
+                                Marketing & Contact
                             </Link>
                         </li>
                     </ul>
