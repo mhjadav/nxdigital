@@ -24,16 +24,26 @@ const Footer = () => {
                         </div>
                         {/* End Col */}
                         <div className="col-md-3">
-                        <div className="contact-us contact-us-last">
+                            <div className="contact-us contact-us-last">
+                                <div className="contact-icon">
+                                <i className="icon icon-phone3" />
+                                </div>
+                                {/* End contact Icon */}
+                                <div className="contact-info">
+                                    <h3>+61 433 756 552</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                            </div>
+                            {/* End Contact Us */}
+                            <div className="contact-us contact-us-last">
                             <div className="contact-icon">
-                            <i className="icon icon-phone3" />
+                            <i className="icon icon-envelope3" />
                             </div>
                             {/* End contact Icon */}
                             <div className="contact-info">
-                                <h3>+61 433 756 552</h3>
-                                <p>Give us a call</p>
+                                <h3>connect@nxdigital.com.au</h3>
+                                <p>Send us a email</p>
                             </div>
-                            {/* End Contact Info */}
                         </div>
                         {/* End Contact Us */}
                         </div>
@@ -88,7 +98,7 @@ const Footer = () => {
                             </li>
                             <li>
                             <Link to="/contact/" className="nav-link">
-                                Marketing And Coffee
+                                Marketing And Contact
                             </Link>
                             </li>
                         </ul>
