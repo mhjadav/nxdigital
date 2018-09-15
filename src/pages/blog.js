@@ -1,8 +1,11 @@
 import React from "react";
 import Layout from "../components/layout";
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-const About = () => {
+const Blog = (props) => {
+    const data = props.data;
+    console.log(data);
     return(
         <Layout>
             
@@ -24,60 +27,97 @@ const About = () => {
         </div>
         {/* Banner area end */}
 
-            <section id="main-container" className="main-container">
+            <section id="tw-blog" className="tw-blog">
                 <div className="container">
-                    
+                    {/* Row End */}
+                    <div className="row fadeInUp" data-wow-duration="0.2s">
+                        {data.allWordpressPost.edges.map(({ node }) => (
+                            <div key={node.slug} className="col-lg-4 col-md-12">
+                                    <div className="tw-latest-post">
+                                    <div className="latest-post-media text-center">
+                                      <Img src={node.featured_media.localFile.childImageSharp.sizes.src}
+                                      sizes={ node.featured_media.localFile.childImageSharp.sizes }
+                                       alt="blog_image_one" className="img-fluid" />
+                                    </div>
+                                    {/* End Latest Post Media */}
+                                    <div className="post-body">
+                                        <div className="post-item-date">
+                                        <div className="post-date">
+                                            <span className="date">{node.day}</span>
+                                            <span className="month">{node.month}</span>
+                                        </div>
+                                        </div>
+                                        {/* End Post Item Date */}
+                                        <div className="post-info">
+                                        <div className="post-meta">
+                                            <span className="post-author">
+                                            Posted by <a href="#">{node.author.name}</a>
+                                            </span>
+                                        </div>
+                                        {/* End Post Meta */}
+                                        <Link to={`/blog/${node.slug}`}><h3 style={{ overflow: "hidden",textOverflow: 'ellipsis',width: '95%', 'whiteSpace': 'nowrap' }} dangerouslySetInnerHTML={{ __html:node.title}} className="post-title" /></Link>
+                                        <div className="entry-content" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                                        <Link to={`/blog/${node.slug}`} class="tw-readmore">Read More
+                                            <i class="fa fa-angle-right"></i>
+                                        </Link>
+                                        {/* End Entry Content */}
+                                        </div>
+                                        {/* End Post info */}
+                                    </div>
+                                    {/* End Post Body */}
+                                    </div>
+                                    {/* End Tw Latest Post */}
+                            </div>
+                        ))}
+                    </div>
+                    {/* End Row */}
                 </div>
+                {/* Container End */}
             </section>
-            <section id="tw-about" className="tw-final-result" style={{ paddingTop: "0px" }}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12 features-box" style={{textAlign: "left"}}>
-                        <h2>
-                            <span>How do businesses become brands?</span>
-                        </h2>
-                        <p>
-                            Brands are born out of trustworthy products backed by brilliant communication with their audiences. 
-                            <br/>
-                            <br/>
-                            Good products are obviously at the base of all successful businesses. But, if you do not have a great marketing strategy for taking those products to your audiences, you will never realise the true potential of your business. 
-                            <br/>
-                            <br/>
-                            One can never begin to know the losses businesses incur due to the lack of attention given to marketing.
-                            Marketing is all about delivering the correct content to the right kind of audiences at the right moments. Now, how do you create the "correct content" for the "right kind of audiences" in the right moments? After every campaign that we, at Nx Digital, design for our audiences, we ask ourselves: Will this campaign touch the heart of the audiences? We accept the campaign only if the answer to that question is YES.
-                        </p>
-                    </div>  
-                    <div className="col-lg-12 features-box" style={{textAlign: "left"}}>
-                        <h2>
-                            <span>How do you make a Sale?</span>
-                        </h2>
-                        <p>
-                            You actually believe a Sale is made when a prospect has paid you for your service or product. You are wrong.
-                            <br/>
-                            <br/>
-                            First of all, you bought his attention. For this, you found out a touchpoint. A touchpoint is your first point of hashtag#contact with that prospect. It could be through a magazine he reads or via. LinkedIn Ad. If your ad was smooth, you have earned his attention.
-                            <br/>
-                            <br/>
-                            Now, you have connected to him at superficial level. Second thing you need to buy is his trust. If he sees you as a trustworthy entity, you have his trust. Client testimonials, WordOfMouth, SharePrices, BrandValue and several other factors determine this.
-                            <br/>
-                            <br/>
-                            If you have won his trust, he will actually go for a transaction. Here, he will meet hashtag#influencers, like a ShopKeeper or a Bank whose CreditCard he is using. So, only if you have bought the trust of these influencers, the transaction will happen smoothly and that prospect will be your Customer. 
-                            <br/>
-                            <br/>
-                            The sale is merely a physical acknowledgment. You first had to buy attention, then you had to buy the influencers' as well as his trust and then he bought your offering.
-                            <br/>
-                            <br/>
-                            And this, ladies and gentlemen, is how you have actually Sold your stuff!
-                        </p>
-                    </div>  
-                </div>
-                {/* 1st Row End */}
-            </div>
-            {/* Container End */}
-            </section>
+            {/* End tw blog */}
+
         </Layout>
 
     )
 }
+export default Blog;
 
-export default About;
+export const pageQuery = graphql`
+  query {
+    allWordpressPage {
+      edges {
+        node {
+          id
+          title
+          excerpt
+          slug
+          date(formatString: "MMMM DD, YYYY")
+        }
+      }
+    }
+    allWordpressPost(sort: { fields: [date] }) {
+      edges {
+        node {
+            month: date(formatString: "MMM")
+            day: date(formatString: "DD")
+          title
+          excerpt
+          author{
+            name
+          }
+          featured_media{
+            localFile{
+              childImageSharp{
+                id
+                sizes( maxWidth: 1000 ) {
+                    ...GatsbyImageSharpSizes
+                }
+              }
+            }
+          }
+          slug
+        }
+      }
+    }
+  }
+`

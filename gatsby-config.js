@@ -54,13 +54,6 @@ module.exports = {
         },
     },
     {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        whitelist: ["body","html","fa", "fa-twitter", "fa-github", "fa-linkedin"],
-        whitelistPatterns: ['/^owl-/'],
-      },
-    },
-    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: siteUrl,
@@ -68,8 +61,37 @@ module.exports = {
         policy: [{ userAgent: '*', disallow: '' }]
       }
     },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+				baseUrl: 'mojaave.wordpress.com',
+				protocol: 'https',
+				hostingWPCOM: true,
+				useACF: false,
+				auth: {
+					wpcom_app_clientSecret: '7foQK5YEiqNVGsMh9D9LQ8RqppEwlYHubpqwUG3sMt1GJzxRb3NrgMfKVZovuhO2',
+					wpcom_app_clientId: '63190',
+					wpcom_user: 'mojaave',
+					wpcom_pass: 'mojaave@123',
+				},
+        verboseOutput: false,
+        searchAndReplaceContentUrls: {
+          sourceUrl: "https://mojaave.wordpress.com",
+          replacementUrl: "https://nxdigital.com.au",
+        },
+			},
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        whitelist: ["body","html","fa", "fa-twitter", "fa-github", "fa-linkedin"],
+        whitelistPatterns: ['/^owl-/'],
+      },
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-sitemap',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
     ],
   };
   

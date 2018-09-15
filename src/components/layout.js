@@ -19,7 +19,7 @@ const Layout = (props) => {
     return (
         <React.Fragment>
             <Helmet
-                title={siteTitle}
+                title={props.siteTitle || siteTitle}
                 meta={[
                     { name: "description", content: props.siteDescription || siteDescription },
                     { property: "og:url", content: props.siteUrl || siteUrl },
