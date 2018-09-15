@@ -6,15 +6,21 @@ const {
   themeColor,
   backgroundColor,
   siteUrl,
-  siteLogo
+  siteLogo,
+  googleAnalyticsID
 } = require('./site-config');
 module.exports = {
+    siteMetadata: {
+      title: siteTitle,
+      description: siteDescription,
+      siteUrl: siteUrl,
+    },
     plugins: [
       'gatsby-plugin-react-helmet',
       {
         resolve: `gatsby-plugin-google-analytics`,
         options: {
-          trackingId: "<your-tracking-id-here>",
+          trackingId: googleAnalyticsID,
           head: true
         }
       },
@@ -30,19 +36,19 @@ module.exports = {
           icon: siteLogo,
           icons: [
             {
-              src: "/images/mahipat48.jpg",
+              src: `/images/favicon48.png`,
               sizes: `48x48`,
-              type: `image/jpg`
+              type: `image/png`
             },
             {
-              src: "/images/mahipat192.jpg",
+              src: `/images/favicon192.png`,
               sizes: `192x192`,
-              type: `image/jpg`
+              type: `image/png`
             },
             {
-              src: "/images/mahipat512.jpg",
+              src: `/images/favicon512.png`,
               sizes: `512x512`,
-              type: `image/jpg`
+              type: `image/png`
             },
           ]
         },
@@ -51,16 +57,19 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         whitelist: ["body","html","fa", "fa-twitter", "fa-github", "fa-linkedin"],
-        whitelistPatterns: ['/^owl/'],
+        whitelistPatterns: ['/^owl-/'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: siteUrl,
+        sitemap: siteUrl + '/sitemap.xml',
+        policy: [{ userAgent: '*', disallow: '' }]
+      }
+    },
     'gatsby-plugin-offline',
+    'gatsby-plugin-sitemap',
     ],
-    siteMetadata: {
-      title: siteTitle,
-      description: siteDescription,
-      keywords: siteKeyword,
-      url: siteUrl
-    }
   };
   

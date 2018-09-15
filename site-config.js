@@ -1,15 +1,17 @@
 const path = require('path');
 
 module.exports = {
-    name:"Mojaave.com",
-    siteTitle: "Mahipat Jadav,Full stack developer,Javascript,ReactJs,India", // Site title.
+    name:"Nx-Digital",
+    siteTitle: "Nx Digital - Your ideal digital partner", // Site title.
     siteLogo: `${__dirname}/src/static/images/logo/logo.jpg`,
-    siteUrl: "https://nx.netlify.com", // Domain of your website without pathPrefix.
-    siteKeyword:"mahipat Jadav, software engineer, full stack developer, mahipat, javascript, react js, Angular, node js, graphql, jquery, lodash, javascript expert, Typescript, ES6, software engineer, web developer, front end developer, bootstrap, material design.",
-    siteDescription: "Full stack developer, I have designed and developed fast and responsive web applications using Javascript, ReactJS, Redux, NodeJs, GraphQl, Bootstrap, Gatsby", // Website description used for RSS feeds/meta description tag.
+    siteUrl: "https://nxdigital.com.au/", // Domain of your website without pathPrefix.
+    siteKeyword:"nx digital, website development, digital marketing, android application, ios application",
+    siteDescription: "We are Nx Digital and we aim to be your ideal digital partners.", // Website description used for RSS feeds/meta description tag.
+    siteType: 'Portfolio',
     googleAnalyticsID: "UA-115817837-3", // GA tracking ID.
-    backgroundColor: "white",
-    themeColor: "white",
+    backgroundColor: "#fff",
+    themeColor: "#6AB8EE",
+    ogImage: `${__dirname}/src/static/images/logo/logo.jpg`,
     services: [{
       name: "",
       description:"",
