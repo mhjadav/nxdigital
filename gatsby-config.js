@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env`,
+});
 const {
   name,
   siteTitle,
@@ -71,8 +74,8 @@ module.exports = {
 				auth: {
 					wpcom_app_clientSecret: '7foQK5YEiqNVGsMh9D9LQ8RqppEwlYHubpqwUG3sMt1GJzxRb3NrgMfKVZovuhO2',
 					wpcom_app_clientId: '63190',
-					wpcom_user: 'mojaave',
-					wpcom_pass: 'mojaave@123',
+					wpcom_user: process.env.WORDPRESS_U,
+					wpcom_pass: process.env.WORDPRESS_P,
 				},
         verboseOutput: false,
         searchAndReplaceContentUrls: {
