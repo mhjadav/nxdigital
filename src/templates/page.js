@@ -1,22 +1,25 @@
-import React, { Component } from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
 
 
-class PageTemplate extends Component {
-  render() {
-    const currentPage = this.props.data.wordpressPage
+const PageTemplate = (props) => {
+  const { data: { wordpressPage: currentPage } } = props;
 
-    return (
-      <Layout>
-        <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
-        <div dangerouslySetInnerHTML={{ __html: currentPage.content }} />
-      </Layout>
-    )
-  }
-}
+  return (
+    <Layout>
+      <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
+      <div dangerouslySetInnerHTML={{ __html: currentPage.content }} />
+    </Layout>
+  );
+};
 
-export default PageTemplate
+PageTemplate.propTypes = {
+  data: PropTypes.shape(PropTypes.object).isRequired,
+};
+
+export default PageTemplate;
 
 export const pageQuery = graphql`
   query($id: String!) {
@@ -33,4 +36,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

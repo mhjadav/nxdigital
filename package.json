@@ -16,14 +16,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "bluebird": "^3.5.2",
+    "dotenv": "^6.0.0",
     "gatsby": "next",
     "gatsby-image": "next",
-    "gatsby-plugin-sharp": "next",
-    "gatsby-source-medium": "next",
-    "gatsby-transformer-sharp": "next",
     "gatsby-plugin-google-analytics": "next",
     "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-source-medium": "next",
     "gatsby-source-wordpress": "next",
+    "gatsby-transformer-sharp": "next",
     "jquery": "^3.3.1",
     "lodash": "^4.17.11",
     "next": "^6.1.2",
@@ -33,16 +35,23 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.0.5",
     "react-linkedin-sdk": "^1.0.11",
-    "simple-load-script": "^1.0.2"
+    "simple-load-script": "^1.0.2",
+    "slash": "^2.0.0"
   },
   "devDependencies": {
-    "dotenv": "^6.0.0",
-    "script-loader": "^0.7.2",
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-offline": "next",
+    "gatsby-plugin-purgecss": "next",
     "gatsby-plugin-robots-txt": "^1.3.0",
     "gatsby-plugin-sitemap": "next",
-    "gatsby-plugin-purgecss": "next"
+    "script-loader": "^0.7.2"
   },
   "repository": {
     "type": "git",
