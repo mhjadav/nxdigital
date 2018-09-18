@@ -41,7 +41,7 @@ const WebsiteDevelopment = () => {
                 <h2>How should I develop a website for my business?</h2>
                 <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
               </div>
-              <div className="tw-features-contact-info">
+              <div className="tw-web-analytics-content">
                 <p>
                     Your website represents your brand and your business.
                     So, the user experience is critical.

@@ -41,7 +41,7 @@ const DigitalMarketing = () => {
                 <h2>How can I grow my business through Digital Marketing?</h2>
                 <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
               </div>
-              <div className="tw-features-contact-info">
+              <div className="tw-web-analytics-content">
                 <p>
                     Digital Marketing lets you define your target audience very precisely.
                 </p>

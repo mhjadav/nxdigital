@@ -41,7 +41,7 @@ const AppDevelopment = () => {
                 <h2>Why does my business need a mobile application?</h2>
                 <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
               </div>
-              <div className="tw-features-contact-info">
+              <div className="tw-web-analytics-content">
                 <p>
                 Today, the world is moving towards mobile devices.
                 Through an app, you offer your target audiences a convenient

@@ -38,28 +38,25 @@ const OutsorucedCTO = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="section-heading text-center">
-                <h2>How can I grow my business through Digital Marketing?</h2>
+                <h2>Which are the best software for my business?</h2>
                 <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
               </div>
-              <div className="tw-features-contact-info">
+              <div className="tw-web-analytics-content">
                 <p>
-                    Digital Marketing let's you define your target audience very precisely.
+                  The primary role of software for any business is to automate the processes.
+                  This reduces human efforts and increases efficiency. Moreover,
+                  human errors are eliminated when the tasks are performed by software.
+                  Typically, software requirements vary from business to business and
+                  customised software can be developed specifically tailor-made to meet
+                  your requirements. A lot of times, software readily available can also
+                  be used to get rid of highly mechanical tasks especially like certain
+                  aspects of Accounting, Inventory Management and PoS (Point of Sales).
                 </p>
                 <p>
-                    You can run your search engine or social media campaigns for a longer
-                    period of time at compelling prices.
-                </p>
-                <p>
-                    It is highly interactive. So, you can have your audiences reach out to you via.
-                    lead generation forms, visit your websites or download your apps.
-                </p>
-                <p>
-                    Digital Marketing offers key insights via analytics. As you dive deeper into the
-                    world of digital marketing, your RoI continually increases.
-                </p>
-                <p>
-                    Digital Marketing is for everyone. Connect with us to know more about Digital
-                    Marketing for your business.
+                  For larger businesses, two key software required are: Enterprise Resource
+                  Planning Software (ERP) and Customer Relationship Management Software (CRM).
+                  ERP facilitates seamless communication across business verticals and CRM
+                  ensures customer engagement and retention.
                 </p>
               </div>
             </div>
@@ -93,26 +90,8 @@ const OutsorucedCTO = () => {
             <div className="col-md-6 align-self-center">
               <div className="tw-web-analytics-content">
                 <div className="section-heading text-center" style={{ marginBottom: '0px' }}>
-                  <h2>Which are the best software for my business?</h2>
+                  <h2>Which technology should I use to develop software for my business?</h2>
                   <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
-                </div>
-                <p>
-                  The primary role of software for any business is to automate the processes.
-                  This reduces human efforts and increases efficiency. Moreover,
-                  human errors are eliminated when the tasks are performed by software.
-                  Typically, software requirements vary from business to business and
-                  customised software can be developed specifically tailor-made to meet
-                  your requirements. A lot of times, software readily available can also
-                  be used to get rid of highly mechanical tasks especially like certain
-                  aspects of Accounting, Inventory Management and PoS (Point of Sales).
-                  <br />
-                  For larger businesses, two key software required are: Enterprise Resource
-                  Planning Software (ERP) and Customer Relationship Management Software (CRM).
-                  ERP facilitates seamless communication across business verticals and CRM
-                  ensures customer engagement and retention.
-                </p>
-                <div className="section-heading text-center" style={{ marginBottom: '0px' }}>
-                  <h5>Which technology should I use to develop software for my business?</h5>
                 </div>
                 <p>
                   Technology is constantly evolving and picking the right technology

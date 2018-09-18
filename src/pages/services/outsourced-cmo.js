@@ -41,7 +41,7 @@ const OutsourcedCMO = () => {
                 <h2>How do I increase revenues, profitability and grow my business?</h2>
                 <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
               </div>
-              <div className="tw-features-contact-info">
+              <div className="tw-web-analytics-content">
                 <p>
                     Your answer to the question is our Outsourced CMO service.
                     Outsourced CMO is your Chief Marketing Officer with a team
