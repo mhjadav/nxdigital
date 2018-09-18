@@ -3,14 +3,14 @@ import { Link } from 'gatsby';
 
 import service2Image from '../static/images/icon/feature2.png';
 
-const ServicesList = () => (
+const ServicesList = props => (
   <React.Fragment>
-    <section id="tw-service" className="tw-service" style={{ background: 'rgb(247, 249, 248)' }}>
+    <section id="tw-service" className="tw-service" style={{ background: 'rgb(247, 249, 248)', ...props.style }}>
       <div className="container">
         <div className="row text-center">
           <div className="col section-heading wow fadeInDown">
             <h2>
-                            Other
+                            Our
               {' '}
               <span>Services</span>
             </h2>
@@ -29,13 +29,15 @@ const ServicesList = () => (
               </div>
               {/* Service icon end */}
               <div className="service-content">
-                <h3>App Dev</h3>
+                <h3>
+                  <Link to="/services/app-development/" className="tw-readmore">
+                    App Development
+                  </Link>
+                </h3>
                 <p>
                                     Our App Development services give you:
                   <br />
-                                    App Architecture
-                  <br />
-                                    App Designing
+                                    App Architecture And Designing
                   <br />
                                     UI / UX Designing
                   <br />
@@ -65,7 +67,11 @@ const ServicesList = () => (
               </div>
               {/* Service icon end */}
               <div className="service-content">
-                <h3>Digital Marketing</h3>
+                <h3>
+                  <Link to="/services/digital-marketing/" className="tw-readmore">
+                  Digital Marketing
+                  </Link>
+                </h3>
                 <p>
                                     Our Digital Marketing services that include:
                   <br />
@@ -99,7 +105,11 @@ const ServicesList = () => (
               </div>
               {/* Service icon end */}
               <div className="service-content">
-                <h3>Website Development</h3>
+                <h3>
+                  <Link to="/services/website-development/" className="tw-readmore">
+                  Website Development
+                  </Link>
+                </h3>
                 <p>
                                     We design and deliver websites which are:
                   <br />
@@ -133,7 +143,11 @@ const ServicesList = () => (
               </div>
               {/* Service icon end */}
               <div className="service-content">
-                <h3>Outsourced CMO</h3>
+                <h3>
+                  <Link to="/services/outsourced-cmo/" className="tw-readmore">
+                    Outsourced CMO
+                  </Link>
+                </h3>
                 <p>
                                     Our Outsourced CMO services comprise:
                   <br />
@@ -170,7 +184,11 @@ const ServicesList = () => (
               </div>
               {/* Service icon end */}
               <div className="service-content">
-                <h3>Outsourced CTO</h3>
+                <h3>
+                  <Link to="/services/outsourced-cto/" className="tw-readmore">
+                    Outsourced CTO
+                  </Link>
+                </h3>
                 <p>
                                     Our Outsourced CTO Services offer you:
                   <br />
@@ -186,7 +204,7 @@ const ServicesList = () => (
                   <br />
                                     Developing your own Tech Products
                   <br />
-                                    Support and Upgrades on existing Software
+                                    Upgrades on existing Software
                   <Link to="/services/outsourced-cto/" className="tw-readmore">
                     <i className="fa fa-angle-right" />
                   </Link>

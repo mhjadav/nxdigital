@@ -44,13 +44,18 @@ module.exports = {
             type: 'image/png',
           },
           {
+            src: '/images/favicon144.png',
+            sizes: '144x144',
+            type: 'image/png',
+          },
+          {
             src: '/images/favicon192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/images/favicon512.png',
-            sizes: '512x512',
+            src: '/images/favicon250.png',
+            sizes: '250x250',
             type: 'image/png',
           },
         ],
@@ -67,19 +72,19 @@ module.exports = {
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        baseUrl: 'mojaave.wordpress.com',
+        baseUrl: 'nxdigital.wordpress.com',
         protocol: 'https',
         hostingWPCOM: true,
         useACF: false,
         auth: {
-          wpcom_app_clientSecret: '7foQK5YEiqNVGsMh9D9LQ8RqppEwlYHubpqwUG3sMt1GJzxRb3NrgMfKVZovuhO2',
-          wpcom_app_clientId: '63190',
+          wpcom_app_clientSecret: 'KZnK4vU17bSOpzYk6bLy3W7jpcFAGIf32apBDpkKzZNAqcQ0XXiLOBPLTYf1zanb',
+          wpcom_app_clientId: '63220',
           wpcom_user: process.env.WORDPRESS_U,
           wpcom_pass: process.env.WORDPRESS_P,
         },
         verboseOutput: false,
         searchAndReplaceContentUrls: {
-          sourceUrl: 'https://mojaave.wordpress.com',
+          sourceUrl: 'https://nxdigital.wordpress.com',
           replacementUrl: 'https://nxdigital.com.au',
         },
       },

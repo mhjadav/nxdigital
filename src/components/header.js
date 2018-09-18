@@ -42,8 +42,8 @@ const Header = () => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/services/app-dev/">
-                                    App Dev
+                    <Link to="/services/app-development/">
+                    App Development
                     </Link>
                   </li>
                   <li>
@@ -65,7 +65,7 @@ const Header = () => (
               </li>
               <li className="nav-item">
                 <Link to="/career/" className="nav-link">
-                                Career
+                                Careers
                 </Link>
               </li>
               <li className="nav-item">
@@ -75,7 +75,7 @@ const Header = () => (
               </li>
               <li className="nav-item">
                 <Link to="/contact/" className="nav-link">
-                                Marketing & Contact
+                                Contact
                 </Link>
               </li>
             </ul>

@@ -2,10 +2,11 @@ import React from 'react';
 import Layout from '../../components/layout';
 import ServicesList from '../../components/services-list';
 import ContactForm from '../../components/contact-form';
+import { pageMetaInfo } from '../../../site-config';
 
 import serviceImage2 from '../../static/images/services/single_service_img2.png';
 
-const WebsiteDevelopment = () => {
+const OutsorucedCTO = () => {
   const fields = {
     name: true,
     email: true,
@@ -14,7 +15,7 @@ const WebsiteDevelopment = () => {
     request: true,
   };
   return (
-    <Layout>
+    <Layout seoDescription={pageMetaInfo.outsorucedCTO.description}>
       <div id="banner-area" className="banner-area bg-overlay case-bg-overlay">
         <div className="container">
           <div className="row">
@@ -92,29 +93,42 @@ const WebsiteDevelopment = () => {
             <div className="col-md-6 align-self-center">
               <div className="tw-web-analytics-content">
                 <div className="section-heading text-center" style={{ marginBottom: '0px' }}>
-                  <h2>How can I do Digital Marketing for my business?</h2>
+                  <h2>Which are the best software for my business?</h2>
                   <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
                 </div>
                 <p>
-                    There are two main approaches to Digital Marketing :
+                  The primary role of software for any business is to automate the processes.
+                  This reduces human efforts and increases efficiency. Moreover,
+                  human errors are eliminated when the tasks are performed by software.
+                  Typically, software requirements vary from business to business and
+                  customised software can be developed specifically tailor-made to meet
+                  your requirements. A lot of times, software readily available can also
+                  be used to get rid of highly mechanical tasks especially like certain
+                  aspects of Accounting, Inventory Management and PoS (Point of Sales).
                   <br />
-                    1. Organic (Long-term gains)
+                  For larger businesses, two key software required are: Enterprise Resource
+                  Planning Software (ERP) and Customer Relationship Management Software (CRM).
+                  ERP facilitates seamless communication across business verticals and CRM
+                  ensures customer engagement and retention.
+                </p>
+                <div className="section-heading text-center" style={{ marginBottom: '0px' }}>
+                  <h5>Which technology should I use to develop software for my business?</h5>
+                </div>
+                <p>
+                  Technology is constantly evolving and picking the right technology
+                  to develop your software is quite a challenge. There are several
+                  factors to be considered while selecting the right technology.
+                  Some of these factors include security, costs, advantages,
+                  disadvantages, licensing fees, downtime tolerance etc.
                   <br />
-                    2. Paid (Short-term gains)
-                  <br />
-                    SEO (Search Engine Optimisation), link-building, blogging,
-                    updating the website with relevant content and
-                    several other activities are required for growing your reach organically.
-                  <br />
-                    SEM (Search Engine Marketing), SMM (Social Media Marketing),
-                    Search and Display Ads on LinkedIn and several other activities
-                    comprise the Paid Approach.
-                  <br />
-                    Understand in more depth how a Digital Marketing Campaign
-                    can be designed for your business.
+                  We at Nx Digital offer outsourced CTO services in which
+                  we bring an expertise in various technologies to the table.
+                  We offer consultation and understand your requirements thoroughly
+                  which helps you not just chose the right technology,
+                  but develop the software end-to-end and the provide training
+                  and support in case of any issues
                   <a href="#services-form-section" className="tw-readmore">
-                    Book A Free Consultation Session Or Request A Call-back
-                    <i className="fa fa-angle-right" />
+                  Book A Complimentary Consultation or Request a Call-back
                   </a>
                 </p>
               </div>
@@ -164,4 +178,4 @@ const WebsiteDevelopment = () => {
   );
 };
 
-export default WebsiteDevelopment;
+export default OutsorucedCTO;

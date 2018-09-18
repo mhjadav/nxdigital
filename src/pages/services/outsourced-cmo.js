@@ -2,10 +2,11 @@ import React from 'react';
 import Layout from '../../components/layout';
 import ServicesList from '../../components/services-list';
 import ContactForm from '../../components/contact-form';
+import { pageMetaInfo } from '../../../site-config';
 
 import serviceImage2 from '../../static/images/services/single_service_img2.png';
 
-const WebsiteDevelopment = () => {
+const OutsourcedCMO = () => {
   const fields = {
     name: true,
     email: true,
@@ -14,7 +15,7 @@ const WebsiteDevelopment = () => {
     request: true,
   };
   return (
-    <Layout>
+    <Layout seoDescription={pageMetaInfo.outsourcedCMO.description}>
       <div id="banner-area" className="banner-area bg-overlay case-bg-overlay">
         <div className="container">
           <div className="row">
@@ -95,29 +96,25 @@ const WebsiteDevelopment = () => {
             <div className="col-md-6 align-self-center">
               <div className="tw-web-analytics-content">
                 <div className="section-heading text-center" style={{ marginBottom: '0px' }}>
-                  <h2>How can I do Digital Marketing for my business?</h2>
+                  <h2>How do I make a Marketing Strategy for my business?</h2>
                   <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
                 </div>
                 <p>
-                    There are two main approaches to Digital Marketing :
+                Digital Marketing strategies varies across categories and across businesses.
+                Each business requires it's own Digital Marketing Strategy.
+                Ideally, to start with, you need to have your objectives clearly defined.
+                Once you have identified the value proposition for your prospects and the
+                communication strategy defined, you can start with the execution part.
+                In terms of execution, you need to create a Landing Page or a Web Page
+                with appropriate lead capturing mechanism. Once done, the objective is
+                then to get and consistently bring the relevant users to the page.
+                The interested users can get in touch with you and you can now start
+                engaging with the users.
                   <br />
-                    1. Organic (Long-term gains)
-                  <br />
-                    2. Paid (Short-term gains)
-                  <br />
-                    SEO (Search Engine Optimisation), link-building, blogging,
-                    updating the website with relevant content and several
-                    other activities are required for growing your reach organically.
-                  <br />
-                    SEM (Search Engine Marketing), SMM (Social Media Marketing),
-                    Search and Display Ads on LinkedIn and several other activities
-                    comprise the Paid Approach.
-                  <br />
-                    Understand in more depth how a Digital Marketing
-                    Campaign can be designed for your business.
+                  Learn more on how Nx Digital provides Outsourced CMO services
+                  so that businesses can engage with their users seamlessly:
                   <a href="#services-form-section" className="tw-readmore">
                     Book A Complimentary Consultation or Request a Call-back
-                    <i className="fa fa-angle-right" />
                   </a>
                 </p>
               </div>
@@ -167,4 +164,4 @@ const WebsiteDevelopment = () => {
   );
 };
 
-export default WebsiteDevelopment;
+export default OutsourcedCMO;

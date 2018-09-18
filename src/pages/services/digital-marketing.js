@@ -2,10 +2,11 @@ import React from 'react';
 import Layout from '../../components/layout';
 import ServicesList from '../../components/services-list';
 import ContactForm from '../../components/contact-form';
+import { pageMetaInfo } from '../../../site-config';
 
 import serviceImage2 from '../../static/images/services/single_service_img2.png';
 
-const WebsiteDevelopment = () => {
+const DigitalMarketing = () => {
   const fields = {
     name: true,
     email: true,
@@ -14,7 +15,7 @@ const WebsiteDevelopment = () => {
     request: true,
   };
   return (
-    <Layout>
+    <Layout seoDescription={pageMetaInfo.digitalMarketing.description}>
       <div id="banner-area" className="banner-area bg-overlay case-bg-overlay">
         <div className="container">
           <div className="row">
@@ -42,7 +43,7 @@ const WebsiteDevelopment = () => {
               </div>
               <div className="tw-features-contact-info">
                 <p>
-                    Digital Marketing let&apos;s you define your target audience very precisely.
+                    Digital Marketing lets you define your target audience very precisely.
                 </p>
                 <p>
                     You can run your search engine or social media campaigns
@@ -166,4 +167,4 @@ const WebsiteDevelopment = () => {
   );
 };
 
-export default WebsiteDevelopment;
+export default DigitalMarketing;

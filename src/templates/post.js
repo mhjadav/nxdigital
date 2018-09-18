@@ -44,12 +44,14 @@ const PostTemplate = (props) => {
             <div className="col-lg-12 col-md-12">
               <div className="post-content post-single">
                 <div className="post-media post-image">
+                  { post.featured_media && (
                   <Img
                     src={post.featured_media.localFile.childImageSharp.sizes.src}
                     sizes={post.featured_media.localFile.childImageSharp.sizes}
                     className="img-fluid"
                     alt={post.title}
                   />
+                  )}
                 </div>
                 {/* End Post Media */}
                 <div className="post-body">
@@ -79,7 +81,7 @@ const PostTemplate = (props) => {
                     {/* End Post Meta */}
                   </div>
                   {/* header end */}
-                  <div className="entry-content" dangerouslySetInnerHTML={{ __html: post.content }} />
+                  <div className="entry-content" style={{ '-webkit-box-orient': 'vertical' }} dangerouslySetInnerHTML={{ __html: post.content }} />
                   {/* End Entry Content */}
                   <div className="post-footer clearfix">
                     <div className="post-tags pull-left">
@@ -131,7 +133,10 @@ const PostTemplate = (props) => {
 };
 
 PostTemplate.propTypes = {
-  data: PropTypes.shape(PropTypes.object).isRequired,
+  data: PropTypes.shape(PropTypes.object),
+};
+PostTemplate.defaultProps = {
+  data: {},
 };
 
 export default PostTemplate;

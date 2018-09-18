@@ -82,7 +82,7 @@ class Career extends Component {
                 <div className="col-sm-12">
                   <div className="banner-heading">
                     <h1 className="banner-title">
-                                      Career
+                                      Careers
                     </h1>
                   </div>
                 </div>
@@ -99,7 +99,6 @@ class Career extends Component {
                 <div className="col text-center">
                   <div className="section-heading">
                     <h2>
-                      <small>The Beginning</small>
                               We are
                       {' '}
                       <span>hiring</span>

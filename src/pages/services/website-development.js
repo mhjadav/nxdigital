@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../components/layout';
 import ServicesList from '../../components/services-list';
 import ContactForm from '../../components/contact-form';
+import { pageMetaInfo } from '../../../site-config';
 
 import serviceImage2 from '../../static/images/services/single_service_img2.png';
 
@@ -14,7 +15,7 @@ const WebsiteDevelopment = () => {
     request: true,
   };
   return (
-    <Layout>
+    <Layout seoDescription={pageMetaInfo.websiteDevelopment.description}>
       <div id="banner-area" className="banner-area bg-overlay case-bg-overlay">
         <div className="container">
           <div className="row">
@@ -94,26 +95,37 @@ const WebsiteDevelopment = () => {
             <div className="col-md-6 align-self-center">
               <div className="tw-web-analytics-content">
                 <div className="section-heading text-center" style={{ marginBottom: '0px' }}>
-                  <h2>How should I develop a website for my business?</h2>
+                  <h2>How do I make my website look attractive?</h2>
                   <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
                 </div>
                 <p>
-                    UI/UX Designing plays a vital role here. Our team uses sophisticated tools
-                    like Illustrator, Zeplin and several others to deliver a high quality
-                    experience for the end users. We also have a team of graphic designers to
-                    develop images and other graphic elements required to propel your brand value.
-                    To sum it up, we provide:
+                    UI/UX Designing plays a vital role here. Using sophisticated tools
+                    like Illustrator, Zeplin etc, a high quality experience for the end
+                    users can be achieved. Graphic designing may be required to sketch
+                    images and other graphic elements required to propel your brand value.
+                    Elegant colours, clear fonts and the overall look and feel along with
+                    a compliance to brand elements is what brings out the best in a website.
                   <br />
+                    You can always reach out to Nx Digital for your Website Designing
+                    Requirements like:
+                  <ul>
+                    <li>
                     1. Graphic Designing
-                  <a href="#services-form-section" className="tw-readmore">
-                    <i className="fa fa-angle-right" />
-                  </a>
-                  <br />
+                      <a href="#services-form-section" className="tw-readmore">
+                        <i className="fa fa-angle-right" />
+                      </a>
+                    </li>
+                    <li>
                     2. UI / UX Designing
+                      <a href="#services-form-section" className="tw-readmore">
+                        <i className="fa fa-angle-right" />
+                      </a>
+                    </li>
+                  </ul>
+                  and much more...
                   <a href="#services-form-section" className="tw-readmore">
-                    <i className="fa fa-angle-right" />
+                    Book A Complimentary Consultation or Request a Call-back
                   </a>
-
                 </p>
               </div>
               {/* Analytics Content End */}

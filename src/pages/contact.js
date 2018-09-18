@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import ContactForm from '../components/contact-form';
 
@@ -14,7 +15,7 @@ const Contact = () => (
           <div className="col-sm-12">
             <div className="banner-heading">
               <h1 className="banner-title">
-                                    Marketing & Contact
+                                    Contact
               </h1>
             </div>
           </div>
@@ -68,10 +69,17 @@ const Contact = () => (
                 <p>Nx Digital</p>
                 <p>Level 23, HWT Tower</p>
                 <p>40 City Road, Southbank VIC 3006</p>
-                <i className="fa fa-phone" />
-                <p>+61 433 756 552</p>
-                <i className="fa fa-envelope" />
-                <p>connect@nxdigital.com.au</p>
+                <Link to="tel:+61433756552">
+                  <i className="fa fa-phone" />
+                  <p>
+                  +61 433 756 552
+
+                  </p>
+                </Link>
+                <Link to="mailto:connect@nxdigital.com.au">
+                  <i className="fa fa-envelope" />
+                  <p>connect@nxdigital.com.au</p>
+                </Link>
               </div>
               {/* End content info box */}
             </div>

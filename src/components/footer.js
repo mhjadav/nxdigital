@@ -10,7 +10,9 @@ const Footer = () => (
             <div className="col-md-5">
               <div className="contact-us">
                 <div className="contact-icon">
-                  <i className="icon icon-map2" />
+                  <a target="_blank" href="https://www.google.com/maps?ll=-37.821005,144.966737&z=16&t=m&hl=en-US&gl=IN&mapclient=embed&cid=16342563361171998924">
+                    <i className="icon icon-map2" />
+                  </a>
                 </div>
                 {/* End contact Icon */}
                 <div className="contact-info">
@@ -26,23 +28,35 @@ const Footer = () => (
             <div className="col-md-3">
               <div className="contact-us contact-us-last">
                 <div className="contact-icon">
-                  <i className="icon icon-phone3" />
+                  <Link to="tel:+61433756552">
+                    <i className="icon icon-phone3" />
+                  </Link>
                 </div>
                 {/* End contact Icon */}
                 <div className="contact-info">
-                  <h3>+61 433 756 552</h3>
-                  <p>Give us a call</p>
+                  <Link to="tel:+61433756552">
+                    <h3>
+                  +61 433 756 552
+                    </h3>
+                    <p>Give us a call</p>
+                  </Link>
                 </div>
               </div>
               {/* End Contact Us */}
               <div className="contact-us contact-us-last">
                 <div className="contact-icon">
-                  <i className="icon icon-envelope3" />
+                  <Link to="mailto:connect@nxdigital.com.au">
+                    <i className="icon icon-envelope3" />
+                  </Link>
                 </div>
                 {/* End contact Icon */}
                 <div className="contact-info">
-                  <h3>connect@nxdigital.com.au</h3>
-                  <p>Send us a email</p>
+                  <Link to="mailto:connect@nxdigital.com.au">
+                    <h3>
+                        connect@nxdigital.com.au
+                    </h3>
+                    <p>Send us an email</p>
+                  </Link>
                 </div>
               </div>
               {/* End Contact Us */}
@@ -87,8 +101,8 @@ const Footer = () => (
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about/" className="nav-link">
-                                About
+                  <Link to="/career/" className="nav-link">
+                    Careers
                   </Link>
                 </li>
                 <li>
@@ -98,7 +112,7 @@ const Footer = () => (
                 </li>
                 <li>
                   <Link to="/contact/" className="nav-link">
-                                Marketing And Contact
+                                Contact
                   </Link>
                 </li>
               </ul>

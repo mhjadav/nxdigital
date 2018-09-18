@@ -2,10 +2,11 @@ import React from 'react';
 import Layout from '../../components/layout';
 import ServicesList from '../../components/services-list';
 import ContactForm from '../../components/contact-form';
+import { pageMetaInfo } from '../../../site-config';
 
 import serviceImage2 from '../../static/images/services/single_service_img2.png';
 
-const WebsiteDevelopment = () => {
+const AppDevelopment = () => {
   const fields = {
     name: true,
     email: true,
@@ -14,14 +15,14 @@ const WebsiteDevelopment = () => {
     request: true,
   };
   return (
-    <Layout>
+    <Layout seoDescription={pageMetaInfo.appDevelopment.description}>
       <div id="banner-area" className="banner-area bg-overlay case-bg-overlay">
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
               <div className="banner-heading">
                 <h1 className="banner-title">
-                                     App Dev
+                App Development
                 </h1>
               </div>
             </div>
@@ -91,29 +92,35 @@ const WebsiteDevelopment = () => {
             <div className="col-md-6 align-self-center">
               <div className="tw-web-analytics-content">
                 <div className="section-heading text-center" style={{ marginBottom: '0px' }}>
-                  <h2>How can I do Digital Marketing for my business?</h2>
+                  <h2>What are the standard characteristics of an app?</h2>
                   <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
                 </div>
                 <p>
-                    There are two main approaches to Digital Marketing :
+                  An ideal must be designed keeping in mind the purpose it serves for
+                  your end users. Key points to consider while developing an app include:
+
+                  <ul>
+                    <li>
+                    Delivering a rich user experience through UI / UX Designing
+                    </li>
+                    <li>
+                    Ease of navigation so the users do not feel lost in the app
+                    </li>
+                    <li>
+                    Light in weight, so it occupies less storage space on the users' phones
+                    </li>
+                    <li>
+                    Should load fast and should have the right kind of engaging content
+                    </li>
+                    <li>
+                    Should be updated regularly to leverage the OS upgrades and features
+                    </li>
+                  </ul>
+                  Let's connect and talk more about how Nx Digital can help with your
+                  App Development requirements:
                   <br />
-                    1. Organic (Long-term gains)
-                  <br />
-                    2. Paid (Short-term gains)
-                  <br />
-                    SEO (Search Engine Optimisation), link-building, blogging,
-                    updating the website with relevant content and
-                    several other activities are required for growing your reach organically.
-                  <br />
-                    SEM (Search Engine Marketing), SMM (Social Media Marketing),
-                    Search and Display Ads on LinkedIn and several
-                    other activities comprise the Paid Approach.
-                  <br />
-                    Understand in more depth how a Digital Marketing Campaign
-                    can be designed for your business.
                   <a href="#services-form-section" className="tw-readmore">
                     Book A Complimentary Consultation or Request a Call-back
-                    <i className="fa fa-angle-right" />
                   </a>
                 </p>
               </div>
@@ -164,4 +171,4 @@ const WebsiteDevelopment = () => {
   );
 };
 
-export default WebsiteDevelopment;
+export default AppDevelopment;

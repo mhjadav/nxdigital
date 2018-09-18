@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import { pageMetaInfo } from '../../site-config';
+import ServicesList from '../components/services-list';
 
 const About = () => (
-  <Layout>
+  <Layout seoDescription={pageMetaInfo.about.description}>
 
     <div id="banner-area" className="banner-area bg-overlay case-bg-overlay">
       <div className="container">
@@ -154,6 +155,7 @@ const About = () => (
       </div>
       {/* End Container */}
     </section>
+    <ServicesList style={{ background: 'none' }} />
   </Layout>
 
 );

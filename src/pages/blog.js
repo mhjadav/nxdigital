@@ -35,12 +35,14 @@ const Blog = (props) => {
               <div key={node.slug} className="col-lg-4 col-md-12">
                 <div className="tw-latest-post">
                   <div className="latest-post-media text-center">
+                    { node.featured_media && (
                     <Img
                       src={node.featured_media.localFile.childImageSharp.sizes.src}
                       sizes={node.featured_media.localFile.childImageSharp.sizes}
                       alt="blog_image_one"
                       className="img-fluid"
                     />
+                    )}
                   </div>
                   {/* End Latest Post Media */}
                   <div className="post-body">
@@ -71,7 +73,7 @@ const Blog = (props) => {
 
                       </Link>
                       <div className="entry-content" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                      <Link to={`/blog/${node.slug}`} class="tw-readmore">
+                      <Link to={`/blog/${node.slug}`} className="tw-readmore">
 Read More
                         <i className="fa fa-angle-right" />
                       </Link>
@@ -107,17 +109,6 @@ export default Blog;
 
 export const pageQuery = graphql`
   query {
-    allWordpressPage {
-      edges {
-        node {
-          id
-          title
-          excerpt
-          slug
-          date(formatString: "MMMM DD, YYYY")
-        }
-      }
-    }
     allWordpressPost(sort: { fields: [date] }) {
       edges {
         node {
