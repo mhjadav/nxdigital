@@ -62,11 +62,11 @@ class Carousel extends Component {
                             then promoted on Social Media channel LinkedIn and through the Search
                             and Display networks of Google Ads.
                       </p>
-                      <span>
+                      <p>
 The leads flowing through are filtered and the client's sales
                         team then starts meaningful conversations for closure.
 
-                      </span>
+                      </p>
                     </article>
                     <Link to="/contact/" className="tw-readmore">
 Connect with Us
