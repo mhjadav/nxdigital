@@ -5,7 +5,7 @@ module.exports = {
   siteTitle: 'Nx Digital, Your ideal Digital Partner', // Site title.
   siteLogo: `${__dirname}/src/static/images/logo/logo.jpg`,
   siteUrl: 'https://nxdigital.com.au/', // Domain of your website without pathPrefix.
-  siteKeyword: 'nx digital, website development, digital marketing, android application, ios application',
+  siteKeyword: 'Digital Marketing Marketing Agency,Technology Company,Software Development,App Development,Website Development',
   siteDescription: 'Nx Digital is a global digital marketing agency which helps businesses achieve growth and profitability through digital marketing and technology services',
   siteType: 'Portfolio',
   googleAnalyticsID: 'UA-125818366-1', // GA tracking ID.

@@ -9,6 +9,7 @@ import {
   siteDescription,
   siteUrl,
   siteType,
+  siteKeyword,
 } from '../../site-config';
 
 import favicon32 from '../static/images/favicon/favicon32.png';
@@ -28,6 +29,7 @@ const Layout = (props) => {
         title={seoTitle || siteTitle}
         meta={[
           { name: 'description', content: seoDescription || siteDescription },
+          { name: 'keyword', content: siteKeyword },
           { property: 'og:url', content: seoUrl || siteUrl },
           { property: 'og:image', content: siteUrl + ogImage },
           { property: 'og:title', content: seoTitle || siteTitle },
