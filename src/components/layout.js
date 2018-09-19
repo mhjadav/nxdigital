@@ -28,6 +28,7 @@ const Layout = (props) => {
       <Helmet
         title={seoTitle || siteTitle}
         meta={[
+          { name: 'google-site-verification', content: '53nJ_FsnXEFbKwP_vR78lkTyAkVN-3i7546mBTJ57u4' },
           { name: 'description', content: seoDescription || siteDescription },
           { name: 'keyword', content: siteKeyword },
           { property: 'og:url', content: seoUrl || siteUrl },
