@@ -43,7 +43,7 @@ module.exports = {
   currentOpenings: [
     {
       title: 'Web Designer and Developer',
-      description: 'Nx Digital offers end to end Digital Marketing and Technology services to businesses world wide. 
+      description: `Nx Digital offers end to end Digital Marketing and Technology services to businesses world wide. 
       
 Job Summary:
 
@@ -67,7 +67,7 @@ Be adaptable and able to pick up new techniques
 Have good interpersonal and communication skills
 Keep up to date with advances in computer technology and how this affects the business environment
       
-If you enjoy these things, do apply',
+If you enjoy these things, do apply`,
       
     },
     
