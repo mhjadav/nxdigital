@@ -43,46 +43,17 @@ module.exports = {
   currentOpenings: [
     {
       title: 'Web Designer and Developer',
-      description: `Nx Digital offers end to end Digital Marketing and Technology services to businesses world wide. 
-      
-Job Summary:
-
-A web designer / developer is responsible for designing, layout and coding of a website. They are involved with the technical and graphical aspects of a website - how the site works and how it looks. They can also be involved with the maintenance and updation of an existing site.
-
-Responsibilities and Duties:
-
-After establishing the target audience for a website and identifying the type of content it will host, a web designer / developer will:
-
-Write the programming code, either from scratch or by adapting existing website software and graphics packages to meet business requirements
-Test the website and identify any technical problems
-Upload the site onto a server and register it with different search engines.
-
-Required Experience, Skills and Qualifications:
-
-The applicant must have 2 years of minimum and relevant work experience.
-
-Skills in software programming and graphics
-Have creativity and imagination
-Be adaptable and able to pick up new techniques
-Have good interpersonal and communication skills
-Keep up to date with advances in computer technology and how this affects the business environment
-      
-If you enjoy these things, do apply`,
-      
+      summary: 'A web designer / developer is responsible for designing, layout and coding of a website. They are involved with the technical and graphical aspects of a website - how the site works and how it looks. They can also be involved with the maintenance and updation of an existing site.',
+      responsibilities: {
+        description: 'After establishing the target audience for a website and identifying the type of content it will host, a web designer / developer will:',
+        duties: [
+          'Write the programming code, either from scratch or by adapting existing website software and graphics packages to meet business requirements',
+          'Test the website and identify any technical problems',
+          'Upload the site onto a server and register it with different search engines.',
+        ],
+        footer: 'If you enjoy these things, do apply',
+      },
     },
-    
-   /* {
-      title: 'Front End Engineer',
-      description: 'We offer end to end digital marketing and technology services to our clients world wide, We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide',
-    },
-    {
-      title: 'UX Designer',
-      description: 'We offer end to end digital marketing and technology services to our clients world wide, We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide',
-    },
-    {
-      title: 'Senior UI Engineer',
-      description: 'We offer end to end digital marketing and technology services to our clients world wide, We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide We offer end to end digital marketing and technology services to our clients world wide',
-    },*/
   ],
   MAC: {},
 };

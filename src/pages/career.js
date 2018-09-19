@@ -198,7 +198,18 @@ class Career extends Component {
                                      {/* header end */}
                                      <div className="entry-content">
                                        <p>
-                                         {job.description}
+                                         {job.summary}
+                                       </p>
+                                       <p>
+                                         {job.responsibilities.description}
+                                       </p>
+                                       <ul>
+                                         {
+                                           job.responsibilities.duties.map(duty => <li>{duty}</li>)
+                                         }
+                                       </ul>
+                                       <p>
+                                         {job.responsibilities.footer}
                                        </p>
                                      </div>
                                      {/* End Entry Content */}
