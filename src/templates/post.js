@@ -94,11 +94,14 @@ const PostTemplate = (props) => {
                     <div className="share-items pull-right">
                       <ul className="post-social-icons unstyled">
                         <li><strong>Share: </strong></li>
-                        <li><a href="#facebook"><i className="fa fa-facebook" /></a></li>
+                        <li><a href="https://www.facebook.com/OptimusDM.India"><i className="fa fa-facebook" /></a></li>
+                        <li><a href="https://twitter.com/realOptimusDM"><i className="fa fa-twitter" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/optimus-dm/"><i className="fa fa-linkedin" /></a></li>
+                        {/* <li><a href="#facebook"><i className="fa fa-facebook" /></a></li>
                         <li><a href="#twitter"><i className="fa fa-twitter" /></a></li>
                         <li><a href="#google"><i className="fa fa-google-plus" /></a></li>
                         <li><a href="#linkedin"><i className="fa fa-linkedin" /></a></li>
-                        <li><a href="#instagram"><i className="fa fa-instagram" /></a></li>
+                        <li><a href="#instagram"><i className="fa fa-instagram" /></a></li> */}
                       </ul>
                     </div>
                     {/* Share items end */}
