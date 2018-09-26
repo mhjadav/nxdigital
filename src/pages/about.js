@@ -33,7 +33,7 @@ const About = () => (
                             We are Optimus DM and we aim to be your ideal digital partners.
               </p>
               <p>
-                            Growth and Profitability are at heart of all businesses, and we help businesses achieve that. Nx aims to deliver 2x, 5x, 10x and eventually, Nx growth to businesses through our Technology, Digital Transformation and Strategy expertise.
+                            Growth and Profitability are at heart of all businesses, and we help businesses achieve that. Optimus DM aims to deliver 2x, 5x, 10x and eventually, consistent exponential growth to businesses through our Technology, Digital Transformation and Strategy expertise.
                 {' '}
 
               </p>
