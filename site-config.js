@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   name: 'Nx-Digital',
-  siteTitle: 'Nx Digital, Your ideal Digital Partner', // Site title.
+  siteTitle: 'Nx Digital - Digital Marketing and Technology', // Site title.
   siteLogo: `${__dirname}/src/static/images/logo/logo.jpg`,
   siteUrl: 'https://nxdigital.com.au/', // Domain of your website without pathPrefix.
   siteKeyword: 'Digital Marketing Marketing Agency,Technology Company,Software Development,App Development,Website Development',

@@ -67,11 +67,12 @@ const Footer = () => (
                 <div className="footer-social-link">
                   <h3>Follow us</h3>
                   <ul>
-                    <li><a href="#facebook"><i className="fa fa-facebook" /></a></li>
-                    <li><a href="#twitter"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.facebook.com/NxDigitalMarketing"><i className="fa fa-facebook" /></a></li>
+                    <li><a href="https://www.linkedin.com/company/nx-digitalmarketing/"><i className="fa fa-linkedin" /></a></li>
+
+                    {/* <li><a href="#twitter"><i className="fa fa-twitter" /></a></li>
                     <li><a href="#google"><i className="fa fa-google-plus" /></a></li>
-                    <li><a href="#linkedin"><i className="fa fa-linkedin" /></a></li>
-                    <li><a href="#instagram"><i className="fa fa-instagram" /></a></li>
+                     <li><a href="#instagram"><i className="fa fa-instagram" /></a></li> */}
                   </ul>
                 </div>
                 {/* End Social link */}
