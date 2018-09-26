@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   name: 'OptimusDM',
-  siteTitle: 'Optimus DM, Your ideal Digital Partner', // Site title.
+  siteTitle: 'Optimus DM - Digital Marketing and Technology', // Site title.
   siteLogo: `${__dirname}/src/static/images/logo/logo.jpg`,
   siteUrl: 'https://www.optimusdm.in/', // Domain of your website without pathPrefix.
   siteKeyword: 'Digital Marketing Marketing Agency,Technology Company,Software Development,App Development,Website Development',
