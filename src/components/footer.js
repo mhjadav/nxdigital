@@ -10,15 +10,17 @@ const Footer = () => (
             <div className="col-md-5">
               <div className="contact-us">
                 <div className="contact-icon">
-                  <a target="_blank" href="https://www.google.com/maps?ll=-37.821005,144.966737&z=16&t=m&hl=en-US&gl=IN&mapclient=embed&cid=16342563361171998924">
+                  <a target="_blank" href="https://goo.gl/maps/NSFMHDBpUdB2">
                     <i className="icon icon-map2" />
                   </a>
                 </div>
                 {/* End contact Icon */}
                 <div className="contact-info">
-                  <h3>Melbourne, Australia</h3>
-                  <p>Level 23, HWT Tower</p>
-                  <p>40 City Road, Southbank VIC 3006</p>
+                  
+                  <h3>Optimus DM,</h3>
+                  <p>11th floor, Earth Arise, </p>
+                  <p>Beside YMCA, Sarkhej - Gandhinagar Hwy</p>
+                  <p>Ahmedabad, Gujarat 380015</p>
                 </div>
                 {/* End Contact Info */}
               </div>
@@ -28,15 +30,15 @@ const Footer = () => (
             <div className="col-md-3">
               <div className="contact-us contact-us-last">
                 <div className="contact-icon">
-                  <Link to="tel:+61433756552">
+                  <Link to="tel:+919152009066">
                     <i className="icon icon-phone3" />
                   </Link>
                 </div>
                 {/* End contact Icon */}
                 <div className="contact-info">
-                  <Link to="tel:+61433756552">
+                  <Link to="tel:+919152009066">
                     <h3>
-                  +61 433 756 552
+                    (+91)9152009066
                     </h3>
                     <p>Give us a call</p>
                   </Link>
@@ -45,15 +47,15 @@ const Footer = () => (
               {/* End Contact Us */}
               <div className="contact-us contact-us-last">
                 <div className="contact-icon">
-                  <Link to="mailto:connect@nxdigital.com.au">
+                  <Link to="mailto:ruchir@optimusdm.in">
                     <i className="icon icon-envelope3" />
                   </Link>
                 </div>
                 {/* End contact Icon */}
                 <div className="contact-info">
-                  <Link to="mailto:connect@nxdigital.com.au">
+                  <Link to="mailto:ruchir@optimusdm.in">
                     <h3>
-                        connect@nxdigital.com.au
+                    ruchir@optimusdm.in
                     </h3>
                     <p>Send us an email</p>
                   </Link>
@@ -67,11 +69,9 @@ const Footer = () => (
                 <div className="footer-social-link">
                   <h3>Follow us</h3>
                   <ul>
-                    <li><a href="#facebook"><i className="fa fa-facebook" /></a></li>
-                    <li><a href="#twitter"><i className="fa fa-twitter" /></a></li>
-                    <li><a href="#google"><i className="fa fa-google-plus" /></a></li>
-                    <li><a href="#linkedin"><i className="fa fa-linkedin" /></a></li>
-                    <li><a href="#instagram"><i className="fa fa-instagram" /></a></li>
+                    <li><a href="https://www.facebook.com/OptimusDM.India"><i className="fa fa-facebook" /></a></li>
+                    <li><a href="https://twitter.com/realOptimusDM"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/company/optimus-dm/"><i className="fa fa-linkedin" /></a></li>
                   </ul>
                 </div>
                 {/* End Social link */}
@@ -89,7 +89,7 @@ const Footer = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <span>Copyright © 2018, All Right Reserved Nx Digital</span>
+            <span>Copyright © 2018, All Right Reserved Optimus DM</span>
           </div>
           {/* End Col */}
           <div className="col-md-6">

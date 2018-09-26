@@ -85,7 +85,7 @@ module.exports = {
         verboseOutput: false,
         searchAndReplaceContentUrls: {
           sourceUrl: 'https://nxdigital.wordpress.com',
-          replacementUrl: 'https://nxdigital.com.au',
+          replacementUrl: 'https://www.optimusdm.in',
         },
       },
     },

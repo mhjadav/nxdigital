@@ -30,7 +30,7 @@ const About = () => (
           <div className="col text-center">
             <div className="section-heading" style={{ marginBottom: '0px' }}>
               <p>
-                            We are Nx Digital and we aim to be your ideal digital partners.
+                            We are Optimus DM and we aim to be your ideal digital partners.
               </p>
               <p>
                             Growth and Profitability are at heart of all businesses, and we help businesses achieve that. Nx aims to deliver 2x, 5x, 10x and eventually, Nx growth to businesses through our Technology, Digital Transformation and Strategy expertise.

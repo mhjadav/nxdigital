@@ -100,7 +100,7 @@ const OutsorucedCTO = () => {
                   Some of these factors include security, costs, advantages,
                   disadvantages, licensing fees, downtime tolerance etc.
                   <br />
-                  We at Nx Digital offer outsourced CTO services in which
+                  We at Optimus DM offer outsourced CTO services in which
                   we bring an expertise in various technologies to the table.
                   We offer consultation and understand your requirements thoroughly
                   which helps you not just chose the right technology,

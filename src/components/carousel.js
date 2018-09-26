@@ -33,7 +33,7 @@ class Carousel extends Component {
                     <div className="col-md-6">
                       <div className="slider-content slider-content-dark">
                         <h1>
-                          <span> Nx Digital </span>
+                          <span> Optimus DM </span>
                           <br />
                           <small style={{ fontSize: '75%' }}>Your ideal digital partner</small>
                         </h1>

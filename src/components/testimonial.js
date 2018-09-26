@@ -87,7 +87,7 @@ Connect with Us
                       </p>
                       <p>
                         Now, Nainorita only focuses on their core business of Fashion
-                        Designing and production while Nx Digital takes care of their
+                        Designing and production while Optimus DM takes care of their
                         Digital Marketing requirements. This includes Digital Marketing
                         as well as a Go-To-Market Strategy for their brands.
                         Not only this, we will also provide the necessary IT Infrastructure

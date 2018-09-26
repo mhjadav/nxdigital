@@ -60,25 +60,24 @@ const Contact = () => (
             <div className="tw-contact-box">
               <div className="contact-heading">
                 <img src={place1Image} alt="" className="img-fluid" />
-                <h3>Melbourne</h3>
+                <h3>Optimus DM</h3>
               </div>
               {/* End Content Heading */}
 
               <div className="contact-info-box-content">
                 <i className="fa fa-map-marker" />
-                <p>Nx Digital</p>
-                <p>Level 23, HWT Tower</p>
-                <p>40 City Road, Southbank VIC 3006</p>
-                <Link to="tel:+61433756552">
+                <p>11th floor, Earth Arise, </p>
+                <p>Beside YMCA, Sarkhej - Gandhinagar Hwy</p>
+                <p>Ahmedabad, Gujarat 380015</p>
+                <Link to="tel:+919152009066">
                   <i className="fa fa-phone" />
                   <p>
-                  +61 433 756 552
-
+                  (+91)9152009066
                   </p>
                 </Link>
-                <Link to="mailto:connect@nxdigital.com.au">
+                <Link to="mailto:ruchir@optimusdm.in">
                   <i className="fa fa-envelope" />
-                  <p>connect@nxdigital.com.au</p>
+                  <p>ruchir@optimusdm.in</p>
                 </Link>
               </div>
               {/* End content info box */}
@@ -88,7 +87,7 @@ const Contact = () => (
           {/* End Col */}
           <div className="col-md-8 col-xs-12">
             <div id="map" className="map">
-              <iframe title="Nx Digital Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.678217130921!2d144.9645478157912!3d-37.821005479751186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b18149340d%3A0xe2cc72ca55f888cc!2sHWT+Tower!5e0!3m2!1sen!2sin!4v1536931843558" width="100%" height="100%" frameBorder={0} style={{ border: 0 }} allowFullScreen />
+              <iframe title="Optimus DM Location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29376.829723275747!2d72.499845!3d23.0199638!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9bfd82333741%3A0x8d1ff139271001d0!2sOptimus+DM!5e0!3m2!1sen!2sin!4v1537937491163" width="100%" height="100%" frameBorder={0} style={{ border: 0 }} allowFullScreen />
             </div>
           </div>
 
