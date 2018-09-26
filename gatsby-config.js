@@ -77,8 +77,8 @@ module.exports = {
         hostingWPCOM: true,
         useACF: false,
         auth: {
-          wpcom_app_clientSecret: process.env.WORDPRESS_CLIENTID,
-          wpcom_app_clientId: process.env.WORDPRESS_SECRET,
+          wpcom_app_clientSecret: process.env.WORDPRESS_SECRET,
+          wpcom_app_clientId: process.env.WORDPRESS_CLIENTID,
           wpcom_user: process.env.WORDPRESS_U,
           wpcom_pass: process.env.WORDPRESS_P,
         },
