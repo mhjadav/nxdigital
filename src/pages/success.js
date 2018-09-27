@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 
-import NotFoundImage from '../static/images/404.png';
+import NotFoundImage from '../static/images/check-seo/announce.png';
 
 const Success = () => {
   const handleGoBackClick = (event) => {
