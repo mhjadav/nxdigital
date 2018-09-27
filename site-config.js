@@ -8,7 +8,7 @@ module.exports = {
   siteKeyword: 'Digital Marketing Marketing Agency,Technology Company,Software Development,App Development,Website Development',
   siteDescription: 'Optimus DM is a global digital marketing agency which helps businesses achieve growth and profitability through digital marketing and technology services',
   siteType: 'Portfolio',
-  googleAnalyticsID: 'UA-125818366-1', // GA tracking ID.
+  googleAnalyticsID: 'UA-115176961-1',
   backgroundColor: '#fff',
   themeColor: '#6AB8EE',
   ogImage: `${__dirname}/src/static/images/logo/logo.jpg`,
