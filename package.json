@@ -47,7 +47,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-manifest": "^2.0.2-beta.5",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-purgecss": "next",
     "gatsby-plugin-robots-txt": "^1.3.0",
