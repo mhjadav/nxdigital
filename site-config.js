@@ -7,11 +7,11 @@ module.exports = {
   siteUrl: 'https://www.optimusdm.in/', // Domain of your website without pathPrefix.
   siteKeyword: 'Digital Marketing Marketing Agency,Technology Company,Software Development,App Development,Website Development',
   siteDescription: 'Optimus DM is a global digital marketing agency which helps businesses achieve growth and profitability through digital marketing and technology services',
-  siteType: 'Portfolio',
+  siteType: 'website',
   googleAnalyticsID: 'UA-115176961-1',
   backgroundColor: '#fff',
   themeColor: '#6AB8EE',
-  ogImage: `${__dirname}/src/static/images/logo/logo.jpg`,
+  ogImage: `${__dirname}/src/static/images/favicon/favicon250.png`,
   services: [{
     name: '',
     description: '',
