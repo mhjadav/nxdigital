@@ -13,7 +13,7 @@ const Success = () => {
       <section id="main-container" className="main-container">
         <div className="container">
           <div className="row">
-            <div className="col-6 text-center align-self-center">
+            <div className="col-lg-6 text-center align-self-center">
               <div className="error-page text-center">
                 <div className="error-message">
                   <h3>Thank you for getting in touch!</h3>
@@ -30,7 +30,7 @@ const Success = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 text-right">
+            <div className="col-lg-6 text-center align-self-center mt-4">
               <img className="img-fluid" src={NotFoundImage} alt="" />
             </div>
           </div>
