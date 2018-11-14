@@ -87,7 +87,7 @@ const PostTemplate = (props) => {
                     <div className="post-tags pull-left">
                       <strong>Tags: </strong>
                       {
-                        post.tags && post.tags.map(tag => <Link key={tag.id} to={post.slug}>{tag.name}</Link>)
+                        post.tags && post.tags.map(tag => `${tag.name}, `)
                     }
                     </div>
                     {/* Post tags end */}

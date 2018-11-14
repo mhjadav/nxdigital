@@ -28,15 +28,15 @@ const Footer = () => (
             <div className="col-md-3">
               <div className="contact-us contact-us-last">
                 <div className="contact-icon">
-                  <Link to="tel:+61433756552">
+                  <Link to="tel:+61431860552">
                     <i className="icon icon-phone3" />
                   </Link>
                 </div>
                 {/* End contact Icon */}
                 <div className="contact-info">
-                  <Link to="tel:+61433756552">
+                  <Link to="tel:+61431860552">
                     <h3>
-                  +61 433 756 552
+                    +61 431 860 552
                     </h3>
                     <p>Give us a call</p>
                   </Link>
