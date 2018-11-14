@@ -63,7 +63,8 @@ const PostTemplate = (props) => {
                         <span className="day">{post.date}</span>
                       </span>
                       <span className="post-author">
-                                Posted By
+                                Posted By :
+                        {' '}
                         <a href="#author">
                           {post.author.name}
                         </a>
