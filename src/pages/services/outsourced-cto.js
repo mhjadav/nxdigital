@@ -161,7 +161,7 @@ export default OutsorucedCTO;
 
 export const query = graphql`
   query {
-    imageSharp(fixed: {originalName: {eq: "cmo.jpeg"}}){
+    imageSharp(fixed: {originalName: {eq: "cto.jpeg"}}){
       fixed(width: 540, height: 300) {
         ...GatsbyImageSharpFixed
       }

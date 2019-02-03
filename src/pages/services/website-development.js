@@ -180,7 +180,7 @@ export default WebsiteDevelopment;
 
 export const query = graphql`
   query {
-    imageSharp(fixed: {originalName: {eq: "cmo.jpeg"}}){
+    imageSharp(fixed: {originalName: {eq: "web-development.jpeg"}}){
       fixed(width: 540, height: 300) {
         ...GatsbyImageSharpFixed
       }
