@@ -4991,7 +4991,7 @@ ul.comments-reply .comment-body {
 }
 
 .analytics-img {
-  margin-bottom: 165px;
+  /* margin-bottom: 165px; */
 }
 
 .tw-web-analytics-content {
@@ -6542,4 +6542,8 @@ h5 span {
 
 #tw-about .features-box span {
   color: #6AB8EE;
+}
+#tw-service .service-icon-inner img {
+  height: 60%;
+  border-radius: 10px;
 }

@@ -1,229 +1,249 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql, StaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 
-import service2Image from '../static/images/icon/feature2.png';
-
-const ServicesList = props => (
-  <React.Fragment>
-    <section id="tw-service" className="tw-service" style={{ background: 'rgb(247, 249, 248)', ...props.style }}>
-      <div className="container">
-        <div className="row text-center">
-          <div className="col section-heading wow fadeInDown">
-            <h2>
+const ServiceList = props => (
+  <StaticQuery
+    query={graphql`
+  query images{
+    allImageSharp(sort: {fields: fixed___originalName}, filter: { fixed:{originalName: { in: ["cmo.jpeg", "web-development.jpeg", "digital-marketing.jpeg", "cto.jpeg", "app-development.jpeg"]} } }){
+      edges{
+        node{
+          fixed(width: 100, height: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  }
+`}
+    render={(data) => {
+      const { allImageSharp: { edges: images } } = data;
+      console.log(images);
+      return (
+        <React.Fragment>
+          <section id="tw-service" className="tw-service" style={{ background: 'rgb(247, 249, 248)', ...props.style }}>
+            <div className="container">
+              <div className="row text-center">
+                <div className="col section-heading wow fadeInDown">
+                  <h2>
                             Our
-              {' '}
-              <span>Services</span>
-            </h2>
-            <span className="animate-border ml-auto mr-auto tw-mt-20" />
-          </div>
-          {/* Title Col End */}
-        </div>
-        {/* Title Row End */}
-        <div className="row">
-          <div className="col-md-4 text-center">
-            <div className="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-              <div className="service-icon service-icon-bg-2 d-table">
-                <div className="service-icon-inner d-table-cell">
-                  <img src={service2Image} alt="search engine" className="img-fluid" />
+                    {' '}
+                    <span>Services</span>
+                  </h2>
+                  <span className="animate-border ml-auto mr-auto tw-mt-20" />
                 </div>
+                {/* Title Col End */}
               </div>
-              {/* Service icon end */}
-              <div className="service-content">
-                <h3>
-                  <Link to="/services/app-development/" className="tw-readmore">
+              {/* Title Row End */}
+              <div className="row">
+                <div className="col-md-4 text-center">
+                  <div className="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div className="service-icon service-icon-bg-2 d-table">
+                      <div className="service-icon-inner d-table-cell">
+                        <Img fixed={images[0].node.fixed} alt="search engine" className="img-fluid" />
+                      </div>
+                    </div>
+                    {/* Service icon end */}
+                    <div className="service-content">
+                      <h3>
+                        <Link to="/services/app-development/" className="tw-readmore">
                     App Development
-                  </Link>
-                </h3>
-                <p>
+                      </Link>
+                      </h3>
+                      <p>
                                     Our App Development services give you:
-                  <br />
+                        <br />
                                     App Architecture And Designing
-                  <br />
+                        <br />
                                     UI / UX Designing
-                  <br />
+                        <br />
                                     User journey on the App
-                  <br />
+                        <br />
                                     iOS and Android Development
-                  <br />
+                        <br />
                                     Hybrid App Development
-                  <br />
+                        <br />
                                     Deployment on App Store and PlayStore
-                  <Link to="/services/app-dev/" className="tw-readmore">
-                    <i className="fa fa-angle-right" />
-                  </Link>
-                </p>
-              </div>
-              {/* Service content end */}
-            </div>
-            {/* Service box End */}
-          </div>
-          {/* Col End */}
-          <div className="col-md-4 text-center">
-            <div className="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-              <div className="service-icon service-icon-bg-2 d-table">
-                <div className="service-icon-inner d-table-cell">
-                  <img src={service2Image} alt="search engine" className="img-fluid" />
+                        <Link to="/services/app-dev/" className="tw-readmore">
+                        <i className="fa fa-angle-right" />
+                      </Link>
+                      </p>
+                    </div>
+                    {/* Service content end */}
+                  </div>
+                  {/* Service box End */}
                 </div>
-              </div>
-              {/* Service icon end */}
-              <div className="service-content">
-                <h3>
-                  <Link to="/services/digital-marketing/" className="tw-readmore">
+                {/* Col End */}
+                <div className="col-md-4 text-center">
+                  <div className="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div className="service-icon service-icon-bg-2 d-table">
+                      <div className="service-icon-inner d-table-cell">
+                        <Img fixed={images[3].node.fixed} alt="search engine" className="img-fluid" />
+                      </div>
+                    </div>
+                    {/* Service icon end */}
+                    <div className="service-content">
+                      <h3>
+                        <Link to="/services/digital-marketing/" className="tw-readmore">
                   Digital Marketing
-                  </Link>
-                </h3>
-                <p>
+                      </Link>
+                      </h3>
+                      <p>
                                     Our Digital Marketing services that include:
-                  <br />
+                        <br />
                                     SEO (Search Engine Optimisation) Services
-                  <br />
+                        <br />
                                     SEM (Search Engines Marketing) Services
-                  <br />
+                        <br />
                                     SMM (Social Media Marketing) Services
-                  <br />
+                        <br />
                                     LinkedIN Marketing
-                  <br />
+                        <br />
                                     Blogging and Content Writing
-                  <br />
+                        <br />
                                     Graphic Designing
-                  <Link to="/services/digital-marketing/" className="tw-readmore">
-                    <i className="fa fa-angle-right" />
-                  </Link>
-                </p>
-              </div>
-              {/* Service content end */}
-            </div>
-            {/* Service box End */}
-          </div>
-          {/* Col End */}
-          <div className="col-md-4 text-center">
-            <div className="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-              <div className="service-icon service-icon-bg-2 d-table">
-                <div className="service-icon-inner d-table-cell">
-                  <img src={service2Image} alt="search engine" className="img-fluid" />
+                        <Link to="/services/digital-marketing/" className="tw-readmore">
+                        <i className="fa fa-angle-right" />
+                      </Link>
+                      </p>
+                    </div>
+                    {/* Service content end */}
+                  </div>
+                  {/* Service box End */}
                 </div>
-              </div>
-              {/* Service icon end */}
-              <div className="service-content">
-                <h3>
-                  <Link to="/services/website-development/" className="tw-readmore">
+                {/* Col End */}
+                <div className="col-md-4 text-center">
+                  <div className="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div className="service-icon service-icon-bg-2 d-table">
+                      <div className="service-icon-inner d-table-cell">
+                        <Img fixed={images[4].node.fixed} alt="search engine" className="img-fluid" />
+                      </div>
+                    </div>
+                    {/* Service icon end */}
+                    <div className="service-content">
+                      <h3>
+                        <Link to="/services/website-development/" className="tw-readmore">
                   Website Development
-                  </Link>
-                </h3>
-                <p>
+                      </Link>
+                      </h3>
+                      <p>
                                     We design and deliver websites which are:
-                  <br />
+                        <br />
                                     SEO Friendly
-                  <br />
+                        <br />
                                     Fast
-                  <br />
+                        <br />
                                     Secure
-                  <br />
+                        <br />
                                     Mobile Responsive
-                  <br />
+                        <br />
                                     Rich in terms of UI / UX
-                  <br />
+                        <br />
                                     Resonant with your brand elements
-                  <Link to="/services/website-development/" className="tw-readmore">
-                    <i className="fa fa-angle-right" />
-                  </Link>
-                </p>
-              </div>
-              {/* Service content end */}
-            </div>
-            {/* Service box End */}
-          </div>
-          {/* Col End */}
-          <div className="col-md-4 text-center">
-            <div className="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-              <div className="service-icon service-icon-bg-2 d-table">
-                <div className="service-icon-inner d-table-cell">
-                  <img src={service2Image} alt="search engine" className="img-fluid" />
+                        <Link to="/services/website-development/" className="tw-readmore">
+                        <i className="fa fa-angle-right" />
+                      </Link>
+                      </p>
+                    </div>
+                    {/* Service content end */}
+                  </div>
+                  {/* Service box End */}
                 </div>
-              </div>
-              {/* Service icon end */}
-              <div className="service-content">
-                <h3>
-                  <Link to="/services/outsourced-cmo/" className="tw-readmore">
+                {/* Col End */}
+                <div className="col-md-4 text-center">
+                  <div className="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div className="service-icon service-icon-bg-2 d-table">
+                      <div className="service-icon-inner d-table-cell">
+                        <Img fixed={images[1].node.fixed} alt="search engine" className="img-fluid" />
+                      </div>
+                    </div>
+                    {/* Service icon end */}
+                    <div className="service-content">
+                      <h3>
+                        <Link to="/services/outsourced-cmo/" className="tw-readmore">
                     Outsourced CMO
-                  </Link>
-                </h3>
-                <p>
+                      </Link>
+                      </h3>
+                      <p>
                                     Our Outsourced CMO services comprise:
-                  <br />
+                        <br />
 
                                     Digital Marketing Strategy
-                  <br />
+                        <br />
                                     Brand Building
-                  <br />
+                        <br />
                                     Customized Campaign Creation
-                  <br />
+                        <br />
                                     End-to-End Online Marketing
-                  <br />
+                        <br />
                                     Developing Landing Pages
-                  <br />
+                        <br />
                                     Website Redesigning
-                  <br />
+                        <br />
                                     Delivering on your Marketing goals
-                  <Link to="/services/outsourced-cmo/" className="tw-readmore">
-                    <i className="fa fa-angle-right" />
-                  </Link>
-                </p>
-              </div>
-              {/* Service content end */}
-            </div>
-            {/* Service box End */}
-          </div>
-          {/* Col End */}
-          <div className="col-md-4 text-center">
-            <div className="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-              <div className="service-icon service-icon-bg-2 d-table">
-                <div className="service-icon-inner d-table-cell">
-                  <img src={service2Image} alt="search engine" className="img-fluid" />
+                        <Link to="/services/outsourced-cmo/" className="tw-readmore">
+                        <i className="fa fa-angle-right" />
+                      </Link>
+                      </p>
+                    </div>
+                    {/* Service content end */}
+                  </div>
+                  {/* Service box End */}
                 </div>
-              </div>
-              {/* Service icon end */}
-              <div className="service-content">
-                <h3>
-                  <Link to="/services/outsourced-cto/" className="tw-readmore">
+                {/* Col End */}
+                <div className="col-md-4 text-center">
+                  <div className="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div className="service-icon service-icon-bg-2 d-table">
+                      <div className="service-icon-inner d-table-cell">
+                        <Img fixed={images[2].node.fixed} alt="search engine" className="img-fluid" />
+                      </div>
+                    </div>
+                    {/* Service icon end */}
+                    <div className="service-content">
+                      <h3>
+                        <Link to="/services/outsourced-cto/" className="tw-readmore">
                     Outsourced CTO
-                  </Link>
-                </h3>
-                <p>
+                      </Link>
+                      </h3>
+                      <p>
                                     Our Outsourced CTO Services offer you:
-                  <br />
+                        <br />
                                     Customized Software Development
-                  <br />
+                        <br />
                                     Business Analysis
-                  <br />
+                        <br />
                                     Technology Consultancy
-                  <br />
+                        <br />
                                     Buy versus Build Analysis
-                  <br />
+                        <br />
                                     Process Automation through Technology
-                  <br />
+                        <br />
                                     Developing your own Tech Products
-                  <br />
+                        <br />
                                     Upgrades on existing Software
-                  <Link to="/services/outsourced-cto/" className="tw-readmore">
-                    <i className="fa fa-angle-right" />
-                  </Link>
-                </p>
-              </div>
-              {/* Service content end */}
-            </div>
-            {/* Service box End */}
-          </div>
-          {/* Col End */}
+                        <Link to="/services/outsourced-cto/" className="tw-readmore">
+                        <i className="fa fa-angle-right" />
+                      </Link>
+                      </p>
+                    </div>
+                    {/* Service content end */}
+                  </div>
+                  {/* Service box End */}
+                </div>
+                {/* Col End */}
 
-        </div>
-        {/* Row end */}
-        <div className="tw-mb-60" />
-      </div>
-      {/* container */}
-    </section>
-    {/* Tw Service End */}
-  </React.Fragment>
+              </div>
+              {/* Row end */}
+              <div className="tw-mb-60" />
+            </div>
+            {/* container */}
+          </section>
+          {/* Tw Service End */}
+        </React.Fragment>
+      );
+    }}
+  />
 );
 
-export default ServicesList;
+export default ServiceList;

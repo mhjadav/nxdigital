@@ -1,4 +1,6 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../../components/layout';
 import ServicesList from '../../components/services-list';
 import ContactForm from '../../components/contact-form';
@@ -6,7 +8,7 @@ import { pageMetaInfo } from '../../../site-config';
 
 import serviceImage2 from '../../static/images/services/single_service_img2.png';
 
-const OutsourcedCMO = () => {
+const OutsourcedCMO = ({data}) => {
   const fields = {
     name: true,
     email: true,
@@ -90,7 +92,7 @@ const OutsourcedCMO = () => {
           {/* 1st Content Row End */}
           <div className="row">
             <div className="col-md-6 ml-auto align-self-md-center">
-              <img src={serviceImage2} alt="website development" className="img-fluid analytics-img" />
+              <Img fixed={data.imageSharp.fixed} alt="Outsourced CMO" className="img-fluid analytics-img" />
             </div>
             {/* Col End */}
             <div className="col-md-6 align-self-center">
@@ -165,3 +167,12 @@ const OutsourcedCMO = () => {
 };
 
 export default OutsourcedCMO;
+
+export const query = graphql`
+  query {
+    imageSharp(fixed: {originalName: {eq: "cmo.jpeg"}}){
+      fixed(width: 540, height: 300) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }`;

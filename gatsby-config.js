@@ -96,6 +96,16 @@ module.exports = {
         whitelistPatterns: ['/^owl-/'],
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/static/images/services/`,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-json',
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',

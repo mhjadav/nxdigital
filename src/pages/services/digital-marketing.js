@@ -1,12 +1,12 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../../components/layout';
 import ServicesList from '../../components/services-list';
 import ContactForm from '../../components/contact-form';
 import { pageMetaInfo } from '../../../site-config';
 
-import serviceImage2 from '../../static/images/services/single_service_img2.png';
-
-const DigitalMarketing = () => {
+const DigitalMarketing = ({data}) => {
   const fields = {
     name: true,
     email: true,
@@ -89,7 +89,7 @@ const DigitalMarketing = () => {
           {/* 1st Content Row End */}
           <div className="row">
             <div className="col-md-6 ml-auto align-self-md-center">
-              <img src={serviceImage2} alt="website development" className="img-fluid analytics-img" />
+              <Img fixed={data.imageSharp.fixed} alt="Digital Marketing" className="img-fluid analytics-img" />
             </div>
             {/* Col End */}
             <div className="col-md-6 align-self-center">
@@ -168,3 +168,12 @@ const DigitalMarketing = () => {
 };
 
 export default DigitalMarketing;
+
+export const query = graphql`
+  query {
+    imageSharp(fixed: {originalName: {eq: "digital-marketing.jpeg"}}){
+      fixed(width: 540, height: 300) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }`;

@@ -1,12 +1,13 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../../components/layout';
 import ServicesList from '../../components/services-list';
 import ContactForm from '../../components/contact-form';
 import { pageMetaInfo } from '../../../site-config';
 
-import serviceImage2 from '../../static/images/services/single_service_img2.png';
-
-const AppDevelopment = () => {
+const AppDevelopment = ({data}) => {
+  console.log(data);
   const fields = {
     name: true,
     email: true,
@@ -86,7 +87,7 @@ const AppDevelopment = () => {
           {/* 1st Content Row End */}
           <div className="row">
             <div className="col-md-6 ml-auto align-self-md-center">
-              <img src={serviceImage2} alt="website development" className="img-fluid analytics-img" />
+              <Img fixed={data.imageSharp.fixed} alt="App development" className="img-fluid analytics-img" />
             </div>
             {/* Col End */}
             <div className="col-md-6 align-self-center">
@@ -172,3 +173,12 @@ const AppDevelopment = () => {
 };
 
 export default AppDevelopment;
+
+export const query = graphql`
+  query {
+    imageSharp(fixed: {originalName: {eq: "app-development.jpeg"}}){
+      fixed(width: 540, height: 235) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }`;
