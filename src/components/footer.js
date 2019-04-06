@@ -90,11 +90,18 @@ const Footer = () => (
     <div className="copyright mt-0">
       <div className="container">
         <div className="row">
-          <div className="col-md-6" style={{ padding: '.5rem 1rem' }}>
-            <span>Copyright © 2018, All Right Reserved Optimus DM</span>
+          <div className="col-md-3" style={{ padding: '.5rem 1rem' }}>
+            <span>
+Designed & Developed By
+              {' '}
+              <a href="https://mojaave.com">Mahipat</a>
+            </span>
+          </div>
+          <div className="col-md-4 text-center" style={{ padding: '.5rem 1rem' }}>
+            <span>Copyright © 2019 - Optimus DM</span>
           </div>
           {/* End Col */}
-          <div className="col-md-6">
+          <div className="col-md-5">
             <div className="copyright-menu">
               <ul>
                 <li>

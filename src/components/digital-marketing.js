@@ -212,10 +212,10 @@ to Book a Consultation Session with us to know how you can accelerate your busin
           <section className="tw-inro-item">
             <div className="container">
               <div className="row">
-                <div className="col-lg-5 col-md-12 text-lg-left">
+                <div className="col-lg-5 order-2 order-lg-1 col-md-12 text-lg-left">
                   <Img fluid={imagesTestimonial[1].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
                 </div>
-                <div className="col-lg-6 offset-lg-1  align-self-center col-md-12">
+                <div className="col-lg-6 order-1 order-lg-2 offset-lg-1  align-self-center col-md-12">
                   <h2 className="column-title light">Nainorita SuccessStory</h2>
                   <p>
                     The first step towards serving the foreign market began with our first sale in the US Market earlier today. Thank you for your love USA.
