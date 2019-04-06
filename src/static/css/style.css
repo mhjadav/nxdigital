@@ -6546,6 +6546,9 @@ h5 span {
   height: 60%;
   border-radius: 10px;
 }
+#tw-features .features-icon-inner img {
+  border-radius: 10px;
+}
 
 
 @keyframes flickerAnimation {
