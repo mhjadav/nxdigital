@@ -30,7 +30,7 @@ const About = () => (
           <div className="col text-center">
             <div className="section-heading" style={{ marginBottom: '0px' }}>
               <p>
-                            We are Nx Digital and we aim to be your ideal digital partners.
+                            We are Optimus DM and we aim to be your ideal digital partners.
               </p>
               <p>
                             Growth and Profitability are at heart of all businesses, and we help businesses achieve that. Nx aims to deliver 2x, 5x, 10x and eventually, Nx growth to businesses through our Technology, Digital Transformation and Strategy expertise.
@@ -89,73 +89,57 @@ const About = () => (
       </div>
       {/* Container End */}
     </section>
-    <section id="tw-testimonial" className="tw-testimonial">
+    <section id="tw-service-features" className="tw-service-features">
       <div className="container">
-        <div className="row align-items-center justify-content-center">
-          <div className="col-md-6 wow fadeInLeft" data-wow-duration="1s">
-            <div className="tw-testimonial-content text-center">
-              <h2 className="section-title">Our Values</h2>
+        <div className="row">
+          <div className="col text-center">
+            <div className="section-heading">
+              <h2>
+            Our
+                {' '}
+                <span>Values</span>
+              </h2>
               <span className="animate-border ml-auto mr-auto tw-mt-20 tw-mb-40" />
             </div>
-            <div className="tw-testimonial-carousel owl-carousel">
-              <div className="tw-testimonial-wrapper">
-                {/* End Testimonial bg */}
-                <div className="testimonial-text">
-                  <p>We believe in serving the needs of the market through our expertise about the digital world. For us, profitability and growth are by-products of client satisfaction.</p>
-                </div>
-                {/* End testimonial text */}
-              </div>
-              <div className="tw-testimonial-wrapper">
-                {/* End Testimonial bg */}
-                <div className="testimonial-text">
-                  <p>
-                                    Our core competence is understanding the way businesses grow and through our digital and technology prowess, we aim to positively impact the ecosystem around us.
-                  </p>
-                </div>
-                {/* End testimonial text */}
-              </div>
-              {/* End Tw testimonial wrapper */}
-              <div className="tw-testimonial-wrapper">
-                {/* End Testimonial bg */}
-                <div className="testimonial-text">
-                  <p>
-                                    We value time extremely highly, for both ourselves as well as for our clients and hence, we focus on concise and clear communications will all the stakeholders in our ecosystem.
-                  </p>
-                </div>
-                {/* End testimonial text */}
-              </div>
-              {/* End Tw testimonial wrapper */}
-              <div className="tw-testimonial-wrapper">
-                {/* End Testimonial bg */}
-                <div className="testimonial-text">
-                  <p>
-                                    Ethics and empathy are at the core of our being. We respect and treat all human beings as equal and we are an equal opportunity employer.
-                  </p>
-                </div>
-                {/* End testimonial text */}
-              </div>
-              {/* End Tw testimonial wrapper */}
-              <div className="tw-testimonial-wrapper">
-                {/* End Testimonial bg */}
-                <div className="testimonial-text">
-                  <p>
-                                    The work that we do is our showcase to the world and that is what fuels our growth. Thus, we maintain extremely strict quality standards, always.
-                  </p>
-                </div>
-                {/* End testimonial text */}
-              </div>
-              {/* End Tw testimonial wrapper */}
-            </div>
-            {/* End Tw testimonial carousel */}
-
+            {/* Heading End */}
           </div>
-          {/* End Col */}
+          {/* Col End */}
         </div>
-        {/* End Row */}
+        {/* Heading Row End */}
+        <div className="row">
+          <div className="col-md-4 text-center">
+            <div className="tw-service-features-box">
+              <p>
+              We believe in serving the needs of the market through our expertise about the digital world. For us, profitability and growth are by-products of client satisfaction.
+              </p>
+            </div>
+            {/* Features box End */}
+          </div>
+          {/* Col End */}
+          <div className="col-md-4 text-center">
+            <div className="tw-service-features-box">
+              <p>
+              Our core competence is understanding the way businesses grow and through our digital and technology prowess, we aim to positively impact the ecosystem around us.
+              </p>
+            </div>
+            {/* Features box End */}
+          </div>
+          {/* Col End */}
+          <div className="col-md-4 text-center">
+            <div className="tw-service-features-box">
+              <p>
+              We value time extremely highly, for both ourselves as well as for our clients and hence, we focus on concise and clear communications will all the stakeholders in our ecosystem.
+              </p>
+            </div>
+            {/* Features box End */}
+          </div>
+          {/* Col End */}
+        </div>
+        {/* Content Row End */}
       </div>
-      {/* End Container */}
+      {/* Container End */}
     </section>
-    <ServicesList style={{ background: 'none' }} />
+    <ServicesList style={{ background: 'rgb(247, 249, 248)' }} />
   </Layout>
 
 );

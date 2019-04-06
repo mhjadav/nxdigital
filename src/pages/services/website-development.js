@@ -108,7 +108,7 @@ const WebsiteDevelopment = ({data}) => {
                     Elegant colours, clear fonts and the overall look and feel along with
                     a compliance to brand elements is what brings out the best in a website.
                   <br />
-                    You can always reach out to Nx Digital for your Website Designing
+                    You can always reach out to Optimus DM for your Website Designing
                     Requirements like:
                   <ul>
                     <li>

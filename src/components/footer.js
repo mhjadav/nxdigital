@@ -8,17 +8,18 @@ const Footer = () => (
         <div className="col-md-12 col-lg-12">
           <div className="row">
             <div className="col-md-5">
-              <div className="contact-us">
+              <div className="contact-us col-md-10">
                 <div className="contact-icon">
-                  <a target="_blank" href="https://www.google.com/maps?ll=-37.821005,144.966737&z=16&t=m&hl=en-US&gl=IN&mapclient=embed&cid=16342563361171998924">
+                  <a target="_blank" rel="noopener referrer" href="https://goo.gl/maps/6fPen7Xpgq82">
                     <i className="icon icon-map2" />
                   </a>
                 </div>
                 {/* End contact Icon */}
                 <div className="contact-info">
-                  <h3>Melbourne, Australia</h3>
-                  <p>Level 23, HWT Tower</p>
-                  <p>40 City Road, Southbank VIC 3006</p>
+                  <h3>Optimus DM</h3>
+                  <span>11th floor, Earth Arise,</span>
+                  <span> Beside YMCA, Sarkhej - Gandhinagar Hwy,</span>
+                  <span> Ahmedabad, Gujarat 380015</span>
                 </div>
                 {/* End Contact Info */}
               </div>
@@ -28,15 +29,15 @@ const Footer = () => (
             <div className="col-md-3">
               <div className="contact-us contact-us-last">
                 <div className="contact-icon">
-                  <Link to="tel:+61431860552">
+                  <Link to="tel:+919152009066">
                     <i className="icon icon-phone3" />
                   </Link>
                 </div>
                 {/* End contact Icon */}
                 <div className="contact-info">
-                  <Link to="tel:+61431860552">
+                  <Link to="tel:+919152009066">
                     <h3>
-                    +61 431 860 552
+                    (+91)9152009066
                     </h3>
                     <p>Give us a call</p>
                   </Link>
@@ -45,15 +46,15 @@ const Footer = () => (
               {/* End Contact Us */}
               <div className="contact-us contact-us-last">
                 <div className="contact-icon">
-                  <Link to="mailto:connect@nxdigital.com.au">
+                  <Link to="mailto:ruchir@optimusdm.in">
                     <i className="icon icon-envelope3" />
                   </Link>
                 </div>
                 {/* End contact Icon */}
                 <div className="contact-info">
-                  <Link to="mailto:connect@nxdigital.com.au">
+                  <Link to="mailto:ruchir@optimusdm.in">
                     <h3>
-                        connect@nxdigital.com.au
+                      ruchir@optimusdm.in
                     </h3>
                     <p>Send us an email</p>
                   </Link>
@@ -67,8 +68,8 @@ const Footer = () => (
                 <div className="footer-social-link">
                   <h3>Follow us</h3>
                   <ul>
-                    <li><a href="https://www.facebook.com/NxDigitalMarketing"><i className="fa fa-facebook" /></a></li>
-                    <li><a href="https://www.linkedin.com/company/nx-digitalmarketing/"><i className="fa fa-linkedin" /></a></li>
+                    <li><a href="https://www.facebook.com/OptimusDM.India"><i className="fa fa-facebook" /></a></li>
+                    <li><a href="https://www.linkedin.com/company/optimus-dm/"><i className="fa fa-linkedin" /></a></li>
 
                     {/* <li><a href="#twitter"><i className="fa fa-twitter" /></a></li>
                     <li><a href="#google"><i className="fa fa-google-plus" /></a></li>
@@ -86,11 +87,11 @@ const Footer = () => (
       {/* End Widget Row */}
     </div>
     {/* End Contact Container */}
-    <div className="copyright">
+    <div className="copyright mt-0">
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
-            <span>Copyright © 2018, All Right Reserved Nx Digital</span>
+          <div className="col-md-6" style={{ padding: '.5rem 1rem' }}>
+            <span>Copyright © 2018, All Right Reserved Optimus DM</span>
           </div>
           {/* End Col */}
           <div className="col-md-6">

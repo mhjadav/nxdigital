@@ -117,7 +117,7 @@ const AppDevelopment = ({data}) => {
                     Should be updated regularly to leverage the OS upgrades and features
                     </li>
                   </ul>
-                  Let's connect and talk more about how Nx Digital can help with your
+                  Let's connect and talk more about how Optimus DM can help with your
                   App Development requirements:
                   <br />
                   <a href="#services-form-section" className="tw-readmore">

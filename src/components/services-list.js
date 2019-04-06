@@ -49,7 +49,7 @@ const ServiceList = props => (
                       <h3>
                         <Link to="/services/app-development/" className="tw-readmore">
                     App Development
-                      </Link>
+                        </Link>
                       </h3>
                       <p>
                                     Our App Development services give you:
@@ -66,8 +66,8 @@ const ServiceList = props => (
                         <br />
                                     Deployment on App Store and PlayStore
                         <Link to="/services/app-dev/" className="tw-readmore">
-                        <i className="fa fa-angle-right" />
-                      </Link>
+                          <i className="fa fa-angle-right" />
+                        </Link>
                       </p>
                     </div>
                     {/* Service content end */}
@@ -87,7 +87,7 @@ const ServiceList = props => (
                       <h3>
                         <Link to="/services/digital-marketing/" className="tw-readmore">
                   Digital Marketing
-                      </Link>
+                        </Link>
                       </h3>
                       <p>
                                     Our Digital Marketing services that include:
@@ -104,8 +104,8 @@ const ServiceList = props => (
                         <br />
                                     Graphic Designing
                         <Link to="/services/digital-marketing/" className="tw-readmore">
-                        <i className="fa fa-angle-right" />
-                      </Link>
+                          <i className="fa fa-angle-right" />
+                        </Link>
                       </p>
                     </div>
                     {/* Service content end */}
@@ -125,7 +125,7 @@ const ServiceList = props => (
                       <h3>
                         <Link to="/services/website-development/" className="tw-readmore">
                   Website Development
-                      </Link>
+                        </Link>
                       </h3>
                       <p>
                                     We design and deliver websites which are:
@@ -142,8 +142,8 @@ const ServiceList = props => (
                         <br />
                                     Resonant with your brand elements
                         <Link to="/services/website-development/" className="tw-readmore">
-                        <i className="fa fa-angle-right" />
-                      </Link>
+                          <i className="fa fa-angle-right" />
+                        </Link>
                       </p>
                     </div>
                     {/* Service content end */}
@@ -163,7 +163,7 @@ const ServiceList = props => (
                       <h3>
                         <Link to="/services/outsourced-cmo/" className="tw-readmore">
                     Outsourced CMO
-                      </Link>
+                        </Link>
                       </h3>
                       <p>
                                     Our Outsourced CMO services comprise:
@@ -183,8 +183,8 @@ const ServiceList = props => (
                         <br />
                                     Delivering on your Marketing goals
                         <Link to="/services/outsourced-cmo/" className="tw-readmore">
-                        <i className="fa fa-angle-right" />
-                      </Link>
+                          <i className="fa fa-angle-right" />
+                        </Link>
                       </p>
                     </div>
                     {/* Service content end */}
@@ -204,7 +204,7 @@ const ServiceList = props => (
                       <h3>
                         <Link to="/services/outsourced-cto/" className="tw-readmore">
                     Outsourced CTO
-                      </Link>
+                        </Link>
                       </h3>
                       <p>
                                     Our Outsourced CTO Services offer you:
@@ -223,8 +223,8 @@ const ServiceList = props => (
                         <br />
                                     Upgrades on existing Software
                         <Link to="/services/outsourced-cto/" className="tw-readmore">
-                        <i className="fa fa-angle-right" />
-                      </Link>
+                          <i className="fa fa-angle-right" />
+                        </Link>
                       </p>
                     </div>
                     {/* Service content end */}

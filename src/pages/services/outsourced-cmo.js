@@ -113,7 +113,7 @@ const OutsourcedCMO = ({data}) => {
                 The interested users can get in touch with you and you can now start
                 engaging with the users.
                   <br />
-                  Learn more on how Nx Digital provides Outsourced CMO services
+                  Learn more on how Optimus DM provides Outsourced CMO services
                   so that businesses can engage with their users seamlessly:
                   <a href="#services-form-section" className="tw-readmore">
                     Book A Complimentary Consultation or Request a Call-back

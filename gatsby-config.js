@@ -44,7 +44,7 @@ module.exports = {
             type: 'image/png',
           },
           {
-            src: '/images/favicon144.png',
+            src: '/images/favicon150.png',
             sizes: '144x144',
             type: 'image/png',
           },
@@ -54,7 +54,7 @@ module.exports = {
             type: 'image/png',
           },
           {
-            src: '/images/favicon250.png',
+            src: '/images/favicon310.png',
             sizes: '250x250',
             type: 'image/png',
           },
@@ -101,6 +101,13 @@ module.exports = {
       options: {
         name: 'images',
         path: `${__dirname}/src/static/images/services/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'imagesTestimonial',
+        path: `${__dirname}/src/static/images/testimonial/`,
       },
     },
     {

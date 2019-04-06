@@ -14,7 +14,7 @@ import {
 
 import favicon32 from '../static/images/favicon/favicon32.png';
 import favicon16 from '../static/images/favicon/favicon16.png';
-import ogImage from '../static/images/favicon/favicon250.png';
+import ogImage from '../static/images/favicon/favicon310.png';
 
 const Layout = (props) => {
   const {

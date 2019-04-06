@@ -1,14 +1,14 @@
 import React from 'react';
-import SwitchTab from '../components/switch-page';
 import DigitalMarketing from '../components/digital-marketing';
+import SwitchTab from '../components/switch-page';
 import Layout from '../components/layout';
 import './index.css';
 
-const Index = () => (
+const DigitalMarketingPage = () => (
   <Layout>
     <SwitchTab digitalMarketing="active" />
     <DigitalMarketing />
   </Layout>
 );
 
-export default Index;
+export default DigitalMarketingPage;

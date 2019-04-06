@@ -9,7 +9,7 @@ const Header = () => (
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light bg-white">
           <Link to="/" className="navbar-brand tw-nav-brand" style={{ minHeight: '70px' }}>
-            <img src={logo} style={{ height: '70px' }} alt="Nx Digital" />
+            <img src={logo} style={{ height: '70px' }} alt="Optimus DM" />
           </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />

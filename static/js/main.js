@@ -7,77 +7,6 @@
                         $(this).parent("li").find(".dropdown-menu").slideToggle();
                         //jQuery(this).find("i").toggleClass("fa-angle-down fa-angle-up");
                   });
-                  /*Testimonial Slider*/
-                  $(".tw-testimonial-carousel").owlCarousel({
-                        items: 1,
-                        loop: true,
-                        autoplay: true,
-                        nav: false,
-                        dots: true,
-                        autoplayTimeout: 5000,
-                        autoplayHoverPause: true,
-                        mouseDrag: false,
-                        smartSpeed: 900,
-                  });
-                  
-                  /* Testimonial Slider */
-                  if ($(".testimonial-slider").length > 0) {
-                        $(".testimonial-slider").owlCarousel({
-                        items: 1,
-                        loop: true,
-                        autoplay: true,
-                        nav: false,
-                        dots: true,
-                        autoplayTimeout: 5000,
-                        autoplayHoverPause: true,
-                        mouseDrag: true,
-                        smartSpeed: 900,
-                        });
-                  };
-                  
-                  /* Testimonial Slider */
-                  if ($(".testimonial-carousel-gray").length > 0) {
-                        $(".testimonial-carousel-gray").owlCarousel({
-                        items: 2,
-                        margin: 20,
-                        loop: true,
-                        autoplay: true,
-                        nav: false,
-                        dots: true,
-                        autoplayTimeout: 5000,
-                        autoplayHoverPause: true,
-                        mouseDrag: true,
-                        smartSpeed: 900,
-                        });
-                  };
-                  /* Testimonial Box Carousel */
-                  if ($(".testimonial-box-carousel").length > 0) {
-                        $(".testimonial-box-carousel").owlCarousel({
-                        items: 3,
-                        margin: 20,
-                        loop: true,
-                        autoplay: true,
-                        nav: false,
-                        dots: true,
-                        autoplayTimeout: 5000,
-                        autoplayHoverPause: true,
-                        mouseDrag: true,
-                        responsiveClass: true,
-                        smartSpeed: 900,
-                        responsive: {
-                              0: {
-                              items: 1,
-                              },
-                              600: {
-                              items: 2,
-                              },
-                              1000: {
-                              items: 3,
-                              }
-                        }
-                        });
-                  };
-                  
                   
                   /* Counter UP */
                   $(".counter").counterUp({
@@ -85,29 +14,6 @@
                         time: 2000
                   });
                   
-                  /* Client carousel */
-                  $(".clients-carousel").owlCarousel({
-                        items: 4,
-                        loop: true,
-                        nav: false,
-                        dots: true,
-                        autoplay: true,
-                        responsiveClass: true,
-                        autoplayHoverPause: true,
-                        mouseDrag: false,
-                        smartSpeed: 900,
-                        responsive: {
-                        0: {
-                              items: 1,
-                        },
-                        600: {
-                              items: 2,
-                        },
-                        1000: {
-                              items: 4,
-                        }
-                        }
-                  });
                   
                   /* Back to top */
                   $(window).scroll(function () {
@@ -134,20 +40,6 @@
                         fixedContentPos: false
                         });
                   };
-                  
-                  /* Our Mission Carousel */
-                  $('.mission-carousel').owlCarousel({
-                        items: 1,
-                        loop: true,
-                        nav: false,
-                        dots: true,
-                        autoplay: true,
-                        autoplayHoverPause: true,
-                        mouseDrag: false,
-                        smartSpeed: 900,
-                        animateOut: 'animated slideInRight',
-                        animateIn: 'animated slideInRight',
-                  });
                   
                   /* Map */
                   
@@ -193,49 +85,7 @@
                         return false;
                   
                   });*/
-                  
-                    /*Main Slideshow*/
-                  $(".tw-hero-slider").owlCarousel({
-                        items: 1,
-                        loop: true,
-                        autoplay: true,
-                        nav: true,
-                        dots: false,
-                        autoplayTimeout: 8000,
-                        autoplayHoverPause: true,
-                        mouseDrag: false,
-                        smartSpeed: 1100,
-                        navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
-                  });
-                  /* Service List Box Slider */
-                  if ($(".service-list-carousel").length > 0) {
-                        $(".service-list-carousel").owlCarousel({
-                        items: 3,
-                        loop: true,
-                        margin: 10,
-                        autoplay: true,
-                        nav: true,
-                        navText: ['<i class="icon icon-arrow-left"></i>', '<i class="icon icon-arrow-right"></i>'],
-                        dots: false,
-                        autoplayTimeout: 5000,
-                        autoplayHoverPause: true,
-                        mouseDrag: true,
-                        responsiveClass: true,
-                        smartSpeed: 900,
-                        responsive: {
-                              0: {
-                              items: 1,
-                              },
-                              600: {
-                              items: 2,
-                              },
-                              1000: {
-                              items: 3,
-                              margin: 5,
-                              }
-                        }
-                        });
-                  };
+            
                   
                   /* On Hover Timeline Active Changed */
                   $(".timeline-wrapper .row").hover(function () {
