@@ -196,7 +196,7 @@ Success
                   After designing a top-notch #Website, #SocialMedia presence and other #DigitalElements, we have now moved onto the next phase of our #project.
                   </p>
                   <p>
-                    <Link to="/contact/">Click here</Link>
+                    <Link className="tw-readmore" to="/contact/">Click here</Link>
                     {' '}
 to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
                   </p>
@@ -224,7 +224,7 @@ to Book a Consultation Session with us to know how you can accelerate your busin
                     Nainorita now exports premium stoles and scarves to USA. This Christmas, you can let your loved ones get cozy in the soft caressing fabric handcrafted by the artisans of Nainorita. From the foothills of the exotic Himalayas, comes authentic Pashmina, now in the US.
                   </p>
                   <p>
-                    <Link to="/contact/">Click here</Link>
+                    <Link className="tw-readmore" to="/contact/">Click here</Link>
                     {' '}
 to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
                   </p>
@@ -245,7 +245,7 @@ to Book a Consultation Session with us to know how you can accelerate your busin
                   </p>
                   <p>Our #DigitalMarketing campaign for them is divided into multiple parts</p>
                   <p>
-                    <Link to="/contact/">Click here</Link>
+                    <Link className="tw-readmore" to="/contact/">Click here</Link>
                     {' '}
 to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
                   </p>
