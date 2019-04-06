@@ -19,6 +19,26 @@ module.exports = {
     siteUrl,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-wordpress',
+      options: {
+        baseUrl: 'nxdigital.wordpress.com',
+        protocol: 'https',
+        hostingWPCOM: true,
+        useACF: false,
+        auth: {
+          wpcom_app_clientSecret: process.env.WORDPRESS_SECRET,
+          wpcom_app_clientId: process.env.WORDPRESS_CLIENTID,
+          wpcom_user: process.env.WORDPRESS_U,
+          wpcom_pass: process.env.WORDPRESS_P,
+        },
+        verboseOutput: false,
+        searchAndReplaceContentUrls: {
+          sourceUrl: 'https://nxdigital.wordpress.com',
+          replacementUrl: 'https://nxdigital.com.au',
+        },
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-google-analytics',
@@ -67,26 +87,6 @@ module.exports = {
         host: siteUrl,
         sitemap: `${siteUrl}/sitemap.xml`,
         policy: [{ userAgent: '*', disallow: '' }],
-      },
-    },
-    {
-      resolve: 'gatsby-source-wordpress',
-      options: {
-        baseUrl: 'nxdigital.wordpress.com',
-        protocol: 'https',
-        hostingWPCOM: true,
-        useACF: false,
-        auth: {
-          wpcom_app_clientSecret: process.env.WORDPRESS_SECRET,
-          wpcom_app_clientId: process.env.WORDPRESS_CLIENTID,
-          wpcom_user: process.env.WORDPRESS_U,
-          wpcom_pass: process.env.WORDPRESS_P,
-        },
-        verboseOutput: false,
-        searchAndReplaceContentUrls: {
-          sourceUrl: 'https://nxdigital.wordpress.com',
-          replacementUrl: 'https://nxdigital.com.au',
-        },
       },
     },
     {
