@@ -11,6 +11,7 @@ const Header = () => (
           <Link to="/" className="navbar-brand tw-nav-brand" style={{ minHeight: '70px' }}>
             <img src={logo} style={{ height: '70px' }} alt="Optimus DM" />
           </Link>
+          <Link to="/book-appointment/" className="btn btn-primary btn-sm d-md-none" style={{ padding: '18px' }}>Let's Connect</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>

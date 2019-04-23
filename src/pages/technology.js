@@ -1,5 +1,5 @@
 import React from 'react';
-import SoftwareDevelopment from '../components/software-development';
+import SoftwareDevelopment from '../components/technology';
 import SwitchTab from '../components/switch-page';
 import Layout from '../components/layout';
 import './index.css';

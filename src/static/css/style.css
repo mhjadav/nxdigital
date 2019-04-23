@@ -2965,6 +2965,9 @@ input.round-btn {
   overflow: hidden;
   height: 200px;
 }
+.tw-inro-item .post-info .entry-content{
+  height: 400px;
+}
 .post-info .entry-content p {
   font-size: 15px;
   padding-right: 10px;
@@ -3360,13 +3363,8 @@ input.round-btn {
 ================================================== */
 /*-- Banner --*/
 .banner-area {
-  background: #2f2c2c;
   position: relative;
   color: #fff;
-  background-position: 50% 50%;
-  background-size: cover;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .banner-area .container {
@@ -6583,4 +6581,11 @@ h5 span {
    -moz-animation: flickerAnimation 0.2s ;
    -o-animation: flickerAnimation 0.2s ;
     animation: flickerAnimation 0.2s ;
+}
+.facts-img{
+  font-size: 31px;
+}
+#tw-features .features-icon i.icon, #tw-facts .facts-img i{
+  font-size: 41px;
+  color: #36b729;
 }

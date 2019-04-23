@@ -12,7 +12,7 @@ const SwitchTab = ({ digitalMarketing, softwareDevelopment }) => (
                 <Link data-toggle="tab" to="/digital-marketing/" className={digitalMarketing}>Digital Marketing</Link>
               </li>
               <li className="nav-item">
-                <Link data-toggle="tab" to="/software-development/" className={softwareDevelopment}>Software Development</Link>
+                <Link data-toggle="tab" to="/technology/" className={softwareDevelopment}>Technology</Link>
               </li>
             </ul>
           </div>

@@ -93,7 +93,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <Img fixed={images[2].node.fixed} alt="digital marketing" className="img-fluid" />
+                        <i className="icon icon-map-marker2" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -121,7 +121,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <Img fixed={images[1].node.fixed} alt="digital marketing" className="img-fluid" />
+                        <i className="icon icon-pie-chart2" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -146,7 +146,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <Img fixed={images[0].node.fixed} alt="digital marketing" className="img-fluid" />
+                        <i className="icon icon-mutual-fund" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -187,77 +187,219 @@ Success
               </div>
 
               <div className="row">
-                <div className="col-lg-6 align-self-center col-md-12">
-                  <h2 className="column-title light">Optimus DM and VVI : Strategy done right!</h2>
-                  <p>
-                    Mr. Abhimanyu approached us with a vision of taking brand VVI to the next level. They are manufacturers of ultra premium range of glass automation and glass hardware fittings.
-                  </p>
-                  <p>
-                  After designing a top-notch #Website, #SocialMedia presence and other #DigitalElements, we have now moved onto the next phase of our #project.
-                  </p>
-                  <p>
-                    <Link className="tw-readmore" to="/contact/">Click here</Link>
-                    {' '}
+                <div className="col-lg-4 col-md-12">
+                  <div className="tw-latest-post">
+                    <div className="latest-post-media text-center">
+                      <Img fluid={imagesTestimonial[2].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
+                    </div>
+                    {/* End Latest Post Media */}
+                    <div className="post-body">
+                      <div className="post-info m-0">
+                        {/* End Post Meta */}
+                        <h3 className="post-title">
+                        Optimus DM and VVI : Strategy done right!
+                        </h3>
+                        <div className="entry-content text-left">
+                          <p>
+                          Mr. Abhimanyu approached us with a vision of taking brand VVI to the next level. They are manufacturers of ultra premium range of glass automation and glass hardware fittings.
+                          After designing a top-notch #Website, #SocialMedia presence and other #DigitalElements, we have now moved onto the next phase of our #project.
+                            <Link className="tw-readmore" to="/contact/">Click here</Link>
+                            {' '}
 to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
-                  </p>
+                          </p>
+                        </div>
+                        {/* End Entry Content */}
+                      </div>
+                      {/* End Post info */}
+                    </div>
+                    {/* End Post Body */}
+                  </div>
+                  {/* End Tw Latest Post */}
                 </div>
                 {/* End Col */}
-                <div className="col-lg-5 offset-lg-1 col-md-12 text-lg-right">
-                  <Img fluid={imagesTestimonial[2].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
+                <div className="col-lg-4 col-md-12">
+                  <div className="tw-latest-post">
+                    <div className="latest-post-media text-center">
+                      <Img fluid={imagesTestimonial[1].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
+                    </div>
+                    {/* End Latest Post Media */}
+                    <div className="post-body">
+                      <div className="post-info m-0">
+                        {/* End Post Meta */}
+                        <h3 className="post-title">
+                          Nainorita SuccessStory
+                        </h3>
+                        <div className="entry-content text-left">
+                          <p>
+                            The first step towards serving the foreign market began with our first sale in the US Market earlier today. Thank you for your love USA.
+                            Nainorita now exports premium stoles and scarves to USA. This Christmas, you can let your loved ones get cozy in the soft caressing fabric handcrafted by the artisans of Nainorita. From the foothills of the exotic Himalayas, comes authentic Pashmina, now in the US.
+                            <Link className="tw-readmore" to="/contact/">Click here</Link>
+                            {' '}
+                            to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
+                          </p>
+                        </div>
+                        {/* End Entry Content */}
+                      </div>
+                      {/* End Post info */}
+                    </div>
+                    {/* End Post Body */}
+                  </div>
+                  {/* End Tw Latest Post */}
+                </div>
+                {/* End Col */}
+                <div className="col-lg-4 col-md-12">
+                  <div className="tw-latest-post">
+                    <div className="latest-post-media text-center">
+                      <Img fluid={imagesTestimonial[0].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
+
+                    </div>
+                    {/* End Latest Post Media */}
+                    <div className="post-body">
+                      <div className="post-info m-0">
+                        {/* End Post Meta */}
+                        <h3 className="post-title">
+                        International Marketing Case Study
+                        </h3>
+                        <div className="entry-content text-left">
+                          <p>
+How to connect businesses to their prospects worldwide:
+                          ConvergeSol has been a long term client for us and is focussed on providing high quality customised #software solutions and #technology consultancy to #FinancialServices companies #globally.
+                          Our #DigitalMarketing campaign for them is divided into multiple parts
+                            <Link className="tw-readmore" to="/contact/">Click here</Link>
+                            {' '}
+to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 {/* End Col */}
               </div>
             </div>
           </section>
-          <section className="tw-inro-item">
+
+          <section id="tw-facts" className="tw-facts tw-facts-item">
             <div className="container">
               <div className="row">
-                <div className="col-lg-5 col-md-12 text-lg-left">
-                  <Img fluid={imagesTestimonial[1].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
+                <div className="col-md-3 text-center">
+                  <div className="tw-facts-box">
+                    <div className="facts-img">
+                      <i className="icon icon-pie-chart2" />
+                    </div>
+                    {/* End Fatcs image */}
+                    <div className="facts-content">
+                      <h4 className="facts-title">Active clients</h4>
+                    </div>
+                    {/* Facts Content End */}
+                  </div>
+                  {/* Facts Box End */}
                 </div>
-                <div className="col-lg-6 offset-lg-1  align-self-center col-md-12">
-                  <h2 className="column-title light">Nainorita SuccessStory</h2>
-                  <p>
-                    The first step towards serving the foreign market began with our first sale in the US Market earlier today. Thank you for your love USA.
-                  </p>
-                  <p>
-                    Nainorita now exports premium stoles and scarves to USA. This Christmas, you can let your loved ones get cozy in the soft caressing fabric handcrafted by the artisans of Nainorita. From the foothills of the exotic Himalayas, comes authentic Pashmina, now in the US.
-                  </p>
-                  <p>
-                    <Link className="tw-readmore" to="/contact/">Click here</Link>
-                    {' '}
-to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
-                  </p>
+                {/* Col End */}
+                <div className="col-md-3 text-center">
+                  <div className="tw-facts-box">
+                    <div className="facts-img">
+                      <i className="icon icon-pie-chart" />
+                    </div>
+                    {/* End Facts Image */}
+                    <div className="facts-content">
+                      <h4 className="facts-title">Projects Done</h4>
+                    </div>
+                    {/* End Facts Content */}
+                  </div>
+                  {/* End Facts Box */}
                 </div>
-                {/* End Col */}
-                {/* End Col */}
+                {/* Col End */}
+                <div className="col-md-3 text-center">
+                  <div className="tw-facts-box">
+                    <div className="facts-img">
+                      <i className="icon icon-map-marker" />
+                    </div>
+                    {/* End Facts Image */}
+                    <div className="facts-content">
+                      <h4 className="facts-title">Success Rate</h4>
+                    </div>
+                    {/* End Facts Content */}
+                  </div>
+                  {/* End Facts Box */}
+                </div>
+                {/* Col End */}
+                <div className="col-md-3 text-center">
+                  <div className="tw-facts-box">
+                    <div className="facts-img">
+                      <i className="icon icon-mutual-fund" />
+                    </div>
+                    {/* End Facts Image */}
+                    <div className="facts-content">
+                      <h4 className="facts-title">Awards</h4>
+                    </div>
+                    {/* End Facts Content */}
+                  </div>
+                  {/* End Facts Box */}
+                </div>
+                {/* Col End */}
               </div>
+              {/* Row End */}
             </div>
+            {/* Container End */}
           </section>
-          <section className="tw-inro-item">
+          <section id="tw-service" className="tw-service">
             <div className="container">
-              <div className="row">
-                <div className="col-lg-6 align-self-center col-md-12">
-                  <h2 className="column-title light">International Marketing Case Study</h2>
-                  <p>How to connect businesses to their prospects worldwide:</p>
-                  <p>
-                  ConvergeSol has been a long term client for us and is focussed on providing high quality customised #software solutions and #technology consultancy to #FinancialServices companies #globally.
-                  </p>
-                  <p>Our #DigitalMarketing campaign for them is divided into multiple parts</p>
-                  <p>
-                    <Link className="tw-readmore" to="/contact/">Click here</Link>
-                    {' '}
-to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
-                  </p>
+              <div className="row text-center">
+                <div className="col section-heading">
+                  <h2>
+                    Why
+                    <span> Optimus DM?</span>
+                  </h2>
+                  <span className="animate-border ml-auto mr-auto tw-mt-20" />
                 </div>
-                {/* End Col */}
-                <div className="col-lg-5 offset-lg-1 col-md-12 text-lg-right">
-                  <Img fluid={imagesTestimonial[0].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
-                </div>
-                {/* End Col */}
+                {/* Title Col End */}
               </div>
+              {/* Title Row End */}
+              <div className="row">
+                <div className="col-md-4 text-center">
+                  <div className="tw-service-box">
+                    <div className="service-content">
+                      <h3>SEO Optimization</h3>
+                      <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
+                    </div>
+                    {/* Service Content end */}
+                  </div>
+                  {/* Service box end */}
+                </div>
+                {/* Col End */}
+                <div className="col-md-4 text-center">
+                  <div className="tw-service-box">
+                    <div className="service-content">
+                      <h3>Content Marketing</h3>
+                      <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
+                    </div>
+                    {/* Service content end */}
+                  </div>
+                  {/* Service box End */}
+                </div>
+                {/* Col End */}
+                <div className="col-md-4 text-center">
+                  <div className="tw-service-box">
+                    <div className="service-content">
+                      <h3>Data Analysis</h3>
+                      <p>
+One of the top 100 advertising and marketing agencies knows what it means to be
+                      </p>
+                    </div>
+                    {/* Service content end */}
+                  </div>
+                  {/* Service box End */}
+                </div>
+                {/* Col end */}
+              </div>
+              {/* Row end */}
+              <div className="tw-mb-105" />
             </div>
+            {/* container */}
           </section>
+
+
           <section id="tw-blog" className="tw-blog">
             <div className="container">
               <div className="row text-center">

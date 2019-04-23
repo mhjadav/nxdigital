@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
-
 const PageTemplate = (props) => {
   const { data: { wordpressPage: currentPage } } = props;
-
   return (
     <Layout>
       <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
