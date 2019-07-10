@@ -19,48 +19,11 @@ const DigitalMarketing = () => (
           }
         }
       }
-      allFile(sort: {fields: name}, filter: {name: {in: ["vvi", "nainorita", "convergesol"]}}) {
-        edges {
-          node {
-            childImageSharp {
-              fluid{
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    allWordpressPost(sort: { fields: [date] }, limit: 3) {
-        edges {
-          node {
-              month: date(formatString: "MMM")
-              day: date(formatString: "DD")
-            title
-            excerpt
-            author{
-              name
-            }
-            featured_media{
-              localFile{
-                childImageSharp{
-                  id
-                  fluid( maxWidth: 350, maxHeight: 250 ) {
-                      ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-            slug
-          }
-        }
-      }
   }
 `}
     render={(data) => {
       const {
         allImageSharp: { edges: images },
-        allFile: { edges: imagesTestimonial },
-        allWordpressPost: { edges: blogList },
       } = data;
 
       return (
