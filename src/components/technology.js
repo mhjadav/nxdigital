@@ -5,6 +5,7 @@ import WhyOptimus from './why-optimus'
 import CaseStudies from './case-studies'
 import LatestBlog from './latest-blog'
 import Statastics from './statastics'
+import ContactFormHome from './contact-form-home'
 
 const SoftwareDevelopment = () => (
   <StaticQuery
@@ -81,6 +82,7 @@ const SoftwareDevelopment = () => (
                         </li>
                       </ul>
                       <label htmlFor="post-1" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -116,6 +118,7 @@ const SoftwareDevelopment = () => (
                         </li>
                       </ul>
                       <label htmlFor="post-2" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -148,6 +151,7 @@ const SoftwareDevelopment = () => (
                         </li>
                       </ul>
                       <label htmlFor="post-3" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -186,6 +190,7 @@ const SoftwareDevelopment = () => (
                       
                       </ul>
                       <label htmlFor="post-4" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -216,6 +221,7 @@ const SoftwareDevelopment = () => (
                        
                       </ul>
                       <label htmlFor="post-5" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -248,6 +254,7 @@ const SoftwareDevelopment = () => (
                         </li>
                       </ul>
                       <label htmlFor="post-6" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -269,7 +276,7 @@ const SoftwareDevelopment = () => (
          <WhyOptimus />
          
          <LatestBlog />
-
+        <ContactFormHome />
 
         
 

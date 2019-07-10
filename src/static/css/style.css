@@ -6624,10 +6624,17 @@ h5 span {
   cursor: pointer;
 
 }
+.link-get-started{
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+.link-get-started a{
+  color: #36b729;
+  font-weight: 800;
+}
 
 
-.owl-style{
-  width: 100%;
-  overflow: hidden;
-  height: auto;
+.read-more-state:checked ~ .link-get-started{
+  display: inline-block;
 }

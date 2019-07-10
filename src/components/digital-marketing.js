@@ -5,6 +5,7 @@ import WhyOptimus from './why-optimus'
 import LatestBlog from './latest-blog'
 import CaseStudies from './case-studies'
 import Statastics from './statastics'
+import ContactFormHome from './contact-form-home'
 
 const DigitalMarketing = () => (
   <StaticQuery
@@ -79,7 +80,7 @@ const DigitalMarketing = () => (
                         It is an effective and sure way of reaching your customers quickly and efficiently.
                         </li>
                       </ul>
-                      <label htmlFor="post-1" className="read-more-trigger" />
+                      <label htmlFor="post-1" className="read-more-trigger" /> <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                       {/*   <p>
                       Digital Marketing lets you define your target audience very precisely.
                       </p>
@@ -126,7 +127,7 @@ const DigitalMarketing = () => (
                         It is highly targeted, dynamic, low cost and offers local as well as global visibility.
                         </li>
                       </ul>
-                      <label htmlFor="post-2" className="read-more-trigger" />
+                      <label htmlFor="post-2" className="read-more-trigger" /><span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -170,6 +171,7 @@ const DigitalMarketing = () => (
                         </li>
                       </ul>
                       <label htmlFor="post-3" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -214,6 +216,7 @@ const DigitalMarketing = () => (
                         </li>
                       </ul>
                       <label htmlFor="post-4" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                       {/*   <p>
                       Digital Marketing lets you define your target audience very precisely.
                       </p>
@@ -243,6 +246,7 @@ const DigitalMarketing = () => (
                     <h3>Email Marketing</h3>
                     <div className="text-left">
                     <input type="checkbox" className="read-more-state" id="post-5" />
+                    
                       <ul className="read-more-wrap">
                         <li>
                         Email marketing involves sending messages to people through email for commercial purposes
@@ -264,6 +268,7 @@ const DigitalMarketing = () => (
                         </li>
                       </ul>
                       <label htmlFor="post-5" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -306,6 +311,7 @@ const DigitalMarketing = () => (
                         </li>
                       </ul>
                       <label htmlFor="post-6" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -354,7 +360,7 @@ const DigitalMarketing = () => (
                         </li>
                       </ul>
                       <label htmlFor="post-7" className="read-more-trigger" />
-                   
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                
@@ -388,6 +394,7 @@ const DigitalMarketing = () => (
                        
                       </ul>
                       <label htmlFor="post-8" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -425,6 +432,7 @@ const DigitalMarketing = () => (
                         </li>
                       </ul>
                       <label htmlFor="post-9" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -443,6 +451,7 @@ const DigitalMarketing = () => (
           <Statastics />
           <WhyOptimus />
           <LatestBlog />
+          <ContactFormHome />
         
 
         </React.Fragment>
