@@ -2087,6 +2087,11 @@ li.dropdown:hover .tw-mega-menu {
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  text-overflow: ellipsis;
+
+  /* Needed to make it work */
+  overflow: hidden;
+  white-space: nowrap
 }
 
 .features-box p {
@@ -2966,7 +2971,7 @@ input.round-btn {
   height: 200px;
 }
 .tw-inro-item .post-info .entry-content{
-  height: 400px;
+  height: auto;
 }
 .post-info .entry-content p {
   font-size: 15px;
@@ -6588,4 +6593,41 @@ h5 span {
 #tw-features .features-icon i.icon, #tw-facts .facts-img i{
   font-size: 41px;
   color: #36b729;
+}
+
+.read-more-state{
+  display: none;
+}
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+  color: #2f2c2c;
+}
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Read More...';
+}
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Read Less...';
+}
+.read-more-trigger {
+  color: #36b729;
+  font-weight: 800;
+  display: inline-block;
+  cursor: pointer;
+
+}
+
+
+.owl-style{
+  width: 100%;
+  overflow: hidden;
+  height: auto;
 }

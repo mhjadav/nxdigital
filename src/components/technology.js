@@ -1,6 +1,10 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { Link, StaticQuery, graphql } from 'gatsby';
+import WhyOptimus from './why-optimus'
+import CaseStudies from './case-studies'
+import LatestBlog from './latest-blog'
+import Statastics from './statastics'
 
 const SoftwareDevelopment = () => (
   <StaticQuery
@@ -75,13 +79,8 @@ const SoftwareDevelopment = () => (
                 {/* Col End */}
                 <div className="col-md-7 ml-md-auto">
                   <p className="features-text">
-            We offer end to end technology services to our clients world wide. Through a complimentary consultation session understand:
-                    <br />
-                    {' '}
-                    <ul>
-                      <li>How # Digital Marketing propels businesses</li>
-                      <li>How # Websites can increase brand value</li>
-                    </ul>
+                  We at Optimus DM provide end to end digital marketing and technology services to our clients worldwide. We aim to deliver consistent exponential growth to businesses through our Technology, Digital Transformation and Strategy Expertise.
+
                   </p>
                 </div>
                 {/* Col End */}
@@ -100,18 +99,25 @@ const SoftwareDevelopment = () => (
                     {/* End Features Icon */}
                     <h3>Website Development</h3>
                     <div className="text-left">
-                      <p>
-                      Digital Marketing lets you define your target audience very precisely.
-                      </p>
-                      <p>
-                    You can run your search engine or social media campaigns for a longer period of time at compelling prices...
-                      </p>
-                      <p>
-                        <Link to="/services/digital-marketing/" className="tw-readmore">
-                  Read More
-                          <i className="fa fa-angle-right" />
-                        </Link>
-                      </p>
+                    <input type="checkbox" className="read-more-state" id="post-1" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Websites have become the first point of contact between your business and its prospects as well as customers. It represents your brand and build brand value.
+                        </li>
+                        <li className="read-more-target">
+                        A good website is attractive, secure and loads very fast.
+                        </li>
+                        <li className="read-more-target">
+                        SEO (Search Engine Optimization) plays a vital role in the development of any type of website.
+                        </li>
+                        <li className="read-more-target">
+                        UI and UX designing tools, when used efficiently, help in improving the user’s experience while surfing your website. 
+                        </li>
+                        <li className="read-more-target">
+                        Elegant colors, clear fonts and the overall look and feel along with a compliance to brand elements is what brings out the best in your website.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-1" className="read-more-trigger" />
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -126,17 +132,27 @@ const SoftwareDevelopment = () => (
                       {/* End Features icon inner */}
                     </div>
                     {/* End Features Icon */}
-                    <h3>SEO Management</h3>
+                    <h3>App Development</h3>
                     <div className="text-left">
-                      <p>
-                        SEO (Search Engine Optimisation), link-building, blogging, updating the website with relevant content and several other activities are required for growing your reach organically...
-                      </p>
-                      <p>
-                        <Link to="/services/digital-marketing/" className="tw-readmore">
-                  Read More
-                          <i className="fa fa-angle-right" />
-                        </Link>
-                      </p>
+                    <input type="checkbox" className="read-more-state" id="post-2" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        In addition to websites, apps are preferred for offering your clientele and target audiences convenience to know more about you or transact with your business.
+                        </li>
+                        <li className="read-more-target">
+                        App development is classified into Android app development, iOS app development, Hybrid apps and Progressive web apps.
+                        </li>
+                        <li className="read-more-target">
+                        A user-friendly app possesses ease of navigation for users and delivers rich experience through UI/UX designing.
+                        </li>
+                        <li className="read-more-target">
+                        The app should be light in weight, so it occupies less storage space in the user's phone as well as it should load faster for better on hand experience.
+                        </li>
+                        <li className="read-more-target">
+                        The app should provide right kind of engaging content to its users for sustaining in the market.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-2" className="read-more-trigger" />
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -151,17 +167,24 @@ const SoftwareDevelopment = () => (
                       {/* End Features icon inner */}
                     </div>
                     {/* End Features Icon */}
-                    <h3>Outsourced CMO</h3>
+                    <h3>Android App Development</h3>
                     <div className="text-left">
-                      <p>
-                    Outsourced CMO is your Chief Marketing Officer with a team of highly talented digital marketers, designers and tech guys required for execution of digital marketing strategies...
-                      </p>
-                      <p>
-                        <Link to="/services/digital-marketing/" className="tw-readmore">
-                  Read More
-                          <i className="fa fa-angle-right" />
-                        </Link>
-                      </p>
+                    <input type="checkbox" className="read-more-state" id="post-3" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Android app development is the process by which new applications are created for devices running on the Android operating system.
+                        </li>
+                        <li className="read-more-target">
+                        Advantage of Android app is, it requires low investment and provides high ROI.
+                        </li>
+                        <li className="read-more-target">
+                        It is also easy to integrate and one can modify it according to its business needs.
+                        </li>
+                        <li className="read-more-target">
+                        It even provides secured environment for development of best apps in smooth and hassle-free way.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-3" className="read-more-trigger" />
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -169,313 +192,123 @@ const SoftwareDevelopment = () => (
                 {/* Col End */}
 
               </div>
+
+              <div className="tw-mt-80" />
+              <div className="row">
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-map-marker2" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>iOS App Development</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-4" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        An application developed for use on Apple’s powered iPhone devices is called an iOS App.
+                        </li>
+                        <li className="read-more-target">
+                        iOS app development provides enhanced security for enterprises keen on protecting their data from breaching. It gives total protection against malware and viruses.
+                        </li>
+                        <li className="read-more-target">
+                        It provides enhanced user experience with its high quality and user-friendly interface.
+                        </li>
+                        <li className="read-more-target">
+                        It possesses safe environment for online transactions through the apps on the platform.
+                        </li>
+                      
+                      </ul>
+                      <label htmlFor="post-4" className="read-more-trigger" />
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-pie-chart2" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>Hybrid Apps</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-5" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Hybrid apps are developed to function simultaneously on both android and iOS platforms.
+                        </li>
+                        <li className="read-more-target">
+                        Hybrid apps provide the advantage of ease of development but offer limited customisation..
+                        </li>
+                        <li className="read-more-target">
+                        The code for Hybrid app once developed can function on both Android and iOS platforms saving time and cost for businesses.
+                        </li>
+                       
+                      </ul>
+                      <label htmlFor="post-5" className="read-more-trigger" />
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-mutual-fund" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>Progressive Web Apps</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-6" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Progressive Web Apps (PWA) are web apps which provide app-like experience to the users.
+                        </li>
+                        <li className="read-more-target">
+                        PWA are reliable, fast and engaging as they load instantly and provide experience like original app on the device.
+                        </li>
+                        <li className="read-more-target">
+                        PWA can be downloaded in zero install time without going through the usual download-install procedure of play store or app store.
+                        </li>
+                        <li className="read-more-target">
+                        PWA provide advantage of working even in offline mode allowing users to work even when there is limited internet connection.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-6" className="read-more-trigger" />
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+
+              </div>
+
+
               {/* End Row 2 */}
             </div>
             {/* End Container */}
           </section>
-          <section className="tw-inro-item">
-            <div className="container">
-              <div className="row text-center">
-                <div className="col section-heading">
-                  <h2>
-Success
-                    <span> Stories</span>
-                  </h2>
-                  <span className="animate-border ml-auto mr-auto tw-mt-20" />
-                </div>
-                {/* Title Col End */}
-              </div>
 
-              <div className="row">
-                <div className="col-lg-4 col-md-12">
-                  <div className="tw-latest-post">
-                    <div className="latest-post-media text-center">
-                      <Img fluid={imagesTestimonial[2].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
-                    </div>
-                    {/* End Latest Post Media */}
-                    <div className="post-body">
-                      <div className="post-info m-0">
-                        {/* End Post Meta */}
-                        <h3 className="post-title">
-                        Optimus DM and VVI : Strategy done right!
-                        </h3>
-                        <div className="entry-content text-left">
-                          <p>
-                          Mr. Abhimanyu approached us with a vision of taking brand VVI to the next level. They are manufacturers of ultra premium range of glass automation and glass hardware fittings.
-                          After designing a top-notch #Website, #SocialMedia presence and other #DigitalElements, we have now moved onto the next phase of our #project.
-                            <Link className="tw-readmore" to="/contact/">Click here</Link>
-                            {' '}
-to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
-                          </p>
-                        </div>
-                        {/* End Entry Content */}
-                      </div>
-                      {/* End Post info */}
-                    </div>
-                    {/* End Post Body */}
-                  </div>
-                  {/* End Tw Latest Post */}
-                </div>
-                {/* End Col */}
-                <div className="col-lg-4 col-md-12">
-                  <div className="tw-latest-post">
-                    <div className="latest-post-media text-center">
-                      <Img fluid={imagesTestimonial[1].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
-                    </div>
-                    {/* End Latest Post Media */}
-                    <div className="post-body">
-                      <div className="post-info m-0">
-                        {/* End Post Meta */}
-                        <h3 className="post-title">
-                          Nainorita SuccessStory
-                        </h3>
-                        <div className="entry-content text-left">
-                          <p>
-                            The first step towards serving the foreign market began with our first sale in the US Market earlier today. Thank you for your love USA.
-                            Nainorita now exports premium stoles and scarves to USA. This Christmas, you can let your loved ones get cozy in the soft caressing fabric handcrafted by the artisans of Nainorita. From the foothills of the exotic Himalayas, comes authentic Pashmina, now in the US.
-                            <Link className="tw-readmore" to="/contact/">Click here</Link>
-                            {' '}
-                            to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
-                          </p>
-                        </div>
-                        {/* End Entry Content */}
-                      </div>
-                      {/* End Post info */}
-                    </div>
-                    {/* End Post Body */}
-                  </div>
-                  {/* End Tw Latest Post */}
-                </div>
-                {/* End Col */}
-                <div className="col-lg-4 col-md-12">
-                  <div className="tw-latest-post">
-                    <div className="latest-post-media text-center">
-                      <Img fluid={imagesTestimonial[0].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
+          <CaseStudies />
+          
 
-                    </div>
-                    {/* End Latest Post Media */}
-                    <div className="post-body">
-                      <div className="post-info m-0">
-                        {/* End Post Meta */}
-                        <h3 className="post-title">
-                        International Marketing Case Study
-                        </h3>
-                        <div className="entry-content text-left">
-                          <p>
-How to connect businesses to their prospects worldwide:
-                          ConvergeSol has been a long term client for us and is focussed on providing high quality customised #software solutions and #technology consultancy to #FinancialServices companies #globally.
-                          Our #DigitalMarketing campaign for them is divided into multiple parts
-                            <Link className="tw-readmore" to="/contact/">Click here</Link>
-                            {' '}
-to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* End Col */}
-              </div>
-            </div>
-          </section>
-
-          <section id="tw-facts" className="tw-facts tw-facts-item">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-3 text-center">
-                  <div className="tw-facts-box">
-                    <div className="facts-img">
-                      <i className="icon icon-pie-chart2" />
-                    </div>
-                    {/* End Fatcs image */}
-                    <div className="facts-content">
-                      <h4 className="facts-title">Active clients</h4>
-                    </div>
-                    {/* Facts Content End */}
-                  </div>
-                  {/* Facts Box End */}
-                </div>
-                {/* Col End */}
-                <div className="col-md-3 text-center">
-                  <div className="tw-facts-box">
-                    <div className="facts-img">
-                      <i className="icon icon-pie-chart" />
-                    </div>
-                    {/* End Facts Image */}
-                    <div className="facts-content">
-                      <h4 className="facts-title">Projects Done</h4>
-                    </div>
-                    {/* End Facts Content */}
-                  </div>
-                  {/* End Facts Box */}
-                </div>
-                {/* Col End */}
-                <div className="col-md-3 text-center">
-                  <div className="tw-facts-box">
-                    <div className="facts-img">
-                      <i className="icon icon-map-marker" />
-                    </div>
-                    {/* End Facts Image */}
-                    <div className="facts-content">
-                      <h4 className="facts-title">Success Rate</h4>
-                    </div>
-                    {/* End Facts Content */}
-                  </div>
-                  {/* End Facts Box */}
-                </div>
-                {/* Col End */}
-                <div className="col-md-3 text-center">
-                  <div className="tw-facts-box">
-                    <div className="facts-img">
-                      <i className="icon icon-mutual-fund" />
-                    </div>
-                    {/* End Facts Image */}
-                    <div className="facts-content">
-                      <h4 className="facts-title">Awards</h4>
-                    </div>
-                    {/* End Facts Content */}
-                  </div>
-                  {/* End Facts Box */}
-                </div>
-                {/* Col End */}
-              </div>
-              {/* Row End */}
-            </div>
-            {/* Container End */}
-          </section>
-          <section id="tw-service" className="tw-service">
-            <div className="container">
-              <div className="row text-center">
-                <div className="col section-heading">
-                  <h2>
-                    Why
-                    <span> Optimus DM?</span>
-                  </h2>
-                  <span className="animate-border ml-auto mr-auto tw-mt-20" />
-                </div>
-                {/* Title Col End */}
-              </div>
-              {/* Title Row End */}
-              <div className="row">
-                <div className="col-md-4 text-center">
-                  <div className="tw-service-box">
-                    <div className="service-content">
-                      <h3>SEO Optimization</h3>
-                      <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
-                    </div>
-                    {/* Service Content end */}
-                  </div>
-                  {/* Service box end */}
-                </div>
-                {/* Col End */}
-                <div className="col-md-4 text-center">
-                  <div className="tw-service-box">
-                    <div className="service-content">
-                      <h3>Content Marketing</h3>
-                      <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
-                    </div>
-                    {/* Service content end */}
-                  </div>
-                  {/* Service box End */}
-                </div>
-                {/* Col End */}
-                <div className="col-md-4 text-center">
-                  <div className="tw-service-box">
-                    <div className="service-content">
-                      <h3>Data Analysis</h3>
-                      <p>
-One of the top 100 advertising and marketing agencies knows what it means to be
-                      </p>
-                    </div>
-                    {/* Service content end */}
-                  </div>
-                  {/* Service box End */}
-                </div>
-                {/* Col end */}
-              </div>
-              {/* Row end */}
-              <div className="tw-mb-105" />
-            </div>
-            {/* container */}
-          </section>
+          <Statastics />
+         <WhyOptimus />
+         
+         <LatestBlog />
 
 
-          <section id="tw-blog" className="tw-blog">
-            <div className="container">
-              <div className="row text-center">
-                <div className="col section-heading">
-                  <h2>
-                    <small>our blog</small>
-          Latest
-                    {' '}
-                    <span>Blog</span>
-                  </h2>
-                  <span className="animate-border ml-auto mr-auto tw-mt-20" />
-                </div>
-                {/* Col end */}
-              </div>
-              {/* Row End */}
-              <div className="row">
-                {blogList.map(({ node }) => (
-                  <div key={node.slug} className="col-lg-4 col-md-12">
-                    <div className="tw-latest-post">
-                      <div className="latest-post-media text-center">
-                        { node.featured_media && (
-                        <Img
-                          fluid={node.featured_media.localFile.childImageSharp.fluid}
-                          alt={node.title}
-                          className="img-fluid"
-                        />
-                        )}
-
-                      </div>
-                      {/* End Latest Post Media */}
-                      <div className="post-body">
-                        <div className="post-item-date">
-                          <div className="post-date">
-                            <span className="date">{node.day}</span>
-                            <span className="month">{node.month}</span>
-                          </div>
-                        </div>
-                        {/* End Post Item Date */}
-                        <div className="post-info">
-                          <div className="post-meta">
-                            <span className="post-author">
-                     Posted by
-                              {' '}
-                              <Link to={`/blog/${node.slug}`}>{node.author.name}</Link>
-                            </span>
-                          </div>
-                          {/* End Post Meta */}
-                          <Link to={`/blog/${node.slug}`}>
-                            <h3
-                              style={{
-                                overflow: 'hidden', textOverflow: 'ellipsis', width: '95%', whiteSpace: 'nowrap',
-                              }}
-                              dangerouslySetInnerHTML={{ __html: node.title }}
-                              className="post-title"
-                            />
-                          </Link>
-                          <div className="entry-content" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                          <Link to={`/blog/${node.slug}`} className="tw-readmore">
-Read More
-                            <i className="fa fa-angle-right" />
-                          </Link>
-                          {/* End Entry Content */}
-                        </div>
-                        {/* End Post info */}
-                      </div>
-                      {/* End Post Body */}
-                    </div>
-                    {/* End Tw Latest Post */}
-                  </div>
-                ))}
-                <div className="col-md-12 text-center"><Link to="/blog" className="btn btn-primary btn-lg tw-mt-80">view all</Link></div>
-              </div>
-              {/* End Row */}
-            </div>
-            {/* Container End */}
-          </section>
+        
 
         </React.Fragment>
       );

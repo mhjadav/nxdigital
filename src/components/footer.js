@@ -94,7 +94,7 @@ const Footer = () => (
             <span>
 Designed & Developed By
               {' '}
-              <a href="https://mojaave.com">Mahipat</a>
+              <a href="https://nirlom.com">Nirlom</a>
             </span>
           </div>
           <div className="col-md-4 text-center" style={{ padding: '.5rem 1rem' }}>

@@ -40,6 +40,11 @@
                         fixedContentPos: false
                         });
                   };
+
+                  setTimeout(function(){
+                        SameHeight('.features-box');
+            
+                    }, 1000);
                   
                   /* Map */
                   
@@ -155,5 +160,10 @@
                   clearInterval(interval);
             }
       }, 200);
+
+      var SameHeight = function(element) {
+            var maxHeight = Math.max.apply(null, $(element).map(function(){return $(this).height()}));
+            $(element).height(maxHeight);
+         }
 })();
 

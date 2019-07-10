@@ -1,6 +1,10 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { Link, StaticQuery, graphql } from 'gatsby';
+import WhyOptimus from './why-optimus'
+import LatestBlog from './latest-blog'
+import CaseStudies from './case-studies'
+import Statastics from './statastics'
 
 const DigitalMarketing = () => (
   <StaticQuery
@@ -66,22 +70,16 @@ const DigitalMarketing = () => (
               <div className="row">
                 <div className="col-md-4">
                   <h2 className="column-title text-md-right text-sm-center">
-          Optimus DM
+                    Optimus DM
                     <br />
                     {' '}
-            Your ideal digital partner
+                    Your ideal digital partner
                   </h2>
                 </div>
                 {/* Col End */}
                 <div className="col-md-7 ml-md-auto">
                   <p className="features-text">
-            We offer end to end digital marketing and technology services to our clients world wide. Through a complimentary consultation session understand:
-                    <br />
-                    {' '}
-                    <ul>
-                      <li>How # Digital Marketing propels businesses</li>
-                      <li>How # Websites can increase brand value</li>
-                    </ul>
+                    We at Optimus DM provide end to end digital marketing and technology services to our clients worldwide. We aim to deliver consistent exponential growth to businesses through our Technology, Digital Transformation and Strategy Expertise.
                   </p>
                 </div>
                 {/* Col End */}
@@ -100,7 +98,26 @@ const DigitalMarketing = () => (
                     {/* End Features Icon */}
                     <h3>Digital Marketing</h3>
                     <div className="text-left">
-                      <p>
+                      <input type="checkbox" className="read-more-state" id="post-1" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Digital marketing refers to the process of using the digital medium to market a product. It is a highly targeted and an effective way of reaching your audience.
+                        </li>
+                        <li className="read-more-target">
+                        With the advent of the internet and online media, marketing has taken innovative and bold steps.
+                        </li>
+                        <li className="read-more-target">
+                        Digital marketing is one innovative method to reach your target audience.
+                        </li>
+                        <li className="read-more-target">
+                        Digital Marketing comprises SEO, SEM, Content Marketing, data-driven marketing, e-commerce marketing, SMM, email marketing, display marketing etc.
+                        </li>
+                        <li className="read-more-target">
+                        It is an effective and sure way of reaching your customers quickly and efficiently.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-1" className="read-more-trigger" />
+                      {/*   <p>
                       Digital Marketing lets you define your target audience very precisely.
                       </p>
                       <p>
@@ -111,7 +128,7 @@ const DigitalMarketing = () => (
                   Read More
                           <i className="fa fa-angle-right" />
                         </Link>
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -126,17 +143,27 @@ const DigitalMarketing = () => (
                       {/* End Features icon inner */}
                     </div>
                     {/* End Features Icon */}
-                    <h3>SEO Management</h3>
+                    <h3>Search Engine Optimisation (SEO)</h3>
                     <div className="text-left">
-                      <p>
-                        SEO (Search Engine Optimisation), link-building, blogging, updating the website with relevant content and several other activities are required for growing your reach organically...
-                      </p>
-                      <p>
-                        <Link to="/services/digital-marketing/" className="tw-readmore">
-                  Read More
-                          <i className="fa fa-angle-right" />
-                        </Link>
-                      </p>
+                    <input type="checkbox" className="read-more-state" id="post-2" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        SEO refers to the process providing visibility of a business to consumers trying to search products or services using Google, Bing, Siri, Alexa etc.
+                        </li>
+                        <li className="read-more-target">
+                        SEO involves the process of modifying, adding content, coding and increasing visibility by the use of specific and targeted keywords.
+                        </li>
+                        <li className="read-more-target">
+                        SEO aims to optimize your content in such a way that it appears at the top of the results page in a search engine.
+                        </li>
+                        <li className="read-more-target">
+                        User-friendly interface with relevant keywords will help increase traffic to your website and bring in more prospective clients.
+                        </li>
+                        <li className="read-more-target">
+                        It is highly targeted, dynamic, low cost and offers local as well as global visibility.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-2" className="read-more-trigger" />
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -151,17 +178,35 @@ const DigitalMarketing = () => (
                       {/* End Features icon inner */}
                     </div>
                     {/* End Features Icon */}
-                    <h3>Outsourced CMO</h3>
+                    <h3>Search Engine Marketing (SEM)</h3>
                     <div className="text-left">
-                      <p>
-                    Outsourced CMO is your Chief Marketing Officer with a team of highly talented digital marketers, designers and tech guys required for execution of digital marketing strategies...
-                      </p>
-                      <p>
-                        <Link to="/services/digital-marketing/" className="tw-readmore">
-                  Read More
-                          <i className="fa fa-angle-right" />
-                        </Link>
-                      </p>
+                    <input type="checkbox" className="read-more-state" id="post-3" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        SEM refers to the process where business pay to search engines to show results about their company.
+                        </li>
+                       
+                        <li className="read-more-target">
+                        Advertisers bid on certain keywords that when typed will show their content, products or services.
+                        </li>
+                        <li className="read-more-target">
+                        SEM network landscapes mainly comprise Google, Bing and Yahoo.
+                        </li>
+                        <li className="read-more-target">
+                        The ROI on the SEM campaign can be clearly measured.
+                        </li>
+                        <li className="read-more-target">
+                        A combination of SEM and SEO can be used to build a successful marketing campaign.
+                        </li>
+
+                        <li className="read-more-target">
+                        SEM strategy is about increasing your website traffic, grow your customer base in the shorter term.
+                        </li>
+                        <li className="read-more-target">
+                        As people spend more time on search engines there is a huge scope for your brand to get noticed which in turn can translate into revenue.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-3" className="read-more-trigger" />
                     </div>
                   </div>
                   {/* End Single Features */}
@@ -170,312 +215,272 @@ const DigitalMarketing = () => (
 
               </div>
               {/* End Row 2 */}
+
+              <div className="tw-mt-80" />
+              <div className="row">
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-mobile2" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3> Content Marketing</h3>
+                    <div className="text-left">
+                      <input type="checkbox" className="read-more-state" id="post-4" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Content marketing provides information to customers to enhance their interest in the product.
+                        </li>
+                        <li className="read-more-target">
+                        Information is given in the form of news, videos, infographics, blogs, podcasts etc.
+                        </li>
+                        <li className="read-more-target">
+                        This form of marketing mainly works in the digital space.
+                        </li>
+                        <li className="read-more-target">
+                        This may not always involve direct sales but builds trust and rapport with the customer.
+                        </li>
+                        <li className="read-more-target">
+                        Brand loyalty, brand awareness, generating leads, direct engagement with the customers, an online presence are major goals of content marketing.
+                        </li>
+                        <li className="read-more-target">
+                        Content marketing when combined with other digital marketing  techniques, formulate a great marketing strategy.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-4" className="read-more-trigger" />
+                      {/*   <p>
+                      Digital Marketing lets you define your target audience very precisely.
+                      </p>
+                      <p>
+                    You can run your search engine or social media campaigns for a longer period of time at compelling prices...
+                      </p>
+                      <p>
+                        <Link to="/services/digital-marketing/" className="tw-readmore">
+                  Read More
+                          <i className="fa fa-angle-right" />
+                        </Link>
+                      </p> */}
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-mutual-fund" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>Email Marketing</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-5" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Email marketing involves sending messages to people through email for commercial purposes
+                    </li>
+                        <li className="read-more-target">
+                        It is mainly used to send advertisements, for soliciting sales, to build loyalty, brand awareness and for building brand personality
+                        </li>
+                        <li className="read-more-target">
+                        Mails can be sent by purchasing data or by using existing customer database
+                        </li>
+                        <li className="read-more-target">
+                        Mails can be personalized to suit your business needs
+                        </li>
+                        <li className="read-more-target">
+                        It is a cost-effective and measurable form of advertising
+                        </li>
+                        <li className="read-more-target">
+                        Emails can be designed according to the gender and the geographical location of the recipient. Customers can be updated about new offers and information that will increase their interest.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-5" className="read-more-trigger" />
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-newspaper" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>Influencer Marketing</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-6" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Influencer marketing focuses on using individuals (often celebrities) with a lot of followers, to communicate directly to those followers.
+                        </li>
+                       
+                        <li className="read-more-target">
+                        Marketing strategy is formulated based solely on that celebrity.
+                        </li>
+                        <li className="read-more-target">
+                        Influencers have a following on social media which in turn can be used to market products and services.
+                        </li>
+                        <li className="read-more-target">
+                        Influencers advertise the products themselves or act as a third party.
+                        </li>
+                        <li className="read-more-target">
+                        Influencer marketing is not about quick payments but building your brand, credibility and putting your idea to a specific client base.
+                        </li>
+                        <li className="read-more-target">
+                        The R’s of Influence marketing will be Reach, Relevance and Resonance.
+                        </li>
+                        <li className="read-more-target">
+                        Influencer marketing makes you implement out of the box ideas to market your products or services
+                        </li>
+                      </ul>
+                      <label htmlFor="post-6" className="read-more-trigger" />
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+
+              </div>
+              {/* End Row 2 */}
+
+
+              <div className="tw-mt-80" />
+              <div className="row">
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-mobile2" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>Social Media Marketing</h3>
+                    <div className="text-left">
+                      <input type="checkbox" className="read-more-state" id="post-7" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        As the name suggests, Social Media Marketing uses social media platforms to run marketing campaigns.
+                        </li>
+                        <li className="read-more-target">
+                        Businesses can address a wide range of stakeholders through social media platforms like Facebook, Instagram etc.
+                        </li>
+                        <li className="read-more-target">
+                        A successful social media strategy can be developed by using a specific, measurable, attainable, relevant and time-bound approach.
+                        </li>
+                        <li className="read-more-target">
+                        Business can project an image they want the customers to associate with their brand very efficiently.
+                        </li>
+                        <li className="read-more-target">
+                        LinkedIn, Facebook, Instagram, Twitter etc. can be used to place target specific messages to cater to specific types of audiences.  
+                        </li>
+                        <li className="read-more-target">
+                        Use of social media marketing enables direct engagement with potential customers.
+                        </li>
+                        <li className="read-more-target">
+                        Use of various analytical tools can also help gather real-world data. This, in turn, helps us enhance campaigns and increase ROI.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-7" className="read-more-trigger" />
+                   
+                    </div>
+                  </div>
+               
+                </div>
+               
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-mutual-fund" />
+                      </div>
+                     
+                    </div>
+                 
+                    <h3>Viral Marketing</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-8" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Viral marketing generates interest in a product or a brand through extensive sharing of the content by the viewers.
+                        </li>
+                        <li className="read-more-target">
+                        Viral marketing works more on social media platforms like Youtube, Facebook, Instagram and Twitter.
+                        </li>
+                        <li className="read-more-target">
+                        Viral marketing may be in the form of video clips, interactive flash games, advergames, eBooks, memes, text messages, email messages or web pages.
+                        </li>
+                        <li className="read-more-target">
+                        Key factors that drive viral marketing are triggers like emotion, mass appeal, practical value and stories.
+                        </li>
+                       
+                      </ul>
+                      <label htmlFor="post-8" className="read-more-trigger" />
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-newspaper" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>Affiliate Marketing</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-9" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Affiliate marketing refers to the process where a third party sells products or services and gets a commission for it.
+                        </li>
+                       
+                        <li className="read-more-target">
+                        Affiliate marketing is totally based on performance.
+                        </li>
+                        <li className="read-more-target">
+                        The company rewards affiliates for their marketing efforts when they bring in customers. 
+                        </li>
+                        <li className="read-more-target">
+                        Common affiliate marketing channels include Influencers, Bloggers, Paid search focused microsites and large media websites.
+                        </li>
+                        <li className="read-more-target">
+                        Affiliate marketing can be used to develop a rapport with the customer, by making it personal, by starting to review specific products and mainly choosing a campaign that has a maximum impact
+
+                        </li>
+                      </ul>
+                      <label htmlFor="post-9" className="read-more-trigger" />
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+
+              </div>
+              {/* End Row 2 */}
+
             </div>
             {/* End Container */}
+
+            
           </section>
-          <section className="tw-inro-item">
-            <div className="container">
-              <div className="row text-center">
-                <div className="col section-heading">
-                  <h2>
-Success
-                    <span> Stories</span>
-                  </h2>
-                  <span className="animate-border ml-auto mr-auto tw-mt-20" />
-                </div>
-                {/* Title Col End */}
-              </div>
-
-              <div className="row">
-                <div className="col-lg-4 col-md-12">
-                  <div className="tw-latest-post">
-                    <div className="latest-post-media text-center">
-                      <Img fluid={imagesTestimonial[2].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
-                    </div>
-                    {/* End Latest Post Media */}
-                    <div className="post-body">
-                      <div className="post-info m-0">
-                        {/* End Post Meta */}
-                        <h3 className="post-title">
-                        Optimus DM and VVI : Strategy done right!
-                        </h3>
-                        <div className="entry-content text-left">
-                          <p>
-                          Mr. Abhimanyu approached us with a vision of taking brand VVI to the next level. They are manufacturers of ultra premium range of glass automation and glass hardware fittings.
-                          After designing a top-notch #Website, #SocialMedia presence and other #DigitalElements, we have now moved onto the next phase of our #project.
-                            <Link className="tw-readmore" to="/contact/">Click here</Link>
-                            {' '}
-to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
-                          </p>
-                        </div>
-                        {/* End Entry Content */}
-                      </div>
-                      {/* End Post info */}
-                    </div>
-                    {/* End Post Body */}
-                  </div>
-                  {/* End Tw Latest Post */}
-                </div>
-                {/* End Col */}
-                <div className="col-lg-4 col-md-12">
-                  <div className="tw-latest-post">
-                    <div className="latest-post-media text-center">
-                      <Img fluid={imagesTestimonial[1].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
-                    </div>
-                    {/* End Latest Post Media */}
-                    <div className="post-body">
-                      <div className="post-info m-0">
-                        {/* End Post Meta */}
-                        <h3 className="post-title">
-                          Nainorita SuccessStory
-                        </h3>
-                        <div className="entry-content text-left">
-                          <p>
-                            The first step towards serving the foreign market began with our first sale in the US Market earlier today. Thank you for your love USA.
-                            Nainorita now exports premium stoles and scarves to USA. This Christmas, you can let your loved ones get cozy in the soft caressing fabric handcrafted by the artisans of Nainorita. From the foothills of the exotic Himalayas, comes authentic Pashmina, now in the US.
-                            <Link className="tw-readmore" to="/contact/">Click here</Link>
-                            {' '}
-                            to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
-                          </p>
-                        </div>
-                        {/* End Entry Content */}
-                      </div>
-                      {/* End Post info */}
-                    </div>
-                    {/* End Post Body */}
-                  </div>
-                  {/* End Tw Latest Post */}
-                </div>
-                {/* End Col */}
-                <div className="col-lg-4 col-md-12">
-                  <div className="tw-latest-post">
-                    <div className="latest-post-media text-center">
-                      <Img fluid={imagesTestimonial[0].node.childImageSharp.fluid} alt="digital marketing" className="img-fluid" />
-
-                    </div>
-                    {/* End Latest Post Media */}
-                    <div className="post-body">
-                      <div className="post-info m-0">
-                        {/* End Post Meta */}
-                        <h3 className="post-title">
-                        International Marketing Case Study
-                        </h3>
-                        <div className="entry-content text-left">
-                          <p>
-How to connect businesses to their prospects worldwide:
-                          ConvergeSol has been a long term client for us and is focussed on providing high quality customised #software solutions and #technology consultancy to #FinancialServices companies #globally.
-                          Our #DigitalMarketing campaign for them is divided into multiple parts
-                            <Link className="tw-readmore" to="/contact/">Click here</Link>
-                            {' '}
-to Book a Consultation Session with us to know how you can accelerate your business through Digital Marketing and Technology.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* End Col */}
-              </div>
-            </div>
-          </section>
-
-          <section id="tw-facts" className="tw-facts tw-facts-item">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-3 text-center">
-                  <div className="tw-facts-box">
-                    <div className="facts-img">
-                      <i className="icon icon-pie-chart2" />
-                    </div>
-                    {/* End Fatcs image */}
-                    <div className="facts-content">
-                      <h4 className="facts-title">Active clients</h4>
-                    </div>
-                    {/* Facts Content End */}
-                  </div>
-                  {/* Facts Box End */}
-                </div>
-                {/* Col End */}
-                <div className="col-md-3 text-center">
-                  <div className="tw-facts-box">
-                    <div className="facts-img">
-                      <i className="icon icon-pie-chart" />
-                    </div>
-                    {/* End Facts Image */}
-                    <div className="facts-content">
-                      <h4 className="facts-title">Projects Done</h4>
-                    </div>
-                    {/* End Facts Content */}
-                  </div>
-                  {/* End Facts Box */}
-                </div>
-                {/* Col End */}
-                <div className="col-md-3 text-center">
-                  <div className="tw-facts-box">
-                    <div className="facts-img">
-                      <i className="icon icon-map-marker" />
-                    </div>
-                    {/* End Facts Image */}
-                    <div className="facts-content">
-                      <h4 className="facts-title">Success Rate</h4>
-                    </div>
-                    {/* End Facts Content */}
-                  </div>
-                  {/* End Facts Box */}
-                </div>
-                {/* Col End */}
-                <div className="col-md-3 text-center">
-                  <div className="tw-facts-box">
-                    <div className="facts-img">
-                      <i className="icon icon-mutual-fund" />
-                    </div>
-                    {/* End Facts Image */}
-                    <div className="facts-content">
-                      <h4 className="facts-title">Awards</h4>
-                    </div>
-                    {/* End Facts Content */}
-                  </div>
-                  {/* End Facts Box */}
-                </div>
-                {/* Col End */}
-              </div>
-              {/* Row End */}
-            </div>
-            {/* Container End */}
-          </section>
-          <section id="tw-service" className="tw-service">
-            <div className="container">
-              <div className="row text-center">
-                <div className="col section-heading">
-                  <h2>
-                    Why
-                    <span> Optimus DM?</span>
-                  </h2>
-                  <span className="animate-border ml-auto mr-auto tw-mt-20" />
-                </div>
-                {/* Title Col End */}
-              </div>
-              {/* Title Row End */}
-              <div className="row">
-                <div className="col-md-4 text-center">
-                  <div className="tw-service-box">
-                    <div className="service-content">
-                      <h3>SEO Optimization</h3>
-                      <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
-                    </div>
-                    {/* Service Content end */}
-                  </div>
-                  {/* Service box end */}
-                </div>
-                {/* Col End */}
-                <div className="col-md-4 text-center">
-                  <div className="tw-service-box">
-                    <div className="service-content">
-                      <h3>Content Marketing</h3>
-                      <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
-                    </div>
-                    {/* Service content end */}
-                  </div>
-                  {/* Service box End */}
-                </div>
-                {/* Col End */}
-                <div className="col-md-4 text-center">
-                  <div className="tw-service-box">
-                    <div className="service-content">
-                      <h3>Data Analysis</h3>
-                      <p>
-One of the top 100 advertising and marketing agencies knows what it means to be
-                      </p>
-                    </div>
-                    {/* Service content end */}
-                  </div>
-                  {/* Service box End */}
-                </div>
-                {/* Col end */}
-              </div>
-              {/* Row end */}
-              <div className="tw-mb-105" />
-            </div>
-            {/* container */}
-          </section>
-
-
-          <section id="tw-blog" className="tw-blog">
-            <div className="container">
-              <div className="row text-center">
-                <div className="col section-heading">
-                  <h2>
-                    <small>our blog</small>
-          Latest
-                    {' '}
-                    <span>Blog</span>
-                  </h2>
-                  <span className="animate-border ml-auto mr-auto tw-mt-20" />
-                </div>
-                {/* Col end */}
-              </div>
-              {/* Row End */}
-              <div className="row">
-                {blogList.map(({ node }) => (
-                  <div key={node.slug} className="col-lg-4 col-md-12">
-                    <div className="tw-latest-post">
-                      <div className="latest-post-media text-center">
-                        { node.featured_media && (
-                        <Img
-                          fluid={node.featured_media.localFile.childImageSharp.fluid}
-                          alt={node.title}
-                          className="img-fluid"
-                        />
-                        )}
-
-                      </div>
-                      {/* End Latest Post Media */}
-                      <div className="post-body">
-                        <div className="post-item-date">
-                          <div className="post-date">
-                            <span className="date">{node.day}</span>
-                            <span className="month">{node.month}</span>
-                          </div>
-                        </div>
-                        {/* End Post Item Date */}
-                        <div className="post-info">
-                          <div className="post-meta">
-                            <span className="post-author">
-                     Posted by
-                              {' '}
-                              <Link to={`/blog/${node.slug}`}>{node.author.name}</Link>
-                            </span>
-                          </div>
-                          {/* End Post Meta */}
-                          <Link to={`/blog/${node.slug}`}>
-                            <h3
-                              style={{
-                                overflow: 'hidden', textOverflow: 'ellipsis', width: '95%', whiteSpace: 'nowrap',
-                              }}
-                              dangerouslySetInnerHTML={{ __html: node.title }}
-                              className="post-title"
-                            />
-                          </Link>
-                          <div className="entry-content" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                          <Link to={`/blog/${node.slug}`} className="tw-readmore">
-Read More
-                            <i className="fa fa-angle-right" />
-                          </Link>
-                          {/* End Entry Content */}
-                        </div>
-                        {/* End Post info */}
-                      </div>
-                      {/* End Post Body */}
-                    </div>
-                    {/* End Tw Latest Post */}
-                  </div>
-                ))}
-                <div className="col-md-12 text-center"><Link to="/blog" className="btn btn-primary btn-lg tw-mt-80">view all</Link></div>
-              </div>
-              {/* End Row */}
-            </div>
-            {/* Container End */}
-          </section>
+         <CaseStudies />
+          <Statastics />
+          <WhyOptimus />
+          <LatestBlog />
+        
 
         </React.Fragment>
       );
