@@ -43,7 +43,6 @@
 
                   setTimeout(function(){
                         SameHeight('.features-box');
-            
                     }, 1000);
                   
                   /* Map */

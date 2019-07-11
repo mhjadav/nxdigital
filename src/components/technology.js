@@ -262,8 +262,183 @@ const SoftwareDevelopment = () => (
                 {/* Col End */}
 
               </div>
+              {/* its 11 july code start */}
+              <div className="tw-mt-80" />
+              <div className="row">
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-map-marker2" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>Enterprise Resource Planning (ERP)</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-7" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        ERP is a software used to manage large as well as small scale businesses.
+                        </li>
+                        <li className="read-more-target">
+                        It is typically, a combination of different operations of a business such as sales, marketing, product planning, product development, human resources and financials.
+                        </li>
+                        <li className="read-more-target">
+                        ERP helps in storing all the data at one place and secures it through built-in protections.
+                        </li>
+                        <li className="read-more-target">
+                        ERP systems are well known for its flexible interface, modular design and central database.
+                        </li>
+                      
+                      </ul>
+                      <label htmlFor="post-7" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-pie-chart2" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>Customer Relationship Manager (CRM)</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-8" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        The relationships we cultivate with clients help us in achieving growth in our business.
+                        </li>
+                        <li className="read-more-target">
+                         CRM is a software used to manage that relationship.
+                        </li>
+                        <li className="read-more-target">
+                        CRM assists us in knowing our clients in better way through identifying, documenting and recording each and every interaction with them.
+                        </li>
+                        <li className="read-more-target">
+                        CRM provides improved customer service through quick information related to the problems, suggestions and feedback of the clients.
+                        </li>
+                       
+                      </ul>
+                      <label htmlFor="post-8" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-mutual-fund" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>Customized Software</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-9" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        Customized software is designed and developed keeping your company’s requirements and expectations in mind.
+                        </li>
+                        <li className="read-more-target">
+                        Getting customized software for your company is a long-term investment as well as it saves the expense of buying licensed software.
+                        </li>
+                        <li className="read-more-target">
+                        It is also more secure than other off-the-shelf software as it is custom made and holds minimal possibility of getting hacked.
+                        </li>
+                        <li className="read-more-target">
+                        Custom software holds the advantage of evolving as the business evolves. It is tailored accordingly to sustain large amount of data fed into the same.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-9" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
 
+              </div>
+              
+              <div className="tw-mt-80" />
+              <div className="row">
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-map-marker2" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>E-commerce Portal</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-10" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        In today’s era of E-commerce, creating an E-commerce platform for establishing your company’s presence online has been a trend and it’s here to stay.
+                        </li>
+                        <li className="read-more-target">
+                        E-commerce platform is a combination of front-end interface which is visible to users and a back-end engine which is operated by the company.
+                        </li>
+                        <li className="read-more-target">
+                        We provide complete service regarding setting up of an E-commerce platform beginning from understanding the client’s requirements to delivering the E-commerce platform which is flexible, robust, attractive and fulfills all the requirements of the client.
+                        </li>
+                      </ul>
+                      <label htmlFor="post-10" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+                <div className="col-lg-4 col-md-12">
+                  <div className="features-box">
+                    <div className="features-icon d-table">
+                      <div className="features-icon-inner d-table-cell">
+                        <i className="icon icon-pie-chart2" />
+                      </div>
+                      {/* End Features icon inner */}
+                    </div>
+                    {/* End Features Icon */}
+                    <h3>Technology Consultation</h3>
+                    <div className="text-left">
+                    <input type="checkbox" className="read-more-state" id="post-11" />
+                      <ul className="read-more-wrap">
+                        <li>
+                        The primary role of software for any business is to automate the processes. This reduces human efforts and increases efficiency of the company.
+                        </li>
+                        <li className="read-more-target">
+                        As technology requirements vary from company to company, we provide complete guidance and provide vital inputs regarding development of a software which can meet the company's requirements.
+                        </li>
+                        <li className="read-more-target">
+                        Various factors like security, costs, advantages, disadvantages, licensing fees, downtime tolerance etc. are considered before developing customized software for any company.
+                        </li>
+                        <li className="read-more-target">
+                        Two important software for the company are its Enterprise Resource Planning software (ERP) and Customer Relationship Management software (CRM), which helps in smooth functioning of the company.
+                        </li>
+                       
+                      </ul>
+                      <label htmlFor="post-11" className="read-more-trigger" />
+                      <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
+                    </div>
+                  </div>
+                  {/* End Single Features */}
+                </div>
+                {/* Col End */}
+                
+                {/* Col End */}
 
+              </div>
               {/* End Row 2 */}
             </div>
             {/* End Container */}
