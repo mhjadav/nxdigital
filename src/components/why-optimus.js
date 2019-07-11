@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhyOptimus = () => (
-    <section id="tw-service" className="tw-service">
+    <section id="tw-service" className="tw-service mt-4">
     <div className="container">
       <div className="row text-center">
         <div className="col section-heading">
@@ -56,7 +56,7 @@ const WhyOptimus = () => (
         {/* Col end */}
       </div>
       {/* Row end */}
-      <div className="tw-mb-105" />
+      <div className="tw-mb-30" />
 
       <div className="row">
         <div className="col-md-4 text-center">
@@ -100,7 +100,7 @@ const WhyOptimus = () => (
         {/* Col end */}
       </div>
       {/* Row end */}
-      <div className="tw-mb-105" />
+      <div className="tw-mb-30" />
 
       <div className="row">
         <div className="col-md-4 text-center">
@@ -145,7 +145,7 @@ const WhyOptimus = () => (
         {/* Col end */}
       </div>
       {/* Row end */}
-      <div className="tw-mb-105" />
+      <div className="tw-mb-30" />
 
 
     </div>
