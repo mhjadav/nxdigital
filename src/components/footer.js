@@ -68,8 +68,8 @@ const Footer = () => (
                 <div className="footer-social-link">
                   <h3>Follow us</h3>
                   <ul>
-                    <li><a href="https://www.facebook.com/OptimusDM.India"><i className="fa fa-facebook" /></a></li>
-                    <li><a href="https://www.linkedin.com/company/optimus-dm/"><i className="fa fa-linkedin" /></a></li>
+                    <li><a href="https://www.facebook.com/OptimusDM.India"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/optimus-dm/"><i class="fab fa-linkedin-in"></i></a></li>
 
                     {/* <li><a href="#twitter"><i className="fa fa-twitter" /></a></li>
                     <li><a href="#google"><i className="fa fa-google-plus" /></a></li>

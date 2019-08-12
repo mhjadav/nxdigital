@@ -6,6 +6,8 @@ import LatestBlog from './latest-blog'
 import CaseStudies from './case-studies'
 import Statastics from './statastics'
 import ContactFormHome from './contact-form-home'
+import viral from "../static/images/viral.png"
+import mysvg from "../static/images/viral-marketing.svg"
 
 const DigitalMarketing = () => (
   <StaticQuery
@@ -55,7 +57,7 @@ const DigitalMarketing = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-mobile2" />
+                        <i className="fa fa-laptop" aria-hidden="true" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -80,7 +82,7 @@ const DigitalMarketing = () => (
                         It is an effective and sure way of reaching your customers quickly and efficiently.
                         </li>
                       </ul>
-                      <label htmlFor="post-1" className="read-more-trigger" /> <span className="link-get-started"><a href="#tw-features-contact">Get Started <i class="fa fa-angle-right"></i></a> </span>
+                      <label htmlFor="post-1" className="read-more-trigger" /> <span className="link-get-started"><a href="#tw-features-contact">Get Started <i className="fa fa-angle-right"></i></a> </span>
                       {/*   <p>
                       Digital Marketing lets you define your target audience very precisely.
                       </p>
@@ -102,7 +104,7 @@ const DigitalMarketing = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-mutual-fund" />
+                        <i className="fa fa-bullhorn" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -137,7 +139,7 @@ const DigitalMarketing = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-newspaper" />
+                      <i class="fas fa-search-location"></i>
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -187,7 +189,7 @@ const DigitalMarketing = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-mobile2" />
+                        <i className="fas fa-ad" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -238,7 +240,7 @@ const DigitalMarketing = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-mutual-fund" />
+                        <i className="fas fa-mail-bulk" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -278,7 +280,7 @@ const DigitalMarketing = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-newspaper" />
+                        <i className="fab fa-telegram-plane" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -328,7 +330,7 @@ const DigitalMarketing = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-mobile2" />
+                        <i className="fab fa-facebook-square" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -370,7 +372,8 @@ const DigitalMarketing = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-mutual-fund" />
+                        <img src={mysvg} height="41" style={{color:'#36b729'}} /> 
+                        
                       </div>
                      
                     </div>
@@ -404,7 +407,7 @@ const DigitalMarketing = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-newspaper" />
+                        <i className="fa fa-handshake-o" />
                       </div>
                       {/* End Features icon inner */}
                     </div>

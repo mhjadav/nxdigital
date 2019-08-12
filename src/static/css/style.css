@@ -3123,7 +3123,7 @@ input.round-btn {
   color: #fff;
 }
 
-.tw-footer-info-box .footer-social-link a i.fa-facebook {
+.tw-footer-info-box .footer-social-link a i.fa-facebook, .tw-footer-info-box .footer-social-link a i.fa-facebook-f  {
   background-color: #3B5998;
 }
 
@@ -3135,7 +3135,7 @@ input.round-btn {
   background-color: #DD4B39;
 }
 
-.tw-footer-info-box .footer-social-link a i.fa-linkedin {
+.tw-footer-info-box .footer-social-link a i.fa-linkedin, .tw-footer-info-box .footer-social-link a i.fa-linkedin-in {
   background-color: #0976B4;
 }
 
@@ -6637,4 +6637,14 @@ h5 span {
 
 .read-more-state:checked ~ .link-get-started{
   display: inline-block;
+}
+
+.features-box .fas, .features-box .fab, .features-box .fa{
+  font-size: 41px;
+  color: #36b729;
+}
+
+.link-get-started .fa-angle-right{
+  font-size: inherit !important;
+
 }

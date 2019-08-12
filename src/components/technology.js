@@ -7,6 +7,7 @@ import LatestBlog from './latest-blog'
 import Statastics from './statastics'
 import ContactFormHome from './contact-form-home'
 
+
 const SoftwareDevelopment = () => (
   <StaticQuery
     query={graphql`
@@ -56,7 +57,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-map-marker2" />
+                        <i className="fa fa-globe" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -92,7 +93,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-pie-chart2" />
+                        <i className="fas fa-mobile-alt" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -128,7 +129,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-mutual-fund" />
+                        <i className="fab fa-android" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -166,7 +167,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-map-marker2" />
+                        <i className="fab fa-app-store-ios" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -200,7 +201,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-pie-chart2" />
+                      <i class="fas fa-recycle"></i>
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -231,7 +232,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-mutual-fund" />
+                        <i className="fas fa-chart-line" />
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -269,7 +270,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-map-marker2" />
+                      <i class="fas fa-business-time"></i>
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -303,7 +304,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-pie-chart2" />
+                      <i class="fas fa-user-tie"></i>
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -337,7 +338,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-mutual-fund" />
+                      <i class="fas fa-tasks"></i>
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -375,7 +376,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-map-marker2" />
+                      <i class="fas fa-shopping-cart"></i>
                       </div>
                       {/* End Features icon inner */}
                     </div>
@@ -405,7 +406,7 @@ const SoftwareDevelopment = () => (
                   <div className="features-box">
                     <div className="features-icon d-table">
                       <div className="features-icon-inner d-table-cell">
-                        <i className="icon icon-pie-chart2" />
+                      <i class="fas fa-users-cog"></i>
                       </div>
                       {/* End Features icon inner */}
                     </div>
