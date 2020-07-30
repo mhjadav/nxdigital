@@ -46,7 +46,9 @@ const Layout = (props) => {
           },
           { rel: 'canonical', href: siteUrl },
         ]}
-      />
+      >
+    <script src="https://www.googleoptimize.com/optimize.js?id=GTM-MLHGPJ9"></script>
+    </Helmet>
       <Header />
       {children}
       <section id="tw-call-to-action" className="tw-call-to-action">
