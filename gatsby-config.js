@@ -93,7 +93,7 @@ module.exports = {
       resolve: 'gatsby-plugin-purgecss',
       options: {
         whitelist: ['body', 'html', 'fa', 'fa-twitter', 'fa-github', 'fa-linkedin'],
-        whitelistPatterns: ['/^owl-/'],
+        whitelistPatterns: [/^owl-/],
       },
     },
     'gatsby-plugin-offline',
