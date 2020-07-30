@@ -6,6 +6,7 @@ const HTML = ({
 }) => (
   <html {...htmlAttributes}>
     <head>
+      <script src="https://www.googleoptimize.com/optimize.js?id=GTM-MLHGPJ9" />
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta
@@ -13,7 +14,6 @@ const HTML = ({
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
       {headComponents}
-      <script src="https://www.googleoptimize.com/optimize.js?id=GTM-MLHGPJ9" />
 
     </head>
     <body {...bodyAttributes}>
